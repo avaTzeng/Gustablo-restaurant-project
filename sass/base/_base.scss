@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: inherit;
+
+
+    // DEBUG
+    // border: 1px solid black;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    
+    // DEBUG
+    height: 1000px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
