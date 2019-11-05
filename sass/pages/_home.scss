@@ -1,47 +1,53 @@
 
 .home-header {
-    // display: flex;
-    // flex-direction: column;
     height: 85vh;
 
-    background-image: url(../img/home/showoff_01.jpg);
-    filter: brightness(80%);
-                                    
+    background-image: url(../img/home/showoff_01.jpg);                                
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        height: 0;
+        background-color: rgba($color-black, 1);
+        opacity: .5;
+        z-index: -1;
+        @include size(100%,100%);
+    }
+
 
     &__block {
         @include absCenter;
     }
 
     &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        @include flexCenter;
     }
 
     &__title {
-        font-family: 'Montserrat', sans-serif;
+        display: inline-block;
+        font-family: $font-family-1;
         font-size: 5rem;
         font-weight: 700;
         color: white;
         text-transform: uppercase;
+        margin-top: -1rem;
         
     }
 
     &__subtitle {
+        display: inline-block;
         color: white;
+        font-weight: 400;
         text-transform: uppercase;
-        font-family: 'Lato', sans-serif;
-        font-size: 2rem;
+        font-family: $font-family-2;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
         
     }
 
     &__discover-btn{
-        // background-color: red;
-        // width: 5rem;
-        // height: 5rem;
     }
 }
