@@ -21,6 +21,7 @@
     &:visited {
         transform: translate(-50%,calc(-50% + 6.5rem));
         padding: .5rem 2rem;
+        border: 1px solid $color-white;
     }
 
     &:hover,
@@ -28,12 +29,6 @@
         background-color: $color-primary;
         transform: translate(-50%,calc(-50% + 6rem));
         padding: .7rem 2.2rem;
+        border: 1px solid $color-primary;
     }
-
-    span {
-        
-    }
-
-
-
 }

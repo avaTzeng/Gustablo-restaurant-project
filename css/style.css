@@ -52,6 +52,9 @@ body {
     width: 100%;
     height: 100%; }
   .home-header__block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -77,6 +80,51 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 1.2rem;
     letter-spacing: 2px; }
+  .home-header__reservation-block {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    justify-content: center;
+    width: 65rem;
+    height: 6.5rem;
+    background-color: #FD4100; }
+  .home-header__reservarion-box {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+    padding: .5rem 1rem;
+    width: 15rem;
+    margin-right: 1rem;
+    cursor: pointer; }
+    .home-header__reservarion-box svg {
+      width: 1.3rem;
+      height: 1.3rem;
+      fill: #FFFFFF; }
+    .home-header__reservarion-box span {
+      font-size: 5px;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 300;
+      color: #FFFFFF; }
+  .home-header__reservation-btn {
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    align-self: center;
+    width: 12rem;
+    padding: .5rem 2rem;
+    cursor: pointer; }
+    .home-header__reservation-btn a:link,
+    .home-header__reservation-btn a:visited {
+      text-decoration: none;
+      color: #999999;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+      font-weight: 400; }
 
 .navigation__nav {
   position: fixed;
@@ -209,8 +257,10 @@ body {
   transform: translate(-50%, calc(-50% + 6.5rem)); }
   .btn-transparent:link, .btn-transparent:visited {
     transform: translate(-50%, calc(-50% + 6.5rem));
-    padding: .5rem 2rem; }
+    padding: .5rem 2rem;
+    border: 1px solid #FFFFFF; }
   .btn-transparent:hover, .btn-transparent:active {
     background-color: #FD4100;
     transform: translate(-50%, calc(-50% + 6rem));
-    padding: .7rem 2.2rem; }
+    padding: .7rem 2.2rem;
+    border: 1px solid #FD4100; }
