@@ -20,7 +20,9 @@ body {
 .paragraph {
     font-family: $font-family-2;
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
     color: $color-grey-light-3;
     line-height: 1.55;
+    text-align: justify;
+    text-justify: inter-word;
 }

@@ -17,7 +17,7 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #7C7C7C; }
+  color: #999999; }
 
 .heading-primary {
   font-family: "Montserrat", sans-serif;
@@ -32,9 +32,11 @@ body {
 .paragraph {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 2.4rem;
-  color: #7C7C7C;
-  line-height: 1.55; }
+  font-size: 1.4rem;
+  color: #999999;
+  line-height: 1.55;
+  text-align: justify;
+  text-justify: inter-word; }
 
 .home-header {
   height: 85vh;
@@ -82,8 +84,9 @@ body {
     letter-spacing: 2px; }
 
 .section-about {
-  background-color: #7C7C7C;
-  padding: 13rem 0; }
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center; }
   .section-about__reservation-block {
     position: absolute;
     top: 0;
@@ -130,22 +133,59 @@ body {
       text-transform: uppercase;
       font-weight: 400; }
   .section-about__contents {
+    margin-top: 8rem;
+    height: 30rem;
+    padding: 2rem 30rem;
     display: flex;
-    justify-content: center; }
+    justify-content: space-around;
+    align-items: center; }
+  .section-about__video {
+    width: auto;
+    height: 100%;
+    margin-left: 3rem; }
+  .section-about__info {
+    width: 40rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+  .section-about__paragraph {
+    margin-top: 2rem;
+    display: block;
+    width: 100%; }
   .section-about__list {
+    width: 100%;
     display: flex;
     list-style: none; }
   .section-about__list-item {
-    background-color: blue;
+    width: 33.3333333%;
+    text-align: center;
     display: inline-block;
-    padding: .6rem 2rem;
-    border-top: 3px solid #FD4100; }
-    .section-about__list-item a:link,
-    .section-about__list-item a:visited {
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: "Montserrat", sans-serif;
-      color: #999999; }
+    padding: .8rem 2rem;
+    font-size: .2rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer; }
+    .section-about__list-item--active {
+      background-color: #FFFFFF;
+      color: #333333;
+      border-top: 2px solid #FD4100;
+      border-right: 2px solid #e0e0e0;
+      border-left: 2px solid #e0e0e0; }
+    .section-about__list-item--inactivated {
+      background-color: #F5F5F5;
+      color: #999999;
+      border-bottom: 2px solid #e0e0e0; }
+      .section-about__list-item--inactivated:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        display: block;
+        width: 1px;
+        height: 65%;
+        background-color: #e0e0e0; }
 
 .navigation__nav {
   position: fixed;
@@ -165,7 +205,7 @@ body {
     transform: translate(-50%, calc(-50% + 2.5rem));
     width: 100vw;
     height: 1px;
-    background-color: #7C7C7C; }
+    background-color: #999999; }
 
 .navigation__list {
   list-style: none;
@@ -182,7 +222,7 @@ body {
     width: 1px;
     height: 2rem;
     margin-left: 1rem;
-    background-color: #7C7C7C; }
+    background-color: #999999; }
 
 .navigation__item {
   margin-left: -.5rem;
