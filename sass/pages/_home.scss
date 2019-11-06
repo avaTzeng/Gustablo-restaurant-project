@@ -1,4 +1,4 @@
-
+//--------------- HEADER ---------------
 .home-header {
     height: 85vh;
 
@@ -22,7 +22,6 @@
         justify-content: space-around;
         align-items: center;
         @include absCenter;
-        
     }
 
     &__content {
@@ -110,6 +109,45 @@
             font-family: $font-family-1;
             text-transform: uppercase;
             font-weight: 400;
+        }
+    }
+}
+
+//--------------- SECTION-ABOUT ---------------
+.section-about {
+    position: relative;
+    z-index: -1;
+    
+    background-color: $color-grey-light-3;
+    padding: 13rem 0;
+
+    &__contents {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__info {
+
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__list-item {
+        background-color: blue;
+        display: inline-block;
+        padding: .6rem 2rem;
+        border-top: 3px solid $color-primary;
+        
+        a:link,
+        a:visited {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: $font-family-1;
+            color: $color-grey-light-2;
         }
     }
 }

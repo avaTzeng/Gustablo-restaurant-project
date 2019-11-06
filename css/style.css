@@ -126,6 +126,29 @@ body {
       text-transform: uppercase;
       font-weight: 400; }
 
+.section-about {
+  position: relative;
+  z-index: -1;
+  background-color: #7C7C7C;
+  padding: 13rem 0; }
+  .section-about__contents {
+    display: flex;
+    justify-content: center; }
+  .section-about__list {
+    display: flex;
+    list-style: none; }
+  .section-about__list-item {
+    background-color: blue;
+    display: inline-block;
+    padding: .6rem 2rem;
+    border-top: 3px solid #FD4100; }
+    .section-about__list-item a:link,
+    .section-about__list-item a:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      color: #999999; }
+
 .navigation__nav {
   position: fixed;
   top: 1.4rem;
