@@ -1,7 +1,6 @@
 //--------------- HEADER ---------------
 .home-header {
     height: 85vh;
-
     background-image: url(../img/home/showoff_01.jpg);                                
     background-size: cover;
     background-position: top;
@@ -46,18 +45,15 @@
         font-family: $font-family-2;
         font-size: 1.2rem;
         letter-spacing: 2px;
-        
     }
-
-    
 }
 
 //--------------- SECTION-ABOUT ---------------
 .section-about {
     background-color: $color-white;
-    // padding: 13rem 10rem;
     display: flex;
     justify-content: center;
+    padding: $padding-section;
 
     // ---------- RESERVATION ----------
     &__reservation-block {
@@ -65,10 +61,8 @@
         top: 0;
         left: 50%;
         transform: translate(-50%,-50%);
-
         display: flex;
         justify-content: center;
-
 
         width: 65rem;
         height: 6.5rem;
@@ -90,7 +84,6 @@
             width: 1.3rem;
             height: 1.3rem;
             fill: $color-white;
-            
         }
 
         span {
@@ -100,7 +93,6 @@
             letter-spacing: 1px;
             font-weight: 300;
             color: $color-white;
-            
         }
     }
 
@@ -125,9 +117,8 @@
 
     // ---------- CONTENTS ----------
     &__contents {
-        margin-top: 8rem;
         height: 30rem;
-        padding: 2rem 30rem;
+        padding: 5rem 30rem 3rem 30rem;
 
         display: flex;
         justify-content: space-around;
@@ -200,4 +191,69 @@
 
         }
     }
+}
+
+//--------------- SECTION-TEAM ---------------
+.section-team {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: $color-grey-light-1;
+    padding: $padding-section 0;
+    
+    &__contents {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    &__paragraph {
+        display: block;
+        width: 50rem;
+    }
+
+    &__photos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 5rem;
+        width: 50rem;
+    }
+
+    &__photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include size(15rem,15rem);
+        overflow: hidden;
+        border-radius: 50%;
+
+        // &:not(:last-child)::after {
+        //     content: "";
+        //     display: inline-block;
+        //     position: absolute;
+        //     right: 0;
+        //     top: 50%;
+        //     transform: translate(2.45rem,calc(-50% - 2rem));
+
+        //     height: 22rem;
+        //     width: 1px;
+        //     background-color: $color-grey-light-2;
+            
+        // }
+        
+
+        img {
+            transform: translateY(7rem);
+            width: 30rem;
+            height: auto;
+        }
+    }
+
+
 }

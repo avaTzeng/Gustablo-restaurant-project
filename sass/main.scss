@@ -1,5 +1,6 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
+@import "abstracts/extends";
 
 @import "base/animation";
 @import "base/base";
@@ -10,3 +11,4 @@
 
 @import "components/navigation";
 @import "components/button";
+@import "components/title-divider";
