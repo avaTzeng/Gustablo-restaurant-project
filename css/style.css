@@ -199,7 +199,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #F5F5F5;
-  padding: 6rem 0; }
+  padding-top: 6rem; }
   .section-team__contents {
     display: flex;
     align-items: center;
@@ -212,18 +212,23 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 5rem;
-    width: 50rem; }
+    width: 70rem; }
   .section-team__photo {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 15rem;
-    height: 15rem;
-    overflow: hidden;
-    border-radius: 50%; }
+    align-items: flex-end; }
+    .section-team__photo:not(:last-child)::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(2.45rem, calc(-50% - 2rem));
+      height: 22rem;
+      width: 1px;
+      background-color: #e0e0e0; }
     .section-team__photo img {
-      transform: translateY(7rem);
-      width: 30rem;
+      width: 20rem;
       height: auto; }
 
 .navigation__overlay {
