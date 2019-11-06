@@ -49,11 +49,20 @@
         
     }
 
+    
+}
+
+//--------------- SECTION-ABOUT ---------------
+.section-about {
+    background-color: $color-grey-light-3;
+    padding: 13rem 0;
+
+    // ---------- RESERVATION ----------
     &__reservation-block {
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 50%;
-        transform: translate(-50%,50%);
+        transform: translate(-50%,-50%);
 
         display: flex;
         justify-content: center;
@@ -111,16 +120,8 @@
             font-weight: 400;
         }
     }
-}
 
-//--------------- SECTION-ABOUT ---------------
-.section-about {
-    position: relative;
-    z-index: -1;
-    
-    background-color: $color-grey-light-3;
-    padding: 13rem 0;
-
+    // ---------- CONTENTS ----------
     &__contents {
 
         display: flex;

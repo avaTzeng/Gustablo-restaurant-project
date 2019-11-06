@@ -80,17 +80,21 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 1.2rem;
     letter-spacing: 2px; }
-  .home-header__reservation-block {
+
+.section-about {
+  background-color: #7C7C7C;
+  padding: 13rem 0; }
+  .section-about__reservation-block {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, 50%);
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: center;
     width: 65rem;
     height: 6.5rem;
     background-color: #FD4100; }
-  .home-header__reservarion-box {
+  .section-about__reservarion-box {
     display: flex;
     align-self: center;
     justify-content: space-between;
@@ -100,37 +104,31 @@ body {
     width: 15rem;
     margin-right: 1rem;
     cursor: pointer; }
-    .home-header__reservarion-box svg {
+    .section-about__reservarion-box svg {
       width: 1.3rem;
       height: 1.3rem;
       fill: #FFFFFF; }
-    .home-header__reservarion-box span {
+    .section-about__reservarion-box span {
       font-size: 5px;
       font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
       letter-spacing: 1px;
       font-weight: 300;
       color: #FFFFFF; }
-  .home-header__reservation-btn {
+  .section-about__reservation-btn {
     background-color: #FFFFFF;
     border: 1px solid #FFFFFF;
     align-self: center;
     width: 12rem;
     padding: .5rem 2rem;
     cursor: pointer; }
-    .home-header__reservation-btn a:link,
-    .home-header__reservation-btn a:visited {
+    .section-about__reservation-btn a:link,
+    .section-about__reservation-btn a:visited {
       text-decoration: none;
       color: #999999;
       font-family: "Montserrat", sans-serif;
       text-transform: uppercase;
       font-weight: 400; }
-
-.section-about {
-  position: relative;
-  z-index: -1;
-  background-color: #7C7C7C;
-  padding: 13rem 0; }
   .section-about__contents {
     display: flex;
     justify-content: center; }
