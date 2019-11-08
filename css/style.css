@@ -43,7 +43,7 @@ body {
 
 .heading-2 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 2.5rem;
   color: #222222;
   line-height: 1.6;
@@ -215,6 +215,12 @@ body {
   align-items: center;
   background-color: #F5F5F5;
   padding-top: 6rem; }
+  .section-team::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
   .section-team__photos {
     display: flex;
     justify-content: space-between;
@@ -260,10 +266,6 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-  .section-gallery__temp {
-    background-color: red;
-    width: 20rem;
-    height: 5rem; }
 
 .navigation__overlay {
   position: fixed;

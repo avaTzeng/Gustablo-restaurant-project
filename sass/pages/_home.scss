@@ -196,6 +196,15 @@
     background-color: $color-grey-light-1;
     padding-top: $padding-section;
 
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+
     &__photos {
         display: flex;
         justify-content: space-between;
@@ -261,11 +270,5 @@
             width: 30rem;
             @include absCenter;
         }
-    }
-
-    &__temp {
-        background-color: red;
-        width: 20rem;
-        height: 5rem;
     }
 }
