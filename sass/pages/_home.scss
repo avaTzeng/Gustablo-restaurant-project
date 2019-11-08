@@ -138,12 +138,6 @@
         flex-direction: column;
     }
 
-    &__paragraph {
-        margin-top: 2rem;
-        display: block;
-        width: 100%;
-    }
-
     &__list {
         width: 100%;
         display: flex;
@@ -195,25 +189,12 @@
 
 //--------------- SECTION-TEAM ---------------
 .section-team {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
 
     background-color: $color-grey-light-1;
     padding-top: $padding-section;
-    
-    &__contents {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-
-    }
-
-    &__paragraph {
-        display: block;
-        width: 50rem;
-    }
 
     &__photos {
         display: flex;
@@ -222,7 +203,6 @@
 
         margin-top: 5rem;
         width: 70rem;
-        
     }
 
     &__photo {
@@ -241,7 +221,6 @@
             height: 22rem;
             width: 1px;
             background-color: $color-grey-light-2;
-            
         }
         
 
@@ -250,6 +229,37 @@
             height: auto;
         }
     }
+}
 
+//--------------- SECTION-GALLERY ---------------
+.section-gallery {
+    padding-top: $padding-section;
 
+    &__photo-row {
+        display: flex;
+        justify-content: center;
+
+        &:not(:last-child) {
+            margin-bottom: .7rem;
+        }
+    }
+
+    &__photos {
+        margin: 3rem 0;
+    }
+
+    &__photo {
+        width: 20rem;
+        height: 20rem;
+        overflow: hidden;
+
+        &:not(:last-child) {
+            margin-right: .7rem;
+        }
+
+        img {
+            width: 30rem;
+            @include absCenter;
+        }
+    }
 }

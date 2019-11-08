@@ -13,14 +13,15 @@
   margin: 0;
   padding: 0;
   position: relative;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  border: 1px solid #12fffc; }
 
 html {
   font-size: 62.5%; }
 
 body {
   box-sizing: border-box;
-  height: 2000px; }
+  height: 5000px; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -44,6 +45,12 @@ body {
   line-height: 1.55;
   text-align: justify;
   text-justify: inter-word; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .home-header {
   height: 85vh;
@@ -155,10 +162,6 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column; }
-  .section-about__paragraph {
-    margin-top: 2rem;
-    display: block;
-    width: 100%; }
   .section-about__list {
     width: 100%;
     display: flex;
@@ -200,13 +203,6 @@ body {
   align-items: center;
   background-color: #F5F5F5;
   padding-top: 6rem; }
-  .section-team__contents {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-  .section-team__paragraph {
-    display: block;
-    width: 50rem; }
   .section-team__photos {
     display: flex;
     justify-content: space-between;
@@ -230,6 +226,28 @@ body {
     .section-team__photo img {
       width: 20rem;
       height: auto; }
+
+.section-gallery {
+  padding-top: 6rem; }
+  .section-gallery__photo-row {
+    display: flex;
+    justify-content: center; }
+    .section-gallery__photo-row:not(:last-child) {
+      margin-bottom: .7rem; }
+  .section-gallery__photos {
+    margin: 3rem 0; }
+  .section-gallery__photo {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden; }
+    .section-gallery__photo:not(:last-child) {
+      margin-right: .7rem; }
+    .section-gallery__photo img {
+      width: 30rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 .navigation__overlay {
   position: fixed;
@@ -401,3 +419,12 @@ body {
     .title-divider__icon::after {
       left: 0;
       transform: translate(3.5rem, -50%); }
+
+.paragraph-home-title {
+  display: block;
+  width: 50rem; }
+
+.paragraph-home-about {
+  display: block;
+  margin-top: 2rem;
+  width: 100%; }

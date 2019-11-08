@@ -12,6 +12,12 @@
     text-align: center;
 }
 
+@mixin flexCenter-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @mixin size($w, $h) {
     width: $w;
     height: $h;
