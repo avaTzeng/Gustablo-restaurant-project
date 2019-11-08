@@ -26,7 +26,8 @@
   margin: 0;
   padding: 0;
   position: relative;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  border: 1px solid #12fffc; }
 
 html {
   font-size: 62.5%; }
@@ -266,6 +267,10 @@ body {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+
+.section-pricing {
+  background-color: #F5F5F5;
+  padding-top: 6rem; }
 
 .navigation__overlay {
   position: fixed;
