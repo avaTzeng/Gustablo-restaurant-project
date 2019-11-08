@@ -262,4 +262,10 @@
             @include absCenter;
         }
     }
+
+    &__temp {
+        background-color: red;
+        width: 20rem;
+        height: 5rem;
+    }
 }

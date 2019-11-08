@@ -8,3 +8,17 @@
     top: 50%;
     background-color: $color-grey-light-2;
 }
+
+//------------ BUTTONS ----------
+%btn-big-normal {
+    letter-spacing: 1px;
+    font-size: 2px;
+    transform: translate(-50%,calc(-50% + 7rem));
+    @include size(20rem, 4rem);
+    transition: all .1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+%btn-big-click {
+    transform: translate(-50%,calc(-50% + 6.5rem));
+    @include size(20.2rem, 4.2rem);
+}

@@ -1,44 +1,57 @@
-.btn-transparent {
-    padding: .5rem 2rem;
-    background-color: transparent;
-    border: 1px solid $color-white;
+.btn {
     text-align: center;
     text-transform: uppercase;
-    color: $color-white;
     font-family: $font-family-1;
     font-weight: 400;
-    font-size: 2px;
-    letter-spacing: 1px;
-    transition: transform .1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
     z-index: 1000;
-    
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,calc(-50% + 6.5rem));
+}
 
-    &--white {
-
-    }
-
-    &--grey {
-        
-    }
-
-    &:link,
-    &:visited {
-        transform: translate(-50%,calc(-50% + 6.5rem));
-        padding: .5rem 2rem;
+.btn-transparent {
+    
+    &--big-white {
+        @extend %btn-big-normal;
+        background-color: transparent;
         border: 1px solid $color-white;
+
+        &:hover,
+        &:active {
+            @extend %btn-big-click;
+            background-color: $color-primary;
+            border: 1px solid $color-primary;
+        }
+
+        a {
+            @include absCenter;
+            color: $color-white;
+            text-decoration: none;
+        }
     }
 
-    &:hover,
-    &:active {
-        background-color: $color-primary;
-        transform: translate(-50%,calc(-50% + 6rem));
-        padding: .7rem 2.2rem;
-        border: 1px solid $color-primary;
-    }
+    &--big-grey {
+        @extend %btn-big-normal;
 
+        background-color: transparent;
+        border: 1px solid $color-grey-light-2;
+
+        &:hover,
+        &:active {
+            @extend %btn-big-click;
+            background-color: $color-primary;
+            border: 1px solid $color-primary;
+
+            a {
+                color: $color-white; 
+            }
+        }
+
+        a {
+            @include absCenter;
+            color: $color-grey-dark-1;
+            text-decoration: none;
+        }
+    }
 
 }
