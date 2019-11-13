@@ -14,11 +14,21 @@
     letter-spacing: 1px;
     font-size: 2px;
     transform: translate(-50%,calc(-50% + 7rem));
-    @include size(20rem, 4rem);
+    @include size(18rem, 3.5rem);
     transition: all .1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+    a {
+        width: 100%;
+    }
 }
 
 %btn-big-click {
     transform: translate(-50%,calc(-50% + 6.5rem));
-    @include size(20.2rem, 4.2rem);
+    @include size(18.4rem, 3.9rem);
+}
+
+%btn-medium-normal {
+    letter-spacing: 1px;
+    font-size: 2px;
+    @include size(17rem, 3rem);
 }
