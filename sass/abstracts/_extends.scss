@@ -8,27 +8,3 @@
     top: 50%;
     width: 10rem;
 }
-
-//------------ BUTTONS ----------
-%btn-big-normal {
-    @include size(18rem, 3.5rem);
-    font-size: 2px;
-    letter-spacing: 1px;
-    transform: translate(-50%,calc(-50% + 7rem));
-    transition: all .1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-
-    a {
-        width: 100%;
-    }
-}
-
-%btn-big-click {
-    @include size(18.4rem, 3.9rem);
-    transform: translate(-50%,calc(-50% + 6.5rem));
-}
-
-%btn-medium-normal {
-    @include size(17rem, 3rem);
-    font-size: 2px;
-    letter-spacing: 1px;
-}

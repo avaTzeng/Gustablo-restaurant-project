@@ -7,27 +7,6 @@
   top: 50%;
   width: 10rem; }
 
-.btn-transparent--big-white, .btn-transparent--big-grey {
-  height: 3.5rem;
-  width: 18rem;
-  font-size: 2px;
-  letter-spacing: 1px;
-  transform: translate(-50%, calc(-50% + 7rem));
-  transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-  .btn-transparent--big-white a, .btn-transparent--big-grey a {
-    width: 100%; }
-
-.btn-transparent--big-white:hover, .btn-transparent--big-white:active, .btn-transparent--big-grey:hover, .btn-transparent--big-grey:active {
-  height: 3.9rem;
-  width: 18.4rem;
-  transform: translate(-50%, calc(-50% + 6.5rem)); }
-
-.btn-transparent--medium-grey {
-  height: 3rem;
-  width: 17rem;
-  font-size: 2px;
-  letter-spacing: 1px; }
-
 *,
 *::after,
 *::before {
@@ -255,15 +234,9 @@ body {
   align-items: center;
   display: flex;
   justify-content: center;
-  padding-top: 6rem; }
-  .section-gallery__button-block {
-    height: 10rem;
-    width: 100%; }
-  .section-gallery .btn-transparent--big-grey {
-    left: 50%;
-    position: absolute;
-    top: 0;
-    transform: translate(-50%, 2rem); }
+  padding: 6rem; }
+  .section-gallery__contents {
+    padding: 3.5rem 0; }
   .section-gallery__photo-row {
     align-items: center;
     display: flex;
@@ -287,8 +260,7 @@ body {
 
 .section-pricing {
   background-color: #F5F5F5;
-  padding-top: 6rem;
-  padding-bottom: 6rem; }
+  padding: 6rem 0; }
   .section-pricing__cards {
     align-items: center;
     display: flex;
@@ -318,6 +290,8 @@ body {
     flex-direction: column;
     padding: 2rem 0;
     width: 100%; }
+    .section-pricing__card-contents .btn {
+      margin-top: 1.7rem; }
   .section-pricing__price {
     color: #FD4100;
     font-family: "Montserrat", sans-serif;
@@ -366,22 +340,6 @@ body {
       margin-top: 2rem; }
     .section-pricing__list-item:not(:first-child) {
       margin-top: .6rem; }
-  .section-pricing__button {
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 46%;
-    height: 3rem;
-    border: 1px solid #e0e0e0;
-    white-space: nowrap; }
-    .section-pricing__button a {
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      text-decoration: none;
-      color: #999999; }
 
 .navigation__overlay {
   height: 5.2rem;
@@ -504,53 +462,46 @@ body {
     height: 1.6rem;
     width: 1.6rem; }
 
-.btn {
+.btn, .btn:link, .btn:visited {
+  display: inline-block;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  text-align: center;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  z-index: 1000; }
+  text-decoration: none;
+  transition: all 0.1s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
 
-.btn-transparent--big-white {
+.btn:hover {
+  box-shadow: 0 1rem 2rem rgba(34, 34, 34, 0.2);
+  transform: translateY(-0.3rem) scale(1.05, 1.05); }
+
+.btn:active, .btn:focus {
+  box-shadow: 0 0.5rem 1rem rgba(34, 34, 34, 0.2);
+  transform: translateY(-1px) scale(1, 1); }
+
+.btn--big {
+  font-size: 2px;
+  padding: .8rem 3.5rem; }
+
+.btn--medium {
+  font-size: 1px;
+  padding: .4rem 2rem; }
+
+.btn--transparent-light-txt {
   background-color: transparent;
-  border: 1px solid #FFFFFF; }
-  .btn-transparent--big-white:hover, .btn-transparent--big-white:active {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF; }
+  .btn--transparent-light-txt:hover {
     background-color: #FD4100;
     border: 1px solid #FD4100; }
-  .btn-transparent--big-white a {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+
+.btn--transparent-dark-txt {
+  color: #999999;
+  background-color: transparent;
+  border: 1px solid #e0e0e0; }
+  .btn--transparent-dark-txt:hover {
     color: #FFFFFF;
-    text-decoration: none; }
-
-.btn-transparent--big-grey {
-  background-color: transparent;
-  border: 1px solid #e0e0e0; }
-  .btn-transparent--big-grey:hover, .btn-transparent--big-grey:active {
     background-color: #FD4100;
     border: 1px solid #FD4100; }
-    .btn-transparent--big-grey:hover a, .btn-transparent--big-grey:active a {
-      color: #FFFFFF; }
-  .btn-transparent--big-grey a {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #333333;
-    text-decoration: none; }
-
-.btn-transparent--medium-grey {
-  background-color: transparent;
-  border: 1px solid #e0e0e0; }
-  .btn-transparent--medium-grey a {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #999999;
-    text-decoration: none; }
 
 .title-divider {
   align-items: center;

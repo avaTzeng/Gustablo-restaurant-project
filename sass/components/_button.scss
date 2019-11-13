@@ -1,67 +1,62 @@
 .btn {
-    font-family: $font-family-1;
-    font-weight: 400;
-    text-align: center;
-    text-transform: uppercase;
-    z-index: 1000;
-}
+    // ---- 基本定義 ----
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        font-family: $font-family-1;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all .1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
 
-.btn-transparent {
-    
-    &--big-white {
-        @extend %btn-big-normal;
+    &:hover {
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+        transform: translateY(-0.3rem) scale(1.05,1.05);
+    }
+
+    &:active,
+    &:focus {
+        box-shadow: 0 0.5rem 1rem rgba($color-black,.2);
+        transform: translateY(-1px) scale(1,1);
+    }
+
+    // ---- 尺寸 ----
+    &--big {
+        font-size: 2px;
+        padding: .8rem 3.5rem;
+    }
+
+    &--medium {
+        font-size: 1px;
+        padding: .4rem 2rem;
+    }
+
+    // ---- Style ----
+    &--transparent-light-txt {
         background-color: transparent;
         border: 1px solid $color-white;
+        color: $color-white;
 
-        &:hover,
-        &:active {
-            @extend %btn-big-click;
+        &:hover {
             background-color: $color-primary;
             border: 1px solid $color-primary;
         }
+    }
 
-        a {
-            @include absCenter;
+    &--transparent-dark-txt {
+        color: $color-grey-light-3;
+        background-color: transparent;
+        border: 1px solid $color-grey-light-2;
+
+        &:hover {
             color: $color-white;
-            text-decoration: none;
-        }
-    }
-
-    &--big-grey {
-        @extend %btn-big-normal;
-
-        background-color: transparent;
-        border: 1px solid $color-grey-light-2;
-
-        &:hover,
-        &:active {
-            @extend %btn-big-click;
             background-color: $color-primary;
             border: 1px solid $color-primary;
-
-            a {
-                color: $color-white; 
-            }
-        }
-
-        a {
-            @include absCenter;
-            color: $color-grey-dark-1;
-            text-decoration: none;
         }
     }
 
-    &--medium-grey {
-        @extend %btn-medium-normal;
-
-        background-color: transparent;
-        border: 1px solid $color-grey-light-2;
-
-        a {
-            @include absCenter;
-            color: $color-grey-light-3;
-            text-decoration: none;
-        }
-    }
+    // ---- 動畫 ----
 
 }

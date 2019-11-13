@@ -232,17 +232,10 @@
 //--------------- SECTION-GALLERY ---------------
 .section-gallery {
     @include flexCenter-row;
-    padding-top: $padding-section;
+    padding: $padding-section;
 
-    &__button-block {
-        @include size(100%,10rem);
-    }
-
-    .btn-transparent--big-grey {
-        left: 50%;
-        position: absolute;
-        top: 0;
-        transform: translate(-50%,2rem);
+    &__contents {
+        padding: 3.5rem 0;
     }
 
     &__photo-row {
@@ -277,8 +270,7 @@
 //--------------- SECTION-PRICING ---------------
 .section-pricing {
     background-color: $color-grey-light-1;
-    padding-top: $padding-section;
-    padding-bottom: $padding-section;
+    padding: $padding-section 0;
 
     &__cards {
         align-items: center;
@@ -314,6 +306,10 @@
         flex-direction: column;
         padding: 2rem 0;
         width: 100%;
+
+        .btn {
+            margin-top: 1.7rem;
+        }
     }
 
     &__price {
@@ -377,23 +373,4 @@
             margin-top: .6rem;
         }
     }
-
-    &__button {
-        @include siez(46%,3rem);
-        border: 1px solid $color-grey-light-2;
-        font-family: $font-family-1;
-        letter-spacing: 1px;
-        text-align: center;
-        text-transform: uppercase;
-        white-space: nowrap;
-
-        a {
-            @include absCenter;
-            color: $color-grey-light-3;
-            text-decoration: none;
-        }
-
-    }
-
-
 }
