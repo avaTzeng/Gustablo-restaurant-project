@@ -1,8 +1,8 @@
 .btn {
-    text-align: center;
-    text-transform: uppercase;
     font-family: $font-family-1;
     font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
     z-index: 1000;
 }
 
@@ -59,8 +59,8 @@
 
         a {
             @include absCenter;
-            text-decoration: none;
             color: $color-grey-light-3;
+            text-decoration: none;
         }
     }
 

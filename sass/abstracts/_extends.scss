@@ -1,20 +1,20 @@
 //------------ HOME ----------
 %title-divider-line {
+    background-color: $color-grey-light-2;
     content: "";
     display: inline-block;
-    width: 10rem;
     height: 1px;
     position: absolute;
     top: 50%;
-    background-color: $color-grey-light-2;
+    width: 10rem;
 }
 
 //------------ BUTTONS ----------
 %btn-big-normal {
-    letter-spacing: 1px;
-    font-size: 2px;
-    transform: translate(-50%,calc(-50% + 7rem));
     @include size(18rem, 3.5rem);
+    font-size: 2px;
+    letter-spacing: 1px;
+    transform: translate(-50%,calc(-50% + 7rem));
     transition: all .1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
     a {
@@ -23,12 +23,12 @@
 }
 
 %btn-big-click {
-    transform: translate(-50%,calc(-50% + 6.5rem));
     @include size(18.4rem, 3.9rem);
+    transform: translate(-50%,calc(-50% + 6.5rem));
 }
 
 %btn-medium-normal {
-    letter-spacing: 1px;
-    font-size: 2px;
     @include size(17rem, 3rem);
+    font-size: 2px;
+    letter-spacing: 1px;
 }

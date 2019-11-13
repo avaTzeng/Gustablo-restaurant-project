@@ -1,18 +1,16 @@
 .title-divider {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     &__icon {
-        width: 2.5rem;
-        height: 2.5rem;
+        @include size(2.5rem,2.5rem);
         margin: 1rem 0;
         
         svg {
-            width: 100%;
-            height: 100%;
-            fill: $color-grey-light-3;
+            @include size(100%,100%);
             @include absCenter;
+            fill: $color-grey-light-3;
         }
         
         &::before {
