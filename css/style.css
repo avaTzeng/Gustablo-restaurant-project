@@ -288,7 +288,7 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 2rem 0;
+    padding-top: 2rem;
     width: 100%; }
     .section-pricing__card-contents .btn {
       margin-top: 1.7rem; }
@@ -319,7 +319,6 @@ body {
       transform: translate(2.3rem, -1.65rem); }
   .section-pricing__list {
     font-family: "Lato", sans-serif;
-    font-size: 1.3rem;
     list-style: none;
     text-align: center;
     vertical-align: middle;
@@ -335,7 +334,8 @@ body {
     height: 2.3rem;
     width: 100%;
     border: none;
-    border-bottom: 1px dotted #e0e0e0; }
+    border-bottom: 1px dotted #e0e0e0;
+    font-size: 1.3rem; }
     .section-pricing__list-item:first-child {
       margin-top: 2rem; }
     .section-pricing__list-item:not(:first-child) {
@@ -484,7 +484,7 @@ body {
 
 .btn--medium {
   font-size: 1px;
-  padding: .4rem 2rem; }
+  padding: .5rem 2rem; }
 
 .btn--transparent-light-txt {
   background-color: transparent;
