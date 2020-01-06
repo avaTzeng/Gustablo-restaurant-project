@@ -192,15 +192,15 @@
 
     &__photos {
         @include flex-row-center;
-        justify-content: space-around;
-        width: $row-content-max-width;
+        justify-content: space-between;
+        width: 90rem;
     }
 
     &__photo {
         align-items: flex-end;
         display: flex;
         justify-content: center;
-
+        
         &:not(:last-child)::after {
             @include size(1px, 70%);
             background-color: $color-grey-light-2;
@@ -209,7 +209,7 @@
             position: absolute;
             right: 0;
             top: 50%;
-            transform: translate(5.7rem, calc(-50% - 2rem));
+            transform: translate(1.55rem, calc(-50% - 2rem));
         }
 
         img {
@@ -221,40 +221,26 @@
 //--------------- SECTION-GALLERY ---------------
 .section-gallery {
     @include flex-column-center;
-
+    margin: 0 auto;
+    max-width: $row-content-max-width;
     padding: $padding-section;
-
-    &__contents {
-        padding: 3.5rem 0;
-    }
-
-    &__photo-row {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-
-        &:not(:last-child) {
-            margin-bottom: .7rem;
-        }
-    }
-
-    &__photos {
-        margin: 0rem 0;
+    
+    &__photo-grid {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1.5rem;
+        margin-bottom: 6rem;
     }
 
     &__photo {
-        @include size(20rem,20rem);
+        @include size(34.5rem, 34.5rem);
         overflow: hidden;
-
-        &:not(:last-child) {
-            margin-right: .7rem;
-        }
 
         img {
             @include abs-center;
-            width: 30rem;
+            width: 100%;
         }
-    }
+    } 
 }
 
 //--------------- SECTION-PRICING ---------------
