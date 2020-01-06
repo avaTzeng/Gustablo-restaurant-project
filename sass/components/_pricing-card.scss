@@ -1,16 +1,13 @@
 .pricing-card {
-    @include size(26rem,39rem);
-    align-items: center;
+    @include flex-column-center;
+    width: 28rem;
     border: 2px solid $color-primary;
     background-color: $color-white;
-    display: flex;
-    flex-direction: column;
 
     &__banner {
         background-color: $color-primary;
         color: $color-white;
         font-family: $font-family-1;
-        font-weight: 300;
         letter-spacing: 1px;
         padding: .5rem 0;
         text-align: center;
@@ -22,30 +19,28 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        padding-top: 2rem;
+        padding: 4.5rem 0 4rem 0;
         width: 100%;
-
-        .btn {
-            margin-top: 1.7rem;
-        }
     }
 
     &__price {
+        margin-bottom: 2.4rem;
         color: $color-primary;
         font-family: $font-family-1;
         font-size: 5rem;
         font-weight: 500;
+        line-height: .7;
 
         &::before {
             content: "$";
             color: $color-grey-light-3;
             display: inline-block;
             font-size: 2rem;
-            font-weight: 500;
+            font-weight: 600;
             left: 0;
             position: absolute;
             top: 0;
-            transform: translate(-1.5rem,1.3rem);
+            transform: translate(-1.5rem,1.6rem);
         }
 
         &::after {
@@ -54,41 +49,34 @@
             color: $color-grey-light-3;
             display: inline-block;
             font-size: 1rem;
-            font-weight: 500;
+            font-weight: 600;
             position: absolute;
             right: 0;
-            transform: translate(2.3rem,-1.65rem);
+            bottom: 0;
+            transform: translate(2.8rem,25%);
         }
     }
 
     &__list {
+        width: 85%;
+        margin-bottom: 2.5rem;
         font-family: $font-family-2;
         list-style: none;
         text-align: center;
-        vertical-align: middle;
-        width: 85%;
 
         &::before {
             @include size(100%,1px);
             background-color: $color-grey-light-2;
             content: "";
             display: block;
-            transform: translateY(1rem);
         }
 
         &-item {
-            @include size(100%,2.3rem);
             border: none;
             border-bottom: 1px dotted $color-grey-light-2;
+            color: $color-grey-light-4;
             font-size: 1.3rem;
-
-            &:first-child {
-                margin-top: 2rem;
-            }
-
-            &:not(:first-child) {
-                margin-top: .6rem;
-            }
+            padding: .8rem 0;
         }
     }
 }
