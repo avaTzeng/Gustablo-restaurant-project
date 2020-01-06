@@ -13,7 +13,8 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  border: 1px solid #12fffc !important; }
 
 html {
   font-size: 62.5%; }
@@ -61,17 +62,17 @@ body {
     top: 0;
     z-index: -1; }
   .home-header__block {
-    left: 50%;
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     align-items: center;
     display: flex;
     justify-content: space-around; }
   .home-header__content {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center; }
     .home-header__content .btn-transparent--big-white {
       left: 50%;
@@ -145,17 +146,15 @@ body {
       text-decoration: none;
       text-transform: uppercase; }
   .section-about__contents {
-    align-items: center;
     display: flex;
-    height: 30rem;
-    justify-content: space-around;
-    padding: 5rem 30rem 3rem 30rem; }
+    justify-content: center;
+    align-items: center; }
   .section-about__video {
-    height: 100%;
-    width: auto;
+    height: 27rem;
     margin-left: 3rem; }
+    .section-about__video video {
+      height: 100%; }
   .section-about__info {
-    height: 100%;
     width: 40rem;
     display: flex;
     flex-direction: column; }
@@ -195,10 +194,11 @@ body {
         transform: translateY(-50%); }
 
 .section-team {
-  align-items: center;
-  background-color: #F5F5F5;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #F5F5F5;
   padding-top: 6rem; }
   .section-team::after {
     content: "";
@@ -231,9 +231,10 @@ body {
       width: 20rem; }
 
 .section-gallery {
-  align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 6rem; }
   .section-gallery__contents {
     padding: 3.5rem 0; }
@@ -252,13 +253,17 @@ body {
     .section-gallery__photo:not(:last-child) {
       margin-right: .7rem; }
     .section-gallery__photo img {
-      left: 50%;
       position: absolute;
       top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
       width: 30rem; }
 
 .section-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   background-color: #F5F5F5;
   padding: 6rem 0; }
   .section-pricing__cards {
@@ -514,9 +519,9 @@ body {
     .title-divider__icon svg {
       height: 100%;
       width: 100%;
-      left: 50%;
       position: absolute;
       top: 50%;
+      left: 50%;
       transform: translate(-50%, -50%);
       fill: #999999; }
     .title-divider__icon::before {
@@ -527,9 +532,9 @@ body {
       transform: translate(3.5rem, -50%); }
 
 .container {
-  align-items: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center; }
 
 .paragraph-home-title {

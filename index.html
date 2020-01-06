@@ -18,42 +18,45 @@
     </head>
 
     <body>
-        <nav class="navigation__nav">
 
-            <div class="navigation__logo-box">
-                <img src="img/logo.png" alt="Logo"> 
-                <span>Gustablo</span>
-            </div>
+        <div>
+            <nav class="navigation__nav">
 
-            <ul class="navigation__list">
-                <li class="navigation__item"><a class="navigation__link" href="#" active>Home</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Pages</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Blog</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Portfolio</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Shop</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Features</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="#">Elements</a></li>
-            </ul>
-
-            <div class="navigation__info">
-                <div class="navigation__shopping-cart">
-                    <svg class="navigation__icon">
-                        <use xlink:href="img/sprites_icon.svg#icon-shopping-cart"></use>
-                    
-                    </svg>
-                    <span>3</span>
+                <div class="navigation__logo-box">
+                    <img src="img/logo.png" alt="Logo"> 
+                    <span>Gustablo</span>
                 </div>
-
-                <svg class="navigation__icon">
-                    <use xlink:href="img/sprites_icon.svg#icon-search"></use>
-                </svg>
-
-                <svg class="navigation__icon">
-                    <use xlink:href="img/sprites_icon.svg#icon-menu"></use>
-                </svg>
-            </div>
-
-        </nav>
+    
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link" href="#" active>Home</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Pages</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Blog</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Portfolio</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Shop</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Features</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="#">Elements</a></li>
+                </ul>
+    
+                <div class="navigation__info">
+                    <div class="navigation__shopping-cart">
+                        <svg class="navigation__icon">
+                            <use xlink:href="img/sprites_icon.svg#icon-shopping-cart"></use>
+                        
+                        </svg>
+                        <span>3</span>
+                    </div>
+    
+                    <svg class="navigation__icon">
+                        <use xlink:href="img/sprites_icon.svg#icon-search"></use>
+                    </svg>
+    
+                    <svg class="navigation__icon">
+                        <use xlink:href="img/sprites_icon.svg#icon-menu"></use>
+                    </svg>
+                </div>
+            </nav>
+        </div>
+        
 
         <div class="navigation__overlay"></div>
 
@@ -106,7 +109,7 @@
                     </span>
                 </div>
 
-
+                <!-- 這段出問題 -->
                 <div class="section-about__contents">
                     <div class="section-about__info">
                         <ul class="section-about__list">
@@ -117,15 +120,17 @@
                         <p class="paragraph-home-about paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. enerators on the Internet tend to repeat.</p>
                     </div>
 
-                    <video class="section-about__video" controls>
-                        <source src="videos/homepage/Food Reel.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <div class="section-about__video">
+                        <video controls>
+                            <source src="videos/homepage/Food Reel.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>  
                 </div>
 
             </section>
 
-            <section class="section-team container">
+            <section class="section-team">
                 <div class="title-divider">
                     <h2 class="heading-2">Meet Team</h2>
                     <span class="title-divider__icon">
@@ -155,7 +160,7 @@
                 </div>
             </section>
 
-            <section class="section-gallery container">
+            <section class="section-gallery">
                 <div class="title-divider">
                     <h2 class="heading-2">Gustablo Gallery</h2>
                     <span class="title-divider__icon">
@@ -200,7 +205,7 @@
                 <a href="#" class="btn btn--big btn--transparent-dark-txt">View gallery</a>
             </section>
 
-            <section class="section-pricing container">
+            <section class="section-pricing">
                 <div class="title-divider">
                     <h2 class="heading-2">Pricing Plans</h2>
                     <span class="title-divider__icon">
@@ -232,10 +237,6 @@
                     </div>
                 </div>
             </section>
-
         </main>
-        
-
-
     </body>
 </html>

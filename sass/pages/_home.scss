@@ -1,6 +1,6 @@
 //--------------- HEADER ---------------
 .home-header {
-    background-image: url(../img/home/showoff_01.jpg);                                
+    background-image: url(../img/home/showoff_01.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
@@ -17,14 +17,14 @@
     }
 
     &__block {
-        @include absCenter;
+        @include abs-center;
         align-items: center;
         display: flex;
         justify-content: space-around;
     }
 
     &__content {
-        @include flexCenter;
+        @include flex-column-center;
 
         .btn-transparent--big-white {
             left: 50%;
@@ -60,6 +60,7 @@
     display: flex;
     justify-content: center;
     padding: $padding-section;
+    
 
     // ---------- RESERVATION ----------
     &__reservation-block {
@@ -70,7 +71,7 @@
         left: 50%;
         position: absolute;
         top: 0;
-        transform: translate(-50%,-50%);    
+        transform: translate(-50%,-50%);
     }
 
     &__reservarion-box {
@@ -119,20 +120,26 @@
 
     // ---------- CONTENTS ----------
     &__contents {
-        align-items: center;
         display: flex;
-        height: 30rem;
-        justify-content: space-around;
-        padding: 5rem 30rem 3rem 30rem;
+        justify-content: center;
+        align-items: center;
+        
+        
     }
 
     &__video {
-        @include size(auto,100%);
+        height: 27rem;
         margin-left: 3rem;
+
+        video {
+            height: 100%;
+        }
     }
 
+    
+
     &__info {
-        @include size(40rem,100%);
+        width: 40rem;
         display: flex;
         flex-direction: column;
     }
@@ -166,7 +173,7 @@
             color: $color-grey-light-3;
             background-color: $color-grey-light-1;
             border-bottom: 2px solid $color-grey-light-2;
-            
+
             &:not(:last-child) {
                 &::after {
                     @include size(1px,65%);
@@ -185,10 +192,8 @@
 
 //--------------- SECTION-TEAM ---------------
 .section-team {
-    align-items: center;
+    @include flex-column-center;
     background-color: $color-grey-light-1;
-    display: flex;
-    flex-direction: column;
     padding-top: $padding-section;
 
     &::after {
@@ -231,7 +236,8 @@
 
 //--------------- SECTION-GALLERY ---------------
 .section-gallery {
-    @include flexCenter-row;
+    @include flex-column-center;
+
     padding: $padding-section;
 
     &__contents {
@@ -261,7 +267,7 @@
         }
 
         img {
-            @include absCenter;
+            @include abs-center;
             width: 30rem;
         }
     }
@@ -269,6 +275,7 @@
 
 //--------------- SECTION-PRICING ---------------
 .section-pricing {
+    @include flex-column-center;
     background-color: $color-grey-light-1;
     padding: $padding-section 0;
 
