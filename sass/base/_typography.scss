@@ -5,7 +5,7 @@ body {
     line-height: 1.7;
 }
 
-.heading-2 {
+h2{
     color: $color-black;
     display: block;
     font-family: $font-family-1;
@@ -14,12 +14,12 @@ body {
     line-height: 1.6;
 }
 
-.paragraph {
+p {
     color: $color-grey-light-3;
     font-family: $font-family-2;
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 1.55;
+    line-height: 1.8;
     text-align: justify;
     text-justify: inter-word;
 }

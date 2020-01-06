@@ -1,18 +1,10 @@
-.temp {
-    max-width: $row-content-max-width;
-    // max-width: 114rem;
-    margin: 0 auto;
-    height: 20rem;
-    background-color: blue;
-}
-
 //--------------- HEADER ---------------
 .home-header {
     background-image: url(../img/home/showoff_01.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    height: 92vh;
+    height: 91.3rem;
 
     &__content {   
         @include abs-center;   
@@ -51,15 +43,14 @@
 
 //--------------- SECTION-ABOUT ---------------
 .section-about {
+    @include flex-row-center;
     background-color: $color-white;
-    display: flex;
-    justify-content: center;
-    padding: $padding-section;
-    
+    padding-top: 16rem;
+    padding-bottom: $padding-section;
 
     // ---------- RESERVATION ----------
     &__reservation-block {
-        @include size(65rem,6.5rem);
+        @include size($row-content-max-width,6.5rem);
         background-color: $color-primary;
         display: flex;
         justify-content: center;
@@ -78,7 +69,7 @@
         justify-content: space-between;
         margin-right: 1rem;
         padding: .5rem 1rem;
-        width: 15rem;
+        width: 25%;
 
         svg {
             @include size(1.3rem,1.3rem);
@@ -101,7 +92,7 @@
         border: 1px solid $color-white;
         cursor: pointer;
         padding: .5rem 2rem;
-        width: 12rem;
+        width: 15%;
 
         a:link,
         a:visited {
@@ -115,28 +106,28 @@
 
     // ---------- CONTENTS ----------
     &__contents {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        
+        @include flex-row-center;
+        justify-content: space-between;
+        width: $row-content-max-width;
     }
 
     &__video {
-        height: 27rem;
-        margin-left: 3rem;
+        height: 37rem;
 
         video {
             height: 100%;
         }
     }
 
-    
-
     &__info {
-        width: 40rem;
-        display: flex;
-        flex-direction: column;
+        @include flex-column-center;
+        width: 38%;
+
+        p {
+            display: block;
+            margin-top: 3.5rem;
+            width: 100%;
+        }
     }
 
     &__list {
@@ -200,11 +191,9 @@
     }
 
     &__photos {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5rem;
-        width: 70rem;
+        @include flex-row-center;
+        justify-content: space-around;
+        width: $row-content-max-width;
     }
 
     &__photo {
@@ -213,18 +202,18 @@
         justify-content: center;
 
         &:not(:last-child)::after {
-            @include size(1px,22rem);
+            @include size(1px, 70%);
             background-color: $color-grey-light-2;
             content: "";
             display: inline-block;
             position: absolute;
             right: 0;
             top: 50%;
-            transform: translate(2.45rem,calc(-50% - 2rem));
+            transform: translate(5.7rem, calc(-50% - 2rem));
         }
 
         img {
-            @include size(20rem,auto);
+            height: 42rem;
         }
     }
 }

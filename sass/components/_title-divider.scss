@@ -1,15 +1,17 @@
 .title-divider {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    @include flex-column-center;
+    margin-bottom: 7rem;
+
+    h2 {
+        line-height: 1;
+    }
 
     &__icon {
         @include size(2.5rem,2.5rem);
-        margin: 1rem 0;
+        margin: 1.2rem 0;
         
         svg {
             @include size(100%,100%);
-            @include abs-center;
             fill: $color-grey-light-3;
         }
         
@@ -24,5 +26,11 @@
             left: 0;
             transform: translate(3.5rem,-50%);
         }
+    }
+
+    p {
+        text-align: center;
+        display: block;
+        width: 68rem;
     }
 }
