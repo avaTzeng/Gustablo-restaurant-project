@@ -263,80 +263,6 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 6rem; }
-  .section-pricing__card {
-    height: 39rem;
-    width: 26rem;
-    align-items: center;
-    border: 2px solid #FD4100;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-direction: column; }
-  .section-pricing__card-banner {
-    background-color: #FD4100;
-    color: #FFFFFF;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    letter-spacing: 1px;
-    padding: .5rem 0;
-    text-align: center;
-    text-transform: uppercase;
-    width: 100%; }
-  .section-pricing__card-contents {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 2rem;
-    width: 100%; }
-    .section-pricing__card-contents .btn {
-      margin-top: 1.7rem; }
-  .section-pricing__price {
-    color: #FD4100;
-    font-family: "Montserrat", sans-serif;
-    font-size: 5rem;
-    font-weight: 500; }
-    .section-pricing__price::before {
-      content: "$";
-      color: #999999;
-      display: inline-block;
-      font-size: 2rem;
-      font-weight: 500;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform: translate(-1.5rem, 1.3rem); }
-    .section-pricing__price::after {
-      bottom: 0;
-      content: "/MO";
-      color: #999999;
-      display: inline-block;
-      font-size: 1rem;
-      font-weight: 500;
-      position: absolute;
-      right: 0;
-      transform: translate(2.3rem, -1.65rem); }
-  .section-pricing__list {
-    font-family: "Lato", sans-serif;
-    list-style: none;
-    text-align: center;
-    vertical-align: middle;
-    width: 85%; }
-    .section-pricing__list::before {
-      height: 1px;
-      width: 100%;
-      background-color: #e0e0e0;
-      content: "";
-      display: block;
-      transform: translateY(1rem); }
-  .section-pricing__list-item {
-    height: 2.3rem;
-    width: 100%;
-    border: none;
-    border-bottom: 1px dotted #e0e0e0;
-    font-size: 1.3rem; }
-    .section-pricing__list-item:first-child {
-      margin-top: 2rem; }
-    .section-pricing__list-item:not(:first-child) {
-      margin-top: .6rem; }
 
 .navigation {
   width: 100vw;
@@ -466,6 +392,81 @@ p {
     text-align: center;
     display: block;
     width: 68rem; }
+
+.pricing-card {
+  height: 39rem;
+  width: 26rem;
+  align-items: center;
+  border: 2px solid #FD4100;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column; }
+  .pricing-card__banner {
+    background-color: #FD4100;
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: .5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%; }
+  .pricing-card__contents {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    width: 100%; }
+    .pricing-card__contents .btn {
+      margin-top: 1.7rem; }
+  .pricing-card__price {
+    color: #FD4100;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5rem;
+    font-weight: 500; }
+    .pricing-card__price::before {
+      content: "$";
+      color: #999999;
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 500;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform: translate(-1.5rem, 1.3rem); }
+    .pricing-card__price::after {
+      bottom: 0;
+      content: "/MO";
+      color: #999999;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 500;
+      position: absolute;
+      right: 0;
+      transform: translate(2.3rem, -1.65rem); }
+  .pricing-card__list {
+    font-family: "Lato", sans-serif;
+    list-style: none;
+    text-align: center;
+    vertical-align: middle;
+    width: 85%; }
+    .pricing-card__list::before {
+      height: 1px;
+      width: 100%;
+      background-color: #e0e0e0;
+      content: "";
+      display: block;
+      transform: translateY(1rem); }
+    .pricing-card__list-item {
+      height: 2.3rem;
+      width: 100%;
+      border: none;
+      border-bottom: 1px dotted #e0e0e0;
+      font-size: 1.3rem; }
+      .pricing-card__list-item:first-child {
+        margin-top: 2rem; }
+      .pricing-card__list-item:not(:first-child) {
+        margin-top: .6rem; }
 
 .container {
   display: flex;

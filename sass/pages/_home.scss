@@ -200,7 +200,7 @@
         align-items: flex-end;
         display: flex;
         justify-content: center;
-        
+
         &:not(:last-child)::after {
             @include size(1px, 70%);
             background-color: $color-grey-light-2;
@@ -254,100 +254,5 @@
         display: flex;
         justify-content: center;
         margin-top: 6rem;
-    }
-
-    &__card {
-        @include size(26rem,39rem);
-        align-items: center;
-        border: 2px solid $color-primary;
-        background-color: $color-white;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__card-banner {
-        background-color: $color-primary;
-        color: $color-white;
-        font-family: $font-family-1;
-        font-weight: 300;
-        letter-spacing: 1px;
-        padding: .5rem 0;
-        text-align: center;
-        text-transform: uppercase;
-        width: 100%;
-    }
-
-    &__card-contents {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        padding-top: 2rem;
-        width: 100%;
-
-        .btn {
-            margin-top: 1.7rem;
-        }
-    }
-
-    &__price {
-        color: $color-primary;
-        font-family: $font-family-1;
-        font-size: 5rem;
-        font-weight: 500;
-
-        &::before {
-            content: "$";
-            color: $color-grey-light-3;
-            display: inline-block;
-            font-size: 2rem;
-            font-weight: 500;
-            left: 0;
-            position: absolute;
-            top: 0;
-            transform: translate(-1.5rem,1.3rem);
-        }
-
-        &::after {
-            bottom: 0;
-            content: "/MO";
-            color: $color-grey-light-3;
-            display: inline-block;
-            font-size: 1rem;
-            font-weight: 500;
-            position: absolute;
-            right: 0;
-            transform: translate(2.3rem,-1.65rem);
-        }
-    }
-
-    &__list {
-        font-family: $font-family-2;
-        list-style: none;
-        text-align: center;
-        vertical-align: middle;
-        width: 85%;
-
-        &::before {
-            @include size(100%,1px);
-            background-color: $color-grey-light-2;
-            content: "";
-            display: block;
-            transform: translateY(1rem);
-        }
-    }
-
-    &__list-item {
-        @include size(100%,2.3rem);
-        border: none;
-        border-bottom: 1px dotted $color-grey-light-2;
-        font-size: 1.3rem;
-
-        &:first-child {
-            margin-top: 2rem;
-        }
-
-        &:not(:first-child) {
-            margin-top: .6rem;
-        }
     }
 }
