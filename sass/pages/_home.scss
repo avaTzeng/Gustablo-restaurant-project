@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    height: 91.3rem;
+    height: 91.2rem;
 
     &__content {   
         @include abs-center;   
@@ -20,7 +20,7 @@
         color: $color-white;
         display: inline-block;
         font-family: $font-family-1;
-        font-size: 8rem;
+        font-size: 10rem;
         font-weight: 700;
         margin-top: -1rem;
         text-transform: uppercase;
@@ -250,9 +250,11 @@
     padding: $padding-section 0;
 
     &__cards {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        margin-top: 6rem;
+        @include flex-row-center;
+
+        .pricing-card:not(last-child) {
+            margin-right: 2rem;
+        }
+
     }
 }

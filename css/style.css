@@ -13,7 +13,8 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  border: 1px solid #12fffc !important; }
 
 html {
   font-size: 62.5%; }
@@ -50,7 +51,7 @@ p {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  height: 91.3rem; }
+  height: 91.2rem; }
   .home-header__content {
     position: absolute;
     top: 50%;
@@ -67,7 +68,7 @@ p {
     color: #FFFFFF;
     display: inline-block;
     font-family: "Montserrat", sans-serif;
-    font-size: 8rem;
+    font-size: 10rem;
     font-weight: 700;
     margin-top: -1rem;
     text-transform: uppercase;
@@ -261,12 +262,13 @@ p {
   .section-pricing__cards {
     align-items: center;
     display: flex;
-    justify-content: center;
-    margin-top: 6rem; }
+    justify-content: center; }
+    .section-pricing__cards .pricing-card:not(last-child) {
+      margin-right: 2rem; }
 
 .navigation {
   width: 100vw;
-  padding: 2.5rem 0;
+  padding: 4.1rem 0;
   position: fixed;
   top: 0;
   left: 50%;
@@ -283,7 +285,7 @@ p {
   .navigation__list {
     display: flex;
     list-style: none;
-    margin-left: 3rem;
+    margin-left: 9rem;
     margin-top: .3rem; }
   .navigation__item {
     margin-left: -.5rem;
@@ -292,7 +294,7 @@ p {
     .navigation__item::before {
       content: "";
       height: 3px;
-      width: calc(100% - 3.8rem);
+      width: calc(100% - 2.8rem);
       background-color: #FD4100;
       display: inline-block;
       left: 50%;
@@ -304,26 +306,28 @@ p {
     .navigation__item:hover::before {
       transform: translateX(-50%) translateY(calc(-50% - 1.8rem)) scaleX(1); }
   .navigation__link {
-    color: #FFFFFF;
     display: inline-block;
-    font-family: "Montserrat", sans-serif;
     padding: .3rem .5rem;
+    color: #FFFFFF;
+    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
     transition: all .3s; }
-  .navigation__logo-box {
+  .navigation__logo {
     align-items: center;
     display: flex; }
-    .navigation__logo-box img {
-      width: 2rem; }
-    .navigation__logo-box span {
+    .navigation__logo img {
+      width: 4rem; }
+    .navigation__logo span {
+      margin-left: 1.2rem;
       color: #FFFFFF;
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
-      font-size: 1.5rem;
+      font-size: 3.4rem;
       letter-spacing: .2rem;
-      margin-left: .8rem;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      line-height: 1; }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
@@ -399,10 +403,12 @@ p {
   align-items: center;
   text-align: center;
   width: 28rem;
-  border: 2px solid #FD4100;
+  border: 2px solid rgba(253, 65, 0, 0);
   background-color: #FFFFFF; }
+  .pricing-card:hover {
+    border: 2px solid #FD4100; }
   .pricing-card__banner {
-    background-color: #FD4100;
+    background-color: #333333;
     color: #FFFFFF;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 1px;
@@ -418,7 +424,7 @@ p {
     width: 100%; }
   .pricing-card__price {
     margin-bottom: 2.4rem;
-    color: #FD4100;
+    color: #333333;
     font-family: "Montserrat", sans-serif;
     font-size: 5rem;
     font-weight: 500;

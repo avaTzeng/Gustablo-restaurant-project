@@ -1,11 +1,15 @@
 .pricing-card {
     @include flex-column-center;
     width: 28rem;
-    border: 2px solid $color-primary;
+    border: 2px solid rgba($color-primary, 0);
     background-color: $color-white;
 
+    &:hover {
+        border: 2px solid $color-primary;
+    }
+
     &__banner {
-        background-color: $color-primary;
+        background-color: $color-grey-dark-1;
         color: $color-white;
         font-family: $font-family-1;
         letter-spacing: 1px;
@@ -25,7 +29,7 @@
 
     &__price {
         margin-bottom: 2.4rem;
-        color: $color-primary;
+        color: $color-grey-dark-1;
         font-family: $font-family-1;
         font-size: 5rem;
         font-weight: 500;

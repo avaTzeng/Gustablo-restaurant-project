@@ -1,6 +1,6 @@
 .navigation {
     width: 100vw;
-    padding: 2.5rem 0;
+    padding: 4.1rem 0;
     position: fixed;
     top: 0;
     left: 50%;
@@ -20,7 +20,7 @@
     &__list {
         display: flex;
         list-style: none;
-        margin-left: 3rem;
+        margin-left: 9rem;
         margin-top: .3rem;
     }
 
@@ -31,7 +31,7 @@
 
         &::before {
             content: "";
-            @include size(calc(100% - 3.8rem),3px);
+            @include size(calc(100% - 2.8rem),3px);
             background-color: $color-primary;
             display: inline-block;
             left: 50%;
@@ -48,31 +48,33 @@
     }
 
     &__link {
-        color: $color-white;
         display: inline-block;
-        font-family: $font-family-1;
         padding: .3rem .5rem;
+        color: $color-white;
+        font-size: 1.7rem;;
+        font-family: $font-family-1;
         text-decoration: none;
         text-transform: uppercase;
         transition: all .3s;
     }
     
-    &__logo-box {
+    &__logo {
         align-items: center;
         display: flex;
-    
+
         img {
-            width: 2rem;
-            
+            width: 4rem;
         }
+    
         span {
+            margin-left: 1.2rem;
             color: $color-white;
             font-family: $font-family-1;
             font-weight: 700;
-            font-size: 1.5rem;
+            font-size: 3.4rem;
             letter-spacing: .2rem;
-            margin-left: .8rem;
             text-transform: uppercase;
+            line-height: 1;
         }
     }
 }
