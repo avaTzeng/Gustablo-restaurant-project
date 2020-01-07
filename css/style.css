@@ -13,8 +13,7 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  position: relative;
-  border: 1px solid #12fffc !important; }
+  position: relative; }
 
 html {
   font-size: 62.5%; }
@@ -51,7 +50,7 @@ p {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  height: 91.2rem; }
+  height: 90vh; }
   .home-header__content {
     position: absolute;
     top: 50%;
@@ -64,13 +63,14 @@ p {
     .home-header__content h1 {
       margin-bottom: 2rem; }
   .home-header__title {
+    margin-top: -1rem;
+    letter-spacing: -.5rem;
     white-space: nowrap;
     color: #FFFFFF;
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-size: 10rem;
     font-weight: 700;
-    margin-top: -1rem;
     text-transform: uppercase;
     line-height: 1; }
   .home-header__subtitle {
@@ -81,7 +81,7 @@ p {
     display: inline-block;
     font-weight: 300;
     font-family: "Lato", sans-serif;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     letter-spacing: 2px;
     text-transform: uppercase; }
 
@@ -90,10 +90,10 @@ p {
   display: flex;
   justify-content: center;
   background-color: #FFFFFF;
-  padding-top: 16rem;
-  padding-bottom: 10rem; }
+  padding-top: 18rem;
+  padding-bottom: 12rem; }
   .section-about__reservation-block {
-    height: 6.5rem;
+    height: 11.5rem;
     width: 118rem;
     background-color: #FD4100;
     display: flex;
@@ -101,7 +101,8 @@ p {
     left: 50%;
     position: absolute;
     top: 0;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    padding: 0 4.6rem; }
   .section-about__reservarion-box {
     align-items: center;
     align-self: center;
@@ -110,25 +111,26 @@ p {
     display: flex;
     justify-content: space-between;
     margin-right: 1rem;
-    padding: .5rem 1rem;
+    padding: 1rem 1.2rem 1rem 2.4rem;
     width: 25%; }
     .section-about__reservarion-box svg {
-      height: 1.3rem;
-      width: 1.3rem;
+      height: 1.7rem;
+      width: 1.7rem;
       fill: #FFFFFF; }
     .section-about__reservarion-box span {
       color: #FFFFFF;
-      font-size: 5px;
+      font-size: 1.3rem;
       font-family: "Montserrat", sans-serif;
       font-weight: 300;
       letter-spacing: 1px;
       text-transform: uppercase; }
   .section-about__reservation-btn {
+    text-align: center;
     align-self: center;
     background-color: #FFFFFF;
     border: 1px solid #FFFFFF;
     cursor: pointer;
-    padding: .5rem 2rem;
+    padding: 1rem 2rem;
     width: 15%; }
     .section-about__reservation-btn a:link,
     .section-about__reservation-btn a:visited {
@@ -198,7 +200,7 @@ p {
   align-items: center;
   text-align: center;
   background-color: #F5F5F5;
-  padding-top: 10rem; }
+  padding-top: 10.8rem; }
   .section-team::after {
     content: "";
     bottom: 0;
@@ -210,7 +212,7 @@ p {
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    width: 90rem; }
+    width: 118rem; }
   .section-team__photo {
     align-items: flex-end;
     display: flex;
@@ -224,7 +226,7 @@ p {
       position: absolute;
       right: 0;
       top: 50%;
-      transform: translate(1.55rem, calc(-50% - 2rem)); }
+      transform: translate(8.5rem, calc(-50% - 2rem)); }
     .section-team__photo img {
       height: 42rem; }
 
@@ -235,15 +237,17 @@ p {
   text-align: center;
   margin: 0 auto;
   max-width: 118rem;
-  padding: 10rem; }
+  padding-top: 10.8rem;
+  padding-bottom: 7.2rem; }
   .section-gallery__photo-grid {
+    width: 118rem;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-gap: 1.5rem;
-    margin-bottom: 6rem; }
+    grid-gap: 2rem;
+    margin-bottom: 7rem; }
   .section-gallery__photo {
-    height: 34.5rem;
-    width: 34.5rem;
+    justify-self: stretch;
+    height: 34.8rem;
     overflow: hidden; }
     .section-gallery__photo img {
       position: absolute;
@@ -258,7 +262,8 @@ p {
   align-items: center;
   text-align: center;
   background-color: #F5F5F5;
-  padding: 10rem 0; }
+  padding-top: 10.8rem;
+  padding-bottom: 13.3rem; }
   .section-pricing__cards {
     align-items: center;
     display: flex;
@@ -268,7 +273,7 @@ p {
 
 .navigation {
   width: 100vw;
-  padding: 4.1rem 0;
+  padding: 2.2rem 0;
   position: fixed;
   top: 0;
   left: 50%;
@@ -277,15 +282,16 @@ p {
   z-index: 1000;
   border-bottom: 1px solid #999999; }
   .navigation__nav {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
     width: 118rem;
-    z-index: 1500;
-    display: flex;
-    align-items: center; }
+    z-index: 1500; }
   .navigation__list {
     display: flex;
     list-style: none;
-    margin-left: 9rem;
     margin-top: .3rem; }
   .navigation__item {
     margin-left: -.5rem;
@@ -301,18 +307,20 @@ p {
       position: absolute;
       top: 50%;
       transform-origin: top;
-      transform: translateX(-50%) translateY(calc(-50% - 1.8rem)) scaleX(0);
+      transform: translateX(-50%) translateY(calc(-50% - 2rem)) scaleX(0);
       transition: all 0.15s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
     .navigation__item:hover::before {
-      transform: translateX(-50%) translateY(calc(-50% - 1.8rem)) scaleX(1); }
+      transform: translateX(-50%) translateY(calc(-50% - 2rem)) scaleX(1); }
   .navigation__link {
     display: inline-block;
     padding: .3rem .5rem;
     color: #FFFFFF;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 300;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 1px;
     transition: all .3s; }
   .navigation__logo {
     align-items: center;
@@ -320,17 +328,18 @@ p {
     .navigation__logo img {
       width: 4rem; }
     .navigation__logo span {
-      margin-left: 1.2rem;
+      margin-left: 1rem;
       color: #FFFFFF;
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
-      font-size: 3.4rem;
+      font-size: 2.6rem;
       letter-spacing: .2rem;
       text-transform: uppercase;
       line-height: 1; }
 
 .btn, .btn:link, .btn:visited {
   display: inline-block;
+  font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -346,29 +355,31 @@ p {
   transform: translateY(-1px) scale(1, 1); }
 
 .btn--big {
-  font-size: 2px;
-  padding: 1rem 6rem; }
+  padding: 1.2rem 6.8rem; }
 
 .btn--medium {
-  font-size: 1px;
   padding: .5rem 2rem; }
 
 .btn--transparent-light-txt {
   background-color: transparent;
-  border: 1px solid #FFFFFF;
-  color: #FFFFFF; }
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  letter-spacing: 0px; }
   .btn--transparent-light-txt:hover {
     background-color: #FD4100;
-    border: 1px solid #FD4100; }
+    border: 2px solid #FD4100;
+    letter-spacing: 2px; }
 
 .btn--transparent-dark-txt {
   color: #999999;
   background-color: transparent;
-  border: 1px solid #e0e0e0; }
+  border: 2px solid #e0e0e0;
+  letter-spacing: 0px; }
   .btn--transparent-dark-txt:hover {
     color: #FFFFFF;
     background-color: #FD4100;
-    border: 1px solid #FD4100; }
+    border: 2px solid #FD4100;
+    letter-spacing: 2px; }
 
 .title-divider {
   display: flex;

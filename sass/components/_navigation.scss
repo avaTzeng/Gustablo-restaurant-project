@@ -1,6 +1,6 @@
 .navigation {
     width: 100vw;
-    padding: 4.1rem 0;
+    padding: 2.2rem 0;
     position: fixed;
     top: 0;
     left: 50%;
@@ -10,17 +10,16 @@
     border-bottom: 1px solid $color-grey-light-3;
 
     &__nav {
+        @include flex-row-center;
+        justify-content: space-between;
         margin: 0 auto;
         width: $row-content-max-width;
         z-index: 1500;
-        display: flex;
-        align-items: center;
     }
 
     &__list {
         display: flex;
         list-style: none;
-        margin-left: 9rem;
         margin-top: .3rem;
     }
 
@@ -38,12 +37,12 @@
             position: absolute;
             top: 50%;
             transform-origin: top;
-            transform: translateX(-50%) translateY(calc(-50% - 1.8rem)) scaleX(0);
+            transform: translateX(-50%) translateY(calc(-50% - 2rem)) scaleX(0);
             transition: all .15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         }
 
         &:hover::before {
-            transform: translateX(-50%) translateY(calc(-50% - 1.8rem)) scaleX(1);
+            transform: translateX(-50%) translateY(calc(-50% - 2rem)) scaleX(1);
         }
     }
 
@@ -51,10 +50,12 @@
         display: inline-block;
         padding: .3rem .5rem;
         color: $color-white;
-        font-size: 1.7rem;;
+        font-size: 1.3rem;
+        font-weight: 300;
         font-family: $font-family-1;
         text-decoration: none;
         text-transform: uppercase;
+        letter-spacing: 1px;
         transition: all .3s;
     }
     
@@ -67,11 +68,11 @@
         }
     
         span {
-            margin-left: 1.2rem;
+            margin-left: 1rem;
             color: $color-white;
             font-family: $font-family-1;
             font-weight: 700;
-            font-size: 3.4rem;
+            font-size: 2.6rem;
             letter-spacing: .2rem;
             text-transform: uppercase;
             line-height: 1;

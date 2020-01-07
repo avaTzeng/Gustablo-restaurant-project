@@ -4,6 +4,7 @@
     &:link,
     &:visited {
         display: inline-block;
+        font-size: 1.3rem;
         font-family: $font-family-1;
         letter-spacing: 1px;
         text-transform: uppercase;
@@ -24,36 +25,38 @@
 
     // ---- 尺寸 ----
     &--big {
-        font-size: 2px;
-        padding: 1rem 6rem;
+        padding: 1.2rem 6.8rem;
     }
 
     &--medium {
-        font-size: 1px;
         padding: .5rem 2rem;
     }
 
     // ---- Style ----
     &--transparent-light-txt {
         background-color: transparent;
-        border: 1px solid $color-white;
+        border: 2px solid $color-white;
         color: $color-white;
+        letter-spacing: 0px;
 
         &:hover {
             background-color: $color-primary;
-            border: 1px solid $color-primary;
+            border: 2px solid $color-primary;
+            letter-spacing: 2px;
         }
     }
 
     &--transparent-dark-txt {
         color: $color-grey-light-3;
         background-color: transparent;
-        border: 1px solid $color-grey-light-2;
+        border: 2px solid $color-grey-light-2;
+        letter-spacing: 0px;
 
         &:hover {
             color: $color-white;
             background-color: $color-primary;
-            border: 1px solid $color-primary;
+            border: 2px solid $color-primary;
+            letter-spacing: 2px;
         }
     }
 

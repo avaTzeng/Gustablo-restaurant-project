@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    height: 91.2rem;
+    height: 90vh;
 
     &__content {   
         @include abs-center;   
@@ -16,13 +16,14 @@
     }
 
     &__title {
+        margin-top: -1rem;
+        letter-spacing: -.5rem;
         white-space: nowrap;
         color: $color-white;
         display: inline-block;
         font-family: $font-family-1;
         font-size: 10rem;
         font-weight: 700;
-        margin-top: -1rem;
         text-transform: uppercase;
         line-height: 1;
     }
@@ -35,7 +36,7 @@
         display: inline-block;
         font-weight: 300;
         font-family: $font-family-2;
-        font-size: 1.8rem;
+        font-size: 2.4rem;
         letter-spacing: 2px;
         text-transform: uppercase;
     }
@@ -45,12 +46,12 @@
 .section-about {
     @include flex-row-center;
     background-color: $color-white;
-    padding-top: 16rem;
-    padding-bottom: $padding-section;
+    padding-top: 18rem;
+    padding-bottom: 12rem;
 
     // ---------- RESERVATION ----------
     &__reservation-block {
-        @include size($row-content-max-width,6.5rem);
+        @include size($row-content-max-width, 11.5rem);
         background-color: $color-primary;
         display: flex;
         justify-content: center;
@@ -58,6 +59,7 @@
         position: absolute;
         top: 0;
         transform: translate(-50%,-50%);
+        padding: 0 4.6rem;
     }
 
     &__reservarion-box {
@@ -68,17 +70,17 @@
         display: flex;
         justify-content: space-between;
         margin-right: 1rem;
-        padding: .5rem 1rem;
+        padding: 1rem 1.2rem 1rem 2.4rem;
         width: 25%;
 
         svg {
-            @include size(1.3rem,1.3rem);
+            @include size(1.7rem,1.7rem);
             fill: $color-white;
         }
 
         span {
             color: $color-white;
-            font-size: 5px;
+            font-size: 1.3rem;
             font-family: $font-family-1;
             font-weight: 300;
             letter-spacing: 1px;
@@ -87,11 +89,12 @@
     }
 
     &__reservation-btn {
+        text-align: center;
         align-self: center;
         background-color: $color-white;
         border: 1px solid $color-white;
         cursor: pointer;
-        padding: .5rem 2rem;
+        padding: 1rem 2rem;
         width: 15%;
 
         a:link,
@@ -180,7 +183,7 @@
 .section-team {
     @include flex-column-center;
     background-color: $color-grey-light-1;
-    padding-top: $padding-section;
+    padding-top: $padding-section-top;
 
     &::after {
         content: "";
@@ -193,7 +196,7 @@
     &__photos {
         @include flex-row-center;
         justify-content: space-between;
-        width: 90rem;
+        width: $row-content-max-width;
     }
 
     &__photo {
@@ -209,7 +212,7 @@
             position: absolute;
             right: 0;
             top: 50%;
-            transform: translate(1.55rem, calc(-50% - 2rem));
+            transform: translate(8.5rem, calc(-50% - 2rem));
         }
 
         img {
@@ -223,17 +226,20 @@
     @include flex-column-center;
     margin: 0 auto;
     max-width: $row-content-max-width;
-    padding: $padding-section;
+    padding-top: $padding-section-top;
+    padding-bottom: 7.2rem;
     
     &__photo-grid {
+        width: $row-content-max-width;
         display: grid;
         grid-template-columns: repeat(3, auto);
-        grid-gap: 1.5rem;
-        margin-bottom: 6rem;
+        grid-gap: 2rem;
+        margin-bottom: 7rem;
     }
 
     &__photo {
-        @include size(34.5rem, 34.5rem);
+        justify-self: stretch;
+        height: 34.8rem;
         overflow: hidden;
 
         img {
@@ -247,7 +253,8 @@
 .section-pricing {
     @include flex-column-center;
     background-color: $color-grey-light-1;
-    padding: $padding-section 0;
+    padding-top: $padding-section-top;
+    padding-bottom: 13.3rem;
 
     &__cards {
         @include flex-row-center;
