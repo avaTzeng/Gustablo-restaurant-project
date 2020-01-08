@@ -94,115 +94,6 @@ p {
     letter-spacing: 2px;
     text-transform: uppercase; }
 
-.section-about {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  background-color: #FFFFFF;
-  padding-top: 18rem;
-  padding-bottom: 12rem; }
-  .section-about__reservation-block {
-    height: 11.5rem;
-    width: 118rem;
-    background-color: #FD4100;
-    display: flex;
-    justify-content: center;
-    left: 50%;
-    position: absolute;
-    top: 0;
-    transform: translate(-50%, -50%);
-    padding: 0 4.6rem; }
-  .section-about__reservarion-box {
-    align-items: center;
-    align-self: center;
-    border: 1px solid #FFFFFF;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 1rem;
-    padding: 1rem 1.2rem 1rem 2.4rem;
-    width: 25%; }
-    .section-about__reservarion-box svg {
-      height: 1.7rem;
-      width: 1.7rem;
-      fill: #FFFFFF; }
-    .section-about__reservarion-box span {
-      color: #FFFFFF;
-      font-size: 1.3rem;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 300;
-      letter-spacing: 1px;
-      text-transform: uppercase; }
-  .section-about__reservation-btn {
-    text-align: center;
-    align-self: center;
-    background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    cursor: pointer;
-    padding: 1rem 2rem;
-    width: 15%; }
-    .section-about__reservation-btn a:link,
-    .section-about__reservation-btn a:visited {
-      color: #999999;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 400;
-      text-decoration: none;
-      text-transform: uppercase; }
-  .section-about__contents {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    width: 118rem; }
-  .section-about__video {
-    height: 37rem; }
-    .section-about__video video {
-      height: 100%; }
-  .section-about__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 38%; }
-    .section-about__info p {
-      display: block;
-      margin-top: 3.5rem;
-      width: 100%; }
-  .section-about__list {
-    display: flex;
-    list-style: none;
-    width: 100%; }
-  .section-about__list-item {
-    cursor: pointer;
-    display: inline-block;
-    font-size: .2rem;
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 1px;
-    padding: .8rem 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    width: 33.3333333%; }
-    .section-about__list-item--active {
-      color: #333333;
-      background-color: #FFFFFF;
-      border-top: 2px solid #FD4100;
-      border-right: 2px solid #e0e0e0;
-      border-left: 2px solid #e0e0e0; }
-    .section-about__list-item--inactivated {
-      color: #999999;
-      background-color: #F5F5F5;
-      border-bottom: 2px solid #e0e0e0; }
-      .section-about__list-item--inactivated:not(:last-child)::after {
-        height: 65%;
-        width: 1px;
-        background-color: #e0e0e0;
-        content: "";
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%); }
-
 .section-team {
   display: flex;
   flex-direction: column;
@@ -920,6 +811,56 @@ p {
     text-transform: uppercase;
     word-spacing: 3px; }
 
+.reservation__block {
+  height: 11.5rem;
+  width: 118rem;
+  background-color: #FD4100;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+  padding: 0 4.6rem; }
+
+.reservation__box {
+  align-items: center;
+  align-self: center;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem;
+  padding: 1rem 1.2rem 1rem 2.4rem;
+  width: 25%; }
+  .reservation__box svg {
+    height: 1.7rem;
+    width: 1.7rem;
+    fill: #FFFFFF; }
+  .reservation__box span {
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+
+.reservation__btn {
+  text-align: center;
+  align-self: center;
+  background-color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  width: 15%; }
+  .reservation__btn a:link,
+  .reservation__btn a:visited {
+    color: #999999;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase; }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -929,3 +870,65 @@ p {
 .row {
   max-width: 118rem;
   margin: 0 auto; }
+
+.row-flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  width: 118rem; }
+
+.section-about {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #FFFFFF;
+  padding: 18rem 0 12rem 0; }
+  .section-about__video {
+    height: 37rem; }
+    .section-about__video video {
+      height: 100%; }
+  .section-about__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 38%; }
+    .section-about__info p {
+      display: block;
+      margin-top: 3.5rem;
+      width: 100%; }
+  .section-about__list {
+    display: flex;
+    list-style: none;
+    width: 100%; }
+  .section-about__list-item {
+    cursor: pointer;
+    display: inline-block;
+    font-size: .2rem;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    padding: .8rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 33.3333333%; }
+    .section-about__list-item--active {
+      color: #333333;
+      background-color: #FFFFFF;
+      border-top: 2px solid #FD4100;
+      border-right: 2px solid #e0e0e0;
+      border-left: 2px solid #e0e0e0; }
+    .section-about__list-item--inactivated {
+      color: #999999;
+      background-color: #F5F5F5;
+      border-bottom: 2px solid #e0e0e0; }
+      .section-about__list-item--inactivated:not(:last-child)::after {
+        height: 65%;
+        width: 1px;
+        background-color: #e0e0e0;
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%); }
