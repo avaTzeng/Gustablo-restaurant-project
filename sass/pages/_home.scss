@@ -283,7 +283,6 @@
     padding-bottom: 13rem;
     text-align: center;
 }
-
 //--------------- SECTION-WHY ---------------
 .section-why {
     padding: 12rem 0;
@@ -304,6 +303,56 @@
 
     .progress:not(:last-child) {
         margin-bottom: 3rem;
+    }
+}
+//--------------- SECTION-SUBSCRIBE ---------------
+.section-subscribe {
+    padding: 6.5rem 0 5rem 0;
+    background-color: $color-primary;
+
+    &__block {
+        width: 84rem;
+        margin: 0 auto;
+    }
+
+    &__content {
+        @include flex-row-center;
+        justify-content: space-between;
+
+        span {
+            font-family: $font-family-1;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            color: $color-white;
+            letter-spacing: 2px;
+            line-height: 1;
+        }
+
+        button {
+            @include size(2rem, 2rem);
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+        svg {
+            @include size(100%, 100%);
+            fill: $color-white;
+        }
+    }
+
+    &__input {
+        @include size(100%, 3.5rem);
+        border: none;
+        border-bottom: 2px solid $color-white;
+        background-color: transparent;
+        color: $color-white;
+        letter-spacing: 2px;
+        font-size: 1.3rem;
+
+        &:focus {
+            outline: none;
+        }
     }
 }
 

@@ -301,6 +301,46 @@ p {
   .section-why .progress:not(:last-child) {
     margin-bottom: 3rem; }
 
+.section-subscribe {
+  padding: 6.5rem 0 5rem 0;
+  background-color: #FD4100; }
+  .section-subscribe__block {
+    width: 84rem;
+    margin: 0 auto; }
+  .section-subscribe__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between; }
+    .section-subscribe__content span {
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      letter-spacing: 2px;
+      line-height: 1; }
+    .section-subscribe__content button {
+      height: 2rem;
+      width: 2rem;
+      border: none;
+      background-color: transparent;
+      cursor: pointer; }
+    .section-subscribe__content svg {
+      height: 100%;
+      width: 100%;
+      fill: #FFFFFF; }
+  .section-subscribe__input {
+    height: 3.5rem;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #FFFFFF;
+    background-color: transparent;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 1.3rem; }
+    .section-subscribe__input:focus {
+      outline: none; }
+
 .navigation {
   width: 100vw;
   padding: 2.2rem 0;
