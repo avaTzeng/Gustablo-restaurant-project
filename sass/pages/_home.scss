@@ -1,6 +1,6 @@
 //--------------- HEADER ---------------
 .home-header {
-    background-image: url(../img/home/showoff_01.jpg);
+    background-image: url(../img/photos/showoff_01.jpg);
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
@@ -275,3 +275,12 @@
     max-width: $row-content-max-width;
     margin: 0 auto;
 }
+
+//--------------- SECTION-EVENTS ---------------
+.section-events {
+    background-color: $color-grey-light-1;
+    padding-top: $padding-section-top;
+    padding-bottom: 13rem;
+}
+
+

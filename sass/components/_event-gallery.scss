@@ -1,0 +1,45 @@
+.event-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+
+    &__item {
+        justify-self: stretch;
+        overflow: hidden;
+        
+        img {
+            @include abs-center;
+            width: 110%;
+        }
+
+        &--content {
+            @include flex-column-center;
+            padding: 8rem 4.5rem 6.5rem 4.5rem;
+            line-height: 1;
+            
+            span:first-child {
+                font-size: 2.2rem;
+                color: $color-black;
+                letter-spacing: 1px;
+            }
+
+            span:nth-child(2) {
+                margin: 1.6rem 0;
+                font-size: 1.6rem;
+                color: $color-primary;
+                letter-spacing: 1px;
+            }
+
+            p {
+                text-align: center;
+                line-height: 1.6;
+                margin-bottom: 2.5rem;
+                height: 7rem;
+            }
+
+        }
+    }
+
+    
+}

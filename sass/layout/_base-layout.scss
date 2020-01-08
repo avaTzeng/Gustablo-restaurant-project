@@ -4,3 +4,11 @@
     align-items: center;
     justify-content: center;
 }
+
+// Use .container-fluid for a full width container, 
+// spanning the entire width of your viewport.
+
+.row {
+    max-width: $row-content-max-width;
+    margin: 0 auto;
+}

@@ -32,6 +32,11 @@
         padding: .5rem 2rem;
     }
 
+    &--small {
+        padding: 1rem 2.4rem;
+    }
+
+
     // ---- Style ----
     &--transparent-light-txt {
         background-color: transparent;
@@ -56,6 +61,16 @@
             color: $color-white;
             background-color: $color-primary;
             border: 2px solid $color-primary;
+            letter-spacing: 2px;
+        }
+    }
+
+    &--primary-solid {
+        color: $color-white;
+        background-color: $color-primary;
+        letter-spacing: 0px;
+
+        &:hover {
             letter-spacing: 2px;
         }
     }
