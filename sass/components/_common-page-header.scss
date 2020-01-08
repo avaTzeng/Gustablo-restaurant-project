@@ -1,0 +1,24 @@
+.common-page-header {
+    padding: 20.8rem 0 13rem 0;
+    // background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url(../../img/photos/cover/aboutPage_cover.webp);
+    background-position: top;
+    background-attachment: fixed;
+    text-align: center;
+    
+    &__contents {
+        display: inline-block;
+    }
+
+    &__slogan {
+        display: inline-block;
+        margin-top: 1.4rem;
+        font-family: $font-family-2;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1;
+        color: $color-white;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        word-spacing: 3px;
+    }
+}

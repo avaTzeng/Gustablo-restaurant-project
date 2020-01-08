@@ -8,6 +8,7 @@
 @import "base/utilities";
 
 @import "pages/home";
+@import "pages/about";
 
 @import "components/navigation";
 @import "components/button";
@@ -17,5 +18,7 @@
 @import "components/content-box";
 @import "components/event-gallery";
 @import "components/progress";
+@import "components/common-page-header";
 
 @import "layout/base-layout";
+@import "layout/introduction";
