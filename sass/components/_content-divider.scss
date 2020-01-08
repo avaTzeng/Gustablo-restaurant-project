@@ -1,6 +1,5 @@
-.title-divider {
+.content-divider {
     @include flex-column-center;
-    margin-bottom: 7rem;
 
     &__icon {
         @include size(3.3rem,3.3rem);
@@ -22,11 +21,5 @@
             left: 0;
             transform: translate(3.5rem,-50%);
         }
-    }
-
-    p {
-        text-align: center;
-        display: block;
-        width: 68rem;
     }
 }

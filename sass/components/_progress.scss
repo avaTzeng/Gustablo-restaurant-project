@@ -1,0 +1,54 @@
+.progress {
+
+    &__content {
+        @include flex-row-center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    span {
+        font-family: $font-family-1;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $color-black;
+        line-height: 1;
+    }
+
+    &__title {
+        letter-spacing: 2px;
+    }
+
+    &__bar {
+        @include size(100%, 1.4rem);
+        background-color: $color-grey-light-1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 100%;
+            background-color: $color-primary;
+            z-index: 1;
+        }
+    }
+
+    &__bar--65 {
+        &::after {
+            width: 65%;
+        }
+    }
+
+    &__bar--70 {
+        &::after {
+            width: 70%;
+        }
+    }
+
+    &__bar--75 {
+        &::after {
+            width: 75%;
+        }
+    }
+}

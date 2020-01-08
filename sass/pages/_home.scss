@@ -284,4 +284,27 @@
     text-align: center;
 }
 
+//--------------- SECTION-WHY ---------------
+.section-why {
+    padding: 12rem 0;
+
+    &__contents {
+        @include flex-row-center;
+        justify-content: flex-start;
+    }
+
+    &__info {
+        width: 55rem;
+    }
+
+    &__chart {
+        margin-left: 9rem;
+        flex: 1;
+    }
+
+    .progress:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}
+
 

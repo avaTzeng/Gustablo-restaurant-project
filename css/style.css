@@ -1,4 +1,4 @@
-.title-divider__icon::before, .title-divider__icon::after {
+.title-divider__icon::before, .title-divider__icon::after, .content-divider__icon::before, .content-divider__icon::after {
   background-color: #e0e0e0;
   content: "";
   display: inline-block;
@@ -13,15 +13,13 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  position: relative;
-  border: 1px solid #12fffc !important; }
+  position: relative; }
 
 html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  height: 5000px; }
+  box-sizing: border-box; }
 
 body {
   color: #999999;
@@ -34,8 +32,8 @@ h2 {
   display: block;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 1.6; }
+  font-size: 3.8rem;
+  line-height: 1; }
 
 p {
   color: #999999;
@@ -288,6 +286,21 @@ p {
   padding-bottom: 13rem;
   text-align: center; }
 
+.section-why {
+  padding: 12rem 0; }
+  .section-why__contents {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start; }
+  .section-why__info {
+    width: 55rem; }
+  .section-why__chart {
+    margin-left: 9rem;
+    flex: 1; }
+  .section-why .progress:not(:last-child) {
+    margin-bottom: 3rem; }
+
 .navigation {
   width: 100vw;
   padding: 2.2rem 0;
@@ -414,19 +427,17 @@ p {
   align-items: center;
   text-align: center;
   margin-bottom: 7rem; }
-  .title-divider h2 {
-    line-height: 1; }
   .title-divider__icon {
-    height: 2.5rem;
-    width: 2.5rem;
-    margin: 1.2rem 0; }
+    height: 3.3rem;
+    width: 3.3rem;
+    margin: 1.7rem 0; }
     .title-divider__icon svg {
       height: 100%;
       width: 100%;
       fill: #999999; }
     .title-divider__icon::before {
       right: 0;
-      transform: translate(-3.5rem, -50%); }
+      transform: translate(-4rem, -50%); }
     .title-divider__icon::after {
       left: 0;
       transform: translate(3.5rem, -50%); }
@@ -434,6 +445,26 @@ p {
     text-align: center;
     display: block;
     width: 68rem; }
+
+.content-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .content-divider__icon {
+    height: 3.3rem;
+    width: 3.3rem;
+    margin: 1.7rem 0; }
+    .content-divider__icon svg {
+      height: 100%;
+      width: 100%;
+      fill: #999999; }
+    .content-divider__icon::before {
+      right: 0;
+      transform: translate(-4rem, -50%); }
+    .content-divider__icon::after {
+      left: 0;
+      transform: translate(3.5rem, -50%); }
 
 .pricing-card {
   display: flex;
@@ -586,6 +617,46 @@ p {
         line-height: 1.6;
         margin-bottom: 2.5rem;
         height: 8rem; }
+
+.progress__content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem; }
+
+.progress span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #222222;
+  line-height: 1; }
+
+.progress__title {
+  letter-spacing: 2px; }
+
+.progress__bar {
+  height: 1.4rem;
+  width: 100%;
+  background-color: #F5F5F5; }
+  .progress__bar::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    background-color: #FD4100;
+    z-index: 1; }
+
+.progress__bar--65::after {
+  width: 65%; }
+
+.progress__bar--70::after {
+  width: 70%; }
+
+.progress__bar--75::after {
+  width: 75%; }
 
 .container {
   display: flex;
