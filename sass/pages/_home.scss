@@ -244,7 +244,7 @@
 
         img {
             @include abs-center;
-            width: 100%;
+            width: 105%;
         }
     } 
 }
@@ -281,6 +281,7 @@
     background-color: $color-grey-light-1;
     padding-top: $padding-section-top;
     padding-bottom: 13rem;
+    text-align: center;
 }
 
 

@@ -13,7 +13,8 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  border: 1px solid #12fffc !important; }
 
 html {
   font-size: 62.5%; }
@@ -254,7 +255,7 @@ p {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 100%; }
+      width: 105%; }
 
 .section-pricing {
   display: flex;
@@ -284,7 +285,8 @@ p {
 .section-events {
   background-color: #F5F5F5;
   padding-top: 10.8rem;
-  padding-bottom: 13rem; }
+  padding-bottom: 13rem;
+  text-align: center; }
 
 .navigation {
   width: 100vw;
@@ -552,7 +554,8 @@ p {
 .event-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr); }
+  grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 8rem; }
   .event-gallery__item {
     justify-self: stretch;
     overflow: hidden; }
@@ -561,7 +564,7 @@ p {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 110%; }
+      width: 105%; }
     .event-gallery__item--content {
       display: flex;
       flex-direction: column;
@@ -582,7 +585,7 @@ p {
         text-align: center;
         line-height: 1.6;
         margin-bottom: 2.5rem;
-        height: 7rem; }
+        height: 8rem; }
 
 .container {
   display: flex;

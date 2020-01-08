@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 8rem;
     
 
     &__item {
@@ -10,7 +11,7 @@
         
         img {
             @include abs-center;
-            width: 110%;
+            width: 105%;
         }
 
         &--content {
@@ -35,7 +36,7 @@
                 text-align: center;
                 line-height: 1.6;
                 margin-bottom: 2.5rem;
-                height: 7rem;
+                height: 8rem;
             }
 
         }
