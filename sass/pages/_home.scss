@@ -355,5 +355,250 @@
         }
     }
 }
+//--------------- FOOTER ---------------
+.footer {
+    background-color: $color-grey-dark-1;
+    padding: 10.5rem 0 2.4rem 0;
+
+//------- 上半部
+    &__main-contents {
+        @include flex-row-center;
+        justify-content: space-between;
+        margin-bottom: 9.8rem;
+
+        p {
+            font-size: 1.4rem;
+            text-align: initial;
+            line-height: 1.4;
+        }
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 27rem;
+        height: 23.5rem;
+    }
+
+    &__sub-block {
+        @include size(100%, 16.5rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__logo {
+        @include flex-row-center;
+        img {
+            @include size(4rem, 4rem);
+        }
+
+        span {
+            margin-left: 1rem;
+            color: $color-white;
+            font-family: $font-family-1;
+            font-weight: 700;
+            font-size: 2.6rem;
+            letter-spacing: .2rem;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+    }
+
+    &__social-media {
+        @include flex-row-center;
+
+        &-icon:not(:last-child) {
+            margin-right: .9rem;
+        }
+
+        &-icon {
+            padding: .8rem;
+            cursor: pointer;
+            border: 1px solid $color-grey-light-4;
+        }
+
+        svg {
+            @include size(2.2rem, 2.2rem);
+            fill: $color-grey-light-4;
+            vertical-align: middle;
+        }
+    }
+
+    &__sub-title {
+        line-height: 1;
+        font-family: $font-family-1;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: $color-white;
+        letter-spacing: 2px;
+        display: inline-block;
+        padding-top: .8rem;
+
+        &::after {
+            @include size(6.5rem, 2px);
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $color-primary;
+            transform: translateY(calc(50% + 2rem));
+        }
+    }
+
+    &__recent-post {
+        @include flex-row-center;
+
+        &-img {
+            @include size(6.7rem, 6.7rem);
+            display: inline-block;
+            margin-right: 1.9rem;
+
+            img {
+                width: 100%;
+                vertical-align: middle;
+            }
+        }
+
+        &-info {
+            @include flex-column-center;
+            align-items: flex-start;
+
+            span {
+                font-family: $font-family-2;
+            }
+
+            span:not(:last-child) {
+                margin-bottom: .3rem;
+            }
+        }
+
+        &-title {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: $color-white;
+        }   
+
+        &-date {
+            font-size: 1.4rem;
+        }
+    }
+
+    &__photo-grid {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: space-between;
+        align-content: space-between;
+        grid-gap: 1rem;
+
+        &-item {
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    input {
+        font-family: $font-family-2;
+        width: 100%;
+        padding: 1rem 1.8rem;
+        border: 1px solid $color-grey-light-4;
+        background-color: transparent;
+        outline: none;
+        color: $color-white;
+        font-size: 1.4rem;
+
+        &::placeholder {
+            color: $color-grey-light-4;
+        }
+
+        &--message {
+            height: 7.2rem;
+        }
+    }
+
+    textarea {
+        width: 100%;
+        padding: 1rem 0 3rem 1.8rem;
+        background-color: transparent;
+        outline: none;
+        font-family: $font-family-2;
+        border: 1px solid $color-grey-light-4;
+        color: $color-white;
+        font-size: 1.4rem;
+        resize: none;
+    }
+
+    &__send-btn {
+        @include size(6.5rem, 2.7rem);
+        background-color: $color-primary;
+        color: $color-white;
+        font-family: $font-family-1;
+        font-size: 1.4rem;
+        border: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+//------- 下半部 
+    &__sub-contents {
+        @include flex-row-center;
+        justify-content: space-between;
+    }
+
+    &__rights {
+        color: $color-grey-light-3;
+        font-family: $font-family-1;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    &__list {
+        @include flex-row-center;
+        list-style: none;
+
+        &-item:not(:last-child) {
+            padding: .3rem 2rem;
+
+            &::after {
+                @include size(1px, 1.3rem);
+                content: "";
+                display: inline-block;
+                background-color: $color-grey-light-3;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(50%, -50%);
+            }
+        }
+
+        &-item:last-child {
+            padding: .3rem 0 .3rem 2rem;
+        }
+
+        &-item {
+            a,
+            a:visited {
+                color: $color-white;
+                text-decoration: none;
+                color: $color-grey-light-3;
+                font-family: $font-family-1;
+                font-size: 1.3rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+
 
 
