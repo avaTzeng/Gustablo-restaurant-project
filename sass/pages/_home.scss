@@ -41,6 +41,11 @@
         text-transform: uppercase;
     }
 }
+//--------------- SECTION-INTRO ---------------
+.section-intro {
+    background-color: $color-white;
+    padding: 18rem 0 12rem 0;
+}
 //--------------- SECTION-TEAM ---------------
 .section-team {
     @include flex-column-center;

@@ -2,6 +2,11 @@
     background-image: linear-gradient(to bottom, rgba($color-black, .55), rgba($color-primary, .35)), url(../../img/photos/cover/aboutPage_cover.webp);
 }
 //--------------- SECTION-ABOUT-GUSTABLO ---------------
+.section-detail {
+    background-color: $color-white;
+    padding: 13rem 0 17.2rem 0;
+}
+//--------------- SECTION-ABOUT-GUSTABLO ---------------
 .section-about-gustablo {
     padding: 17.5rem 0 16rem 0;
     background-color: $color-grey-light-1;
