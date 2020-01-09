@@ -1,3 +1,4 @@
+// container 基本上 flex-direction 是 column 的
 .container {
     display: flex;
     flex-direction: column;
@@ -5,16 +6,20 @@
     justify-content: center;
 }
 
+// 註解：
 // Use .container-fluid for a full width container, 
 // spanning the entire width of your viewport.
 
+// container 基本上 flex-direction 是 row 的
 .row {
     max-width: $row-content-max-width;
+    width: $row-content-max-width;
     margin: 0 auto;
 }
 
-.row-flex {
-    @include flex-row-center;
-    justify-content: space-between;
+.row-space-between {
     width: $row-content-max-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

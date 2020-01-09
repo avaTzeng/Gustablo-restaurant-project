@@ -435,6 +435,23 @@ p {
 .common-page-header {
   background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.55), rgba(253, 65, 0, 0.35)), url(../../img/photos/cover/aboutPage_cover.webp); }
 
+.section-about-gustablo {
+  padding: 17.5rem 0 16rem 0;
+  background-color: #F5F5F5; }
+  .section-about-gustablo__picture {
+    height: 68rem;
+    width: 45rem;
+    position: absolute;
+    bottom: 0;
+    left: 36rem;
+    overflow: hidden; }
+    .section-about-gustablo__picture img {
+      width: 100.5%;
+      vertical-align: middle; }
+  .section-about-gustablo__info {
+    float: right;
+    width: 54.5rem; }
+
 .navigation {
   width: 100vw;
   padding: 2.2rem 0;
@@ -869,19 +886,16 @@ p {
 
 .row {
   max-width: 118rem;
+  width: 118rem;
   margin: 0 auto; }
 
-.row-flex {
-  align-items: center;
+.row-space-between {
+  width: 118rem;
   display: flex;
-  justify-content: center;
   justify-content: space-between;
-  width: 118rem; }
+  align-items: center; }
 
 .section-about {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   background-color: #FFFFFF;
   padding: 18rem 0 12rem 0; }
   .section-about__video {
