@@ -9,6 +9,7 @@
 
 @import "pages/home";
 @import "pages/about";
+@import "pages/services";
 
 @import "components/navigation";
 @import "components/button";
@@ -18,10 +19,11 @@
 @import "components/content-box";
 @import "components/event-gallery";
 @import "components/progress";
-@import "components/common-page-header";
+
 @import "components/reservation";
 
 @import "layout/base-layout";
 @import "layout/introduction";
+@import "layout/common-page-header";
 @import "layout/section-subscribe";
 @import "layout/footer";

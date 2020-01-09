@@ -13,7 +13,8 @@
   box-sizing: inherit;
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+  border: 1px solid #12fffc !important; }
 
 html {
   font-size: 62.5%; }
@@ -198,9 +199,6 @@ p {
   .section-why .progress:not(:last-child) {
     margin-bottom: 3rem; }
 
-.common-page-header {
-  background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.55), rgba(253, 65, 0, 0.35)), url(../../img/photos/cover/aboutPage_cover.webp); }
-
 .section-detail {
   background-color: #FFFFFF;
   padding: 13rem 0 17.2rem 0; }
@@ -224,6 +222,23 @@ p {
 
 .section-info-boxes {
   padding: 17.4rem 0 13.5rem 0; }
+
+.section-detail-boxes {
+  padding: 17.4rem 0 13.5rem 0; }
+
+.section-why-choose-us {
+  padding: 8.6rem 0 8.8rem 0;
+  background-color: #F5F5F5; }
+  .section-why-choose-us__picture {
+    height: 38rem;
+    width: 55rem;
+    overflow: hidden; }
+    .section-why-choose-us__picture img {
+      width: 100.5%;
+      vertical-align: middle; }
+  .section-why-choose-us__info {
+    float: right;
+    width: 54.5rem; }
 
 .navigation {
   width: 100vw;
@@ -582,25 +597,6 @@ p {
 .progress__bar--75::after {
   width: 75%; }
 
-.common-page-header {
-  padding: 20.8rem 0 13rem 0;
-  background-position: top;
-  background-attachment: fixed;
-  text-align: center; }
-  .common-page-header__contents {
-    display: inline-block; }
-  .common-page-header__slogan {
-    display: inline-block;
-    margin-top: 1.4rem;
-    font-family: "Lato", sans-serif;
-    font-size: 1.8rem;
-    font-weight: 300;
-    line-height: 1;
-    color: #FFFFFF;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    word-spacing: 3px; }
-
 .reservation__block {
   height: 11.5rem;
   width: 118rem;
@@ -719,6 +715,29 @@ p {
       right: 0;
       top: 50%;
       transform: translateY(-50%); }
+
+.common-page-header {
+  padding: 20.8rem 0 13rem 0;
+  background-position: top;
+  background-attachment: fixed;
+  text-align: center; }
+  .common-page-header--about {
+    background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.65), rgba(253, 65, 0, 0.35)), url(../../img/photos/cover/aboutPage_cover.webp); }
+  .common-page-header--services {
+    background-image: linear-gradient(to bottom, rgba(34, 34, 34, 0.55), rgba(253, 65, 0, 0.35)), url(../../img/photos/cover/servicesPage_cover.webp); }
+  .common-page-header__contents {
+    display: inline-block; }
+  .common-page-header__slogan {
+    display: inline-block;
+    margin-top: 1.4rem;
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    word-spacing: 3px; }
 
 .section-subscribe {
   padding: 6.5rem 0 5rem 0;
