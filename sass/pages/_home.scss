@@ -135,12 +135,7 @@
 
 //--------------- SECTION-CONTENT_BOXES ---------------
 .section-content-boxes {
-    @include flex-row-center;
-    justify-content: space-between;
-    padding-top: 15rem;
-    padding-bottom: 10rem;
-    max-width: $row-content-max-width;
-    margin: 0 auto;
+    padding: 15rem 0 10rem 0;
 }
 
 //--------------- SECTION-EVENTS ---------------

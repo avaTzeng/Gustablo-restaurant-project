@@ -176,14 +176,7 @@ p {
       margin-right: 2rem; }
 
 .section-content-boxes {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  justify-content: space-between;
-  padding-top: 15rem;
-  padding-bottom: 10rem;
-  max-width: 118rem;
-  margin: 0 auto; }
+  padding: 15rem 0 10rem 0; }
 
 .section-events {
   background-color: #F5F5F5;
@@ -459,6 +452,9 @@ p {
   .section-about-gustablo__info {
     float: right;
     width: 54.5rem; }
+
+.section-info-boxes {
+  padding: 17.4rem 0 13.5rem 0; }
 
 .navigation {
   width: 100vw;
