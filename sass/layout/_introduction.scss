@@ -1,3 +1,4 @@
+// 之所以沒有重構成一個 section ui 是因為不同 page 的 section-introduction 會有不同的 padding(樣板很怪)
 .introduction {
 
     &__video {
