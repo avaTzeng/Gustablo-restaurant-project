@@ -19,8 +19,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  height: 5000px; }
+  box-sizing: border-box; }
 
 body {
   color: #999999;
@@ -160,21 +159,6 @@ p {
       transform: translate(-50%, -50%);
       width: 105%; }
 
-.section-pricing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #F5F5F5;
-  padding-top: 10.8rem;
-  padding-bottom: 13.3rem; }
-  .section-pricing__cards {
-    align-items: center;
-    display: flex;
-    justify-content: center; }
-    .section-pricing__cards .pricing-card:not(last-child) {
-      margin-right: 2rem; }
-
 .section-content-boxes {
   padding: 15rem 0 10rem 0; }
 
@@ -203,42 +187,11 @@ p {
   background-color: #FFFFFF;
   padding: 13rem 0 17.2rem 0; }
 
-.section-about-gustablo {
-  padding: 17.5rem 0 16rem 0;
-  background-color: #F5F5F5; }
-  .section-about-gustablo__picture {
-    height: 68rem;
-    width: 45rem;
-    position: absolute;
-    bottom: 0;
-    left: 36rem;
-    overflow: hidden; }
-    .section-about-gustablo__picture img {
-      width: 100.5%;
-      vertical-align: middle; }
-  .section-about-gustablo__info {
-    float: right;
-    width: 54.5rem; }
-
 .section-info-boxes {
   padding: 17.4rem 0 13.5rem 0; }
 
 .section-detail-boxes {
   padding: 17.4rem 0 13.5rem 0; }
-
-.section-why-choose-us {
-  padding: 8.6rem 0 8.8rem 0;
-  background-color: #F5F5F5; }
-  .section-why-choose-us__picture {
-    height: 38rem;
-    width: 55rem;
-    overflow: hidden; }
-    .section-why-choose-us__picture img {
-      width: 100.5%;
-      vertical-align: middle; }
-  .section-why-choose-us__info {
-    float: right;
-    width: 54.5rem; }
 
 .section-description-boxes {
   background-color: #FFFFFF;
@@ -717,6 +670,10 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  .container--dark {
+    background-color: #F5F5F5; }
+  .container--light {
+    background-color: #FFFFFF; }
 
 .row {
   max-width: 118rem;
@@ -1038,3 +995,34 @@ p {
 
 .section-customer-reviews {
   padding: 11.5rem 0 11.6rem 0; }
+
+.section-pricing {
+  background-color: #F5F5F5;
+  padding-top: 10.8rem;
+  padding-bottom: 13.3rem; }
+  .section-pricing__cards {
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    .section-pricing__cards .pricing-card:not(last-child) {
+      margin-right: 2rem; }
+
+.section-about {
+  padding: 8.6rem 0 8.8rem 0;
+  text-align: center; }
+  .section-about__picture {
+    overflow: hidden; }
+    .section-about__picture--small {
+      height: 38rem;
+      width: 55rem; }
+    .section-about__picture--big {
+      height: 46.8rem;
+      width: 55rem; }
+    .section-about__picture img {
+      width: 100.5%;
+      vertical-align: middle; }
+  .section-about__info {
+    float: right;
+    width: 54.5rem; }
+  .section-about__extra-content {
+    margin-top: 3.5rem; }

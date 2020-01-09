@@ -1,0 +1,14 @@
+.section-pricing {
+    background-color: $color-grey-light-1;
+    padding-top: $padding-section-top;
+    padding-bottom: 13.3rem;
+
+    &__cards {
+        @include flex-row-center;
+
+        .pricing-card:not(last-child) {
+            margin-right: 2rem;
+        }
+
+    }
+}

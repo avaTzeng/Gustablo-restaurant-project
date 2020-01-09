@@ -1,0 +1,30 @@
+.section-about {
+    padding: 8.6rem 0 8.8rem 0;
+    text-align: center;
+
+    &__picture {
+        overflow: hidden;
+
+        &--small {
+            @include size(55rem,38rem);
+        }
+
+        &--big {
+            @include size(55rem,46.8rem);
+        }
+
+        img {
+            width: 100.5%;
+            vertical-align: middle;
+        }
+    }
+
+    &__info {
+        float: right;
+        width: 54.5rem;
+    }
+
+    &__extra-content {
+        margin-top: 3.5rem;
+    }
+}
