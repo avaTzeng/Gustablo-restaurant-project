@@ -1,0 +1,72 @@
+.customer-review-box {
+    width: 37rem;
+    border: 2px solid $color-grey-light-2;
+
+    &__border-mask {
+        @include size(11.2rem, 11.2rem);
+        border: 1rem solid $color-white;
+
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+
+    &__icon {
+        @include size(100%, 100%);
+        background-color: $color-white;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            @include abs-center;
+            @include size(100%, 100%);
+        }
+    }
+
+    &__contents {
+        @include flex-column-center;
+        margin: 5.8rem 0 4.2rem 0;
+    }
+
+    &__star-list {
+        @include flex-row-center;
+        margin-bottom: 1rem;
+        list-style: none;
+        line-height: 1;
+
+        &-item {
+
+            svg {
+                @include size(1.7rem, 1.7rem);
+                vertical-align: middle;
+                fill: #f9ab04;
+            }
+        }
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        width: 30rem;
+        margin-bottom: 1.8rem;
+    }
+
+    &__username {
+        font-family: $font-family-1;
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: $color-primary;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 1rem;
+    }
+
+    &__company {
+        font-family: $font-family-2;
+        font-size: 1.6rem;
+        color: $color-grey-light-3;
+        line-height: 1;
+    }
+}
