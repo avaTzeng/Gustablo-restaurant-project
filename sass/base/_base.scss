@@ -20,3 +20,17 @@ body {
     // DEBUG
     // height: 5000px;
 }
+
+section:nth-child(even) {
+    background-color: $color-grey-light-1;
+}
+
+section:nth-child(odd) {
+    background-color: $color-white;
+}
+
+section:last-child {
+    background-color: $color-primary;
+}
+
+
