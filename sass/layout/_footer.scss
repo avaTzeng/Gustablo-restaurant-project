@@ -94,6 +94,7 @@
 
     &__recent-post {
         @include flex-row-center;
+        text-decoration: none;
 
         &-img {
             @include size(6.7rem, 6.7rem);
@@ -126,6 +127,7 @@
         }   
 
         &-date {
+            color: $color-grey-light-4;
             font-size: 1.4rem;
         }
     }
@@ -142,8 +144,17 @@
 
         &-item {
             overflow: hidden;
+
+            &:hover {
+                img {
+                    width: 110%;
+                }
+            }
+
             img {
+                @include abs-center;
                 width: 100%;
+                transition: .15s;
             }
         }
     }
@@ -161,10 +172,7 @@
         &::placeholder {
             color: $color-grey-light-4;
         }
-
-        &--message {
-            height: 7.2rem;
-        }
+        
     }
 
     textarea {

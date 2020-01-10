@@ -1034,7 +1034,8 @@ textarea {
   .footer__recent-post {
     align-items: center;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    text-decoration: none; }
     .footer__recent-post-img {
       height: 6.7rem;
       width: 6.7rem;
@@ -1058,6 +1059,7 @@ textarea {
       text-transform: uppercase;
       color: #FFFFFF; }
     .footer__recent-post-date {
+      color: #7C7C7C;
       font-size: 1.4rem; }
   .footer__photo-grid {
     width: 100%;
@@ -1070,8 +1072,15 @@ textarea {
     grid-gap: 1rem; }
     .footer__photo-grid-item {
       overflow: hidden; }
+      .footer__photo-grid-item:hover img {
+        width: 110%; }
       .footer__photo-grid-item img {
-        width: 100%; }
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        transition: .15s; }
   .footer input {
     font-family: "Lato", sans-serif;
     width: 100%;
@@ -1083,8 +1092,6 @@ textarea {
     font-size: 1.4rem; }
     .footer input::placeholder {
       color: #7C7C7C; }
-    .footer input--message {
-      height: 7.2rem; }
   .footer textarea {
     width: 100%;
     padding: 1rem 0 3rem 1.8rem;
