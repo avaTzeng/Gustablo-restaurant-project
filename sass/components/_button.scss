@@ -29,10 +29,6 @@
         padding: 1.2rem 6.8rem;
     }
 
-    // &--medium {
-    //     padding: .5rem 2rem;
-    // }
-
     &--md {
         @include size(27rem, 5.2rem);
     }
@@ -48,51 +44,59 @@
 
 
     // ---- Style ----
-    &--transparent-light-txt {
+    &--transparent-light-txt,
+    &--transparent-light-txt:link,
+    &--transparent-light-txt:visited {
         background-color: transparent;
-        border: 2px solid $color-white;
+        border: 1px solid $color-white;
         color: $color-white;
         letter-spacing: 0px;
-
-        &:hover {
-            background-color: $color-primary;
-            border: 2px solid $color-primary;
-            letter-spacing: 2px;
-        }
     }
 
-    &--transparent-dark-txt {
+    &--transparent-light-txt:hover {
+        background-color: $color-primary;
+        border: 1px solid $color-primary;
+        letter-spacing: 2px;
+    }
+
+    &--transparent-dark-txt,
+    &--transparent-dark-txt:link,
+    &--transparent-dark-txt:visited {
         color: $color-grey-light-3;
         background-color: transparent;
-        border: 2px solid $color-grey-light-2;
+        border: 1px solid $color-grey-light-2;
         letter-spacing: 0px;
-
-        &:hover {
-            color: $color-white;
-            background-color: $color-primary;
-            border: 2px solid $color-primary;
-            letter-spacing: 2px;
-        }
     }
 
-    &--primary-solid {
+    &--transparent-dark-txt:hover {
+        color: $color-white;
+        background-color: $color-primary;
+        border: 1px solid $color-primary;
+        letter-spacing: 2px;
+    }
+
+    &--primary-solid,
+    &--primary-solid:link,
+    &--primary-solid:visited {
         color: $color-white;
         background-color: $color-primary;
         letter-spacing: 0px;
-
-        &:hover {
-            letter-spacing: 2px;
-        }
     }
 
-    &--secondary {
+    &--primary-solid:hover {
+        letter-spacing: 2px;
+    }
+
+    &--secondary,
+    &--secondary:link,
+    &--secondary:visited {
         color: $color-white;
         background-color: $color-grey-light-3;
         letter-spacing: 0px;
+    }
 
-        &:hover {
-            letter-spacing: 2px;
-        }
+    &--secondary:hover {
+        letter-spacing: 2px;
     }
 
     // ---- 動畫 ----

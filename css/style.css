@@ -435,40 +435,44 @@ textarea {
 .btn--small {
   padding: 1rem 2.4rem; }
 
-.btn--transparent-light-txt {
+.btn--transparent-light-txt, .btn--transparent-light-txt:link, .btn--transparent-light-txt:visited {
   background-color: transparent;
-  border: 2px solid #FFFFFF;
+  border: 1px solid #FFFFFF;
   color: #FFFFFF;
   letter-spacing: 0px; }
-  .btn--transparent-light-txt:hover {
-    background-color: #FD4100;
-    border: 2px solid #FD4100;
-    letter-spacing: 2px; }
 
-.btn--transparent-dark-txt {
+.btn--transparent-light-txt:hover {
+  background-color: #FD4100;
+  border: 1px solid #FD4100;
+  letter-spacing: 2px; }
+
+.btn--transparent-dark-txt, .btn--transparent-dark-txt:link, .btn--transparent-dark-txt:visited {
   color: #999999;
   background-color: transparent;
-  border: 2px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
   letter-spacing: 0px; }
-  .btn--transparent-dark-txt:hover {
-    color: #FFFFFF;
-    background-color: #FD4100;
-    border: 2px solid #FD4100;
-    letter-spacing: 2px; }
 
-.btn--primary-solid {
+.btn--transparent-dark-txt:hover {
+  color: #FFFFFF;
+  background-color: #FD4100;
+  border: 1px solid #FD4100;
+  letter-spacing: 2px; }
+
+.btn--primary-solid, .btn--primary-solid:link, .btn--primary-solid:visited {
   color: #FFFFFF;
   background-color: #FD4100;
   letter-spacing: 0px; }
-  .btn--primary-solid:hover {
-    letter-spacing: 2px; }
 
-.btn--secondary {
+.btn--primary-solid:hover {
+  letter-spacing: 2px; }
+
+.btn--secondary, .btn--secondary:link, .btn--secondary:visited {
   color: #FFFFFF;
   background-color: #999999;
   letter-spacing: 0px; }
-  .btn--secondary:hover {
-    letter-spacing: 2px; }
+
+.btn--secondary:hover {
+  letter-spacing: 2px; }
 
 .title-divider {
   display: flex;
