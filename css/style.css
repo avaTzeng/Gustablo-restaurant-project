@@ -391,7 +391,8 @@ textarea {
     transition: all .3s; }
   .navigation__logo {
     align-items: center;
-    display: flex; }
+    display: flex;
+    text-decoration: none; }
     .navigation__logo img {
       width: 4rem; }
     .navigation__logo span {
