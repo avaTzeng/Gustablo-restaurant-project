@@ -70,7 +70,7 @@ textarea {
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  height: 90vh; }
+  height: 100vh; }
   .home-header__content {
     position: absolute;
     top: 50%;
@@ -843,7 +843,8 @@ textarea {
 .introduction__video {
   height: 37rem; }
   .introduction__video video {
-    height: 100%; }
+    height: 100%;
+    outline: none; }
 
 .introduction__info {
   display: flex;

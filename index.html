@@ -8,16 +8,12 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/parsley.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
         <link rel="icon" href="myIcon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="myIcon.ico" type="image/x-icon">
 
         <script src="https://kit.fontawesome.com/429f76e186.js" crossorigin="anonymous"></script>
         <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
-        <!-- <script src="node_modules/parsleyjs/dist/parsley.min.js" charset="utf-8"></script> -->
-        <!-- <script src="node_modules/parsleyjs/dist/i18n/zh_tw.js" charset="utf-8"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
         <script src="javascript/main.js"></script>
 
@@ -43,23 +39,23 @@
             </div>
         </div>
 
-        <header class="home-header" data-0="filter: brightness(100%);" data-200="filter: brightness(100%);">
+        <header class="home-header" data-start="filter: brightness(100%);" data-top-bottom="filter: brightness(50%);">
             <div class="home-header__content">
                 <h1>
-                    <span class="home-header__subtitle" data-0="transform: translateX(0rem) rotateZ(0deg); opacity: 1;" data-200="transform: translateX(-100rem) rotateZ(-10deg); opacity: 0;">
+                    <span class="home-header__subtitle" data-start="transform: translateX(0rem);" data--500-top="transform: translateX(-100rem);">
                         Hello, Are You Ready To Start Right Now ?
                     </span>
-                    <span class="home-header__title" data-20="transform: translateX(0rem) rotateZ(0deg); opacity: 1;" data-220="transform: translateX(-100rem) rotateZ(-10deg); opacity: 0;">
+                    <span class="home-header__title" data-start="transform: translateX(0rem);" data--1000-top="transform: translateX(-100rem);">
                         Delicate & Gustable
                     </span>
                 </h1>
-                <a href="#" class="btn btn--big btn--transparent-light-txt" data-0="opacity: 1; visibility: visible;" data-200="opacity: 0;  visibility: hidden;">Discover Menu</a>     
+                <a href="#" class="btn btn--big btn--transparent-light-txt" data-start="visibility: visible;" data--800-top="visibility: hidden;">Discover Menu</a>     
             </div>
         </header>
 
         <main>
             <section class="section-intro container">
-                <div class="reservation__block">
+                <!-- <div class="reservation__block">
                     <div class="reservation__box">
                         <span>Time</span>
                         <svg><use xlink:href="img/sprites_icon.svg#icon-clock1"></use></svg>
@@ -78,7 +74,7 @@
                     <span class="reservation__btn">
                         <a href="#">Book a table</a>
                     </span>
-                </div>
+                </div> -->
                 <div class="row-space-between">
                     <div class="introduction__info">
                         <ul class="introduction__list">
@@ -473,17 +469,6 @@
                             </div>
                         </div>
                     </div>
-    
-                    <!-- <div class="footer__block">
-                        <span class="footer__sub-title">Contact</span>
-                        <form class="footer__sub-block" data-parsley-validate>
-                            <input type="text" name="username" placeholder="Name" required>
-                            <input type="email" name="email" placeholder="Email" data-parsley-trigger="blur" required>
-                            <textarea name="footermessage" placeholder="Message" required></textarea>
-                            <button class="footer__send-btn">Send</button>
-                        </form>
-                    </div> -->
-
                     <div class="footer__block">
                         <span class="footer__sub-title">Contact</span>
                         <form class="footer__sub-block">
