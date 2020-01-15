@@ -953,6 +953,9 @@ textarea {
     font-size: 1.3rem; }
     .section-subscribe__input:focus {
       outline: none; }
+    .section-subscribe__input:-webkit-autofill, .section-subscribe__input:-webkit-autofill:hover, .section-subscribe__input:-webkit-autofill:focus, .section-subscribe__input:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px #FD4100 inset;
+      -webkit-text-fill-color: #FFFFFF; }
 
 .footer {
   background-color: #333333;
@@ -1092,9 +1095,15 @@ textarea {
     font-size: 1.4rem; }
     .footer input::placeholder {
       color: #7C7C7C; }
+  .footer input:-webkit-autofill,
+  .footer input:-webkit-autofill:hover,
+  .footer input:-webkit-autofill:focus,
+  .footer input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #333333 inset;
+    -webkit-text-fill-color: #FFFFFF; }
   .footer textarea {
     width: 100%;
-    padding: 1rem 0 3rem 1.8rem;
+    padding: 1rem 1.8rem 3rem 1.8rem;
     background-color: transparent;
     outline: none;
     font-family: "Lato", sans-serif;

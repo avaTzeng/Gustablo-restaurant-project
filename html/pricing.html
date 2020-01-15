@@ -11,6 +11,7 @@
 
     <script src="https://kit.fontawesome.com/429f76e186.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+    <!-- <script src="/javascript/i18n/zh_tw.js"></script> -->
     <script src="/javascript/main.js"></script>
 
     <title>Gustablo | Listen to your palate</title>
@@ -163,7 +164,7 @@
             </div>
         </section>
         <section class="section-subscribe">
-            <div class="section-subscribe__block">
+            <form class="section-subscribe__block">
                 <div class="section-subscribe__content">
                     <span class="section-subscribe__title">Subscribe Newsletter</span>
                     <button>
@@ -172,8 +173,8 @@
                         </svg>
                     </button>
                 </div>
-                <input type="email" name="emailaddress" class="section-subscribe__input">
-            </div> 
+                <input type="email" name="emailaddress" class="section-subscribe__input" required>
+            </form>
         </section>
     </main>
     <footer class="footer">
@@ -275,12 +276,12 @@
 
                 <div class="footer__block">
                     <span class="footer__sub-title">Contact</span>
-                    <div class="footer__sub-block">
-                        <input type="text" name="username" placeholder="Name">
-                        <input type="email" name="email" placeholder="Email">
-                        <textarea name="footermessage" id="footerMessage"  placeholder="Message"></textarea>
+                    <form class="footer__sub-block">
+                        <input type="text" name="username" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="footermessage" placeholder="Message" required></textarea>
                         <button class="footer__send-btn">Send</button>
-                    </div>
+                    </form>
                 </div>
 
             </div>

@@ -8,9 +8,13 @@
 
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/parsley.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
         <script src="https://kit.fontawesome.com/429f76e186.js" crossorigin="anonymous"></script>
+        <!-- <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+        <script src="node_modules/parsleyjs/dist/parsley.min.js" charset="utf-8"></script>
+        <script src="node_modules/parsleyjs/dist/i18n/zh_tw.js" charset="utf-8"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
         <script src="javascript/main.js"></script>
 
@@ -357,7 +361,7 @@
                 </div>
             </section>
             <section class="section-subscribe">
-                <div class="section-subscribe__block">
+                <form class="section-subscribe__block">
                     <div class="section-subscribe__content">
                         <span class="section-subscribe__title">Subscribe Newsletter</span>
                         <button>
@@ -366,8 +370,8 @@
                             </svg>
                         </button>
                     </div>
-                    <input type="email" name="emailaddress" class="section-subscribe__input">
-                </div> 
+                    <input type="email" name="emailaddress" class="section-subscribe__input" required>
+                </form> 
             </section>
         </main>
         <footer class="footer">
@@ -467,14 +471,24 @@
                         </div>
                     </div>
     
+                    <!-- <div class="footer__block">
+                        <span class="footer__sub-title">Contact</span>
+                        <form class="footer__sub-block" data-parsley-validate>
+                            <input type="text" name="username" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" data-parsley-trigger="blur" required>
+                            <textarea name="footermessage" placeholder="Message" required></textarea>
+                            <button class="footer__send-btn">Send</button>
+                        </form>
+                    </div> -->
+
                     <div class="footer__block">
                         <span class="footer__sub-title">Contact</span>
-                        <div class="footer__sub-block">
-                            <input type="text" name="username" placeholder="Name">
-                            <input type="email" name="email" placeholder="Email">
-                            <textarea name="footermessage" id="footerMessage"  placeholder="Message"></textarea>
+                        <form class="footer__sub-block">
+                            <input type="text" name="username" placeholder="Name" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <textarea name="footermessage" placeholder="Message" required></textarea>
                             <button class="footer__send-btn">Send</button>
-                        </div>
+                        </form>
                     </div>
     
                 </div>

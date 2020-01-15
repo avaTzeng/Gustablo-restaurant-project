@@ -29,7 +29,7 @@
                     <li class="navigation__item"><a class="navigation__link" href="/html/about.html">About</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="/html/services.html">Services</a></li>
                     <li class="navigation__item"><a class="navigation__link" href="/html/pricing.html">Pricing</a></li>
-                    <li class="navigation__item"><a class="navigation__link" href="/html/contacts.html">Contacts</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="/htmlcontacts.html">Contacts</a></li>
                 </ul>
             </nav>
         </div>
@@ -120,7 +120,7 @@
             </div>
         </section>
         <section class="section-subscribe">
-            <div class="section-subscribe__block">
+            <form class="section-subscribe__block">
                 <div class="section-subscribe__content">
                     <span class="section-subscribe__title">Subscribe Newsletter</span>
                     <button>
@@ -129,8 +129,8 @@
                         </svg>
                     </button>
                 </div>
-                <input type="email" name="emailaddress" class="section-subscribe__input">
-            </div> 
+                <input type="email" name="emailaddress" class="section-subscribe__input" required>
+            </form>
         </section>
     </main>
     <footer class="footer">
@@ -232,12 +232,12 @@
 
                 <div class="footer__block">
                     <span class="footer__sub-title">Contact</span>
-                    <div class="footer__sub-block">
-                        <input type="text" name="username" placeholder="Name">
-                        <input type="email" name="email" placeholder="Email">
-                        <textarea name="footermessage" id="footerMessage"  placeholder="Message"></textarea>
+                    <form class="footer__sub-block">
+                        <input type="text" name="username" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="footermessage" placeholder="Message" required></textarea>
                         <button class="footer__send-btn">Send</button>
-                    </div>
+                    </form>
                 </div>
 
             </div>

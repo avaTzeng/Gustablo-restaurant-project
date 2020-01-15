@@ -172,12 +172,19 @@
         &::placeholder {
             color: $color-grey-light-4;
         }
-        
     }
+
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active  {
+        -webkit-box-shadow: 0 0 0 30px $color-grey-dark-1 inset;
+        -webkit-text-fill-color: $color-white;
+    } 
 
     textarea {
         width: 100%;
-        padding: 1rem 0 3rem 1.8rem;
+        padding: 1rem 1.8rem 3rem 1.8rem;
         background-color: transparent;
         outline: none;
         font-family: $font-family-2;
