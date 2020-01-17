@@ -1,6 +1,9 @@
 const globalReset = true;
 const delayBase = 100;
-const delayStep = 40;
+const delayStep = {
+    mov: 40,
+    fade: 140
+}
 
 export default {
 //------------------ UPWARD ------------------
@@ -12,42 +15,42 @@ export default {
         easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
     },
     'UPWARD_DELAY_SHORTEST': {
-        delay: delayBase + delayStep * 1,
+        delay: delayBase + delayStep.mov * 1,
         distance: '3rem',
         origin: 'bottom',
         reset: globalReset,
         easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
     },
     'UPWARD_DELAY_SHORTER': {
-        delay: delayBase + delayStep * 2,
+        delay: delayBase + delayStep.mov * 2,
         distance: '3rem',
         origin: 'bottom',
         reset: globalReset,
         easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
     },
     'UPWARD_DELAY_SHORT': {
-        delay: delayBase + delayStep * 3,
+        delay: delayBase + delayStep.mov * 3,
         distance: '3rem',
         origin: 'bottom',
         reset: globalReset,
         easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
     },
     'UPWARD_DELAY_LONG': {
-        delay: delayBase + delayStep * 4,
+        delay: delayBase + delayStep.mov * 4,
         distance: '3rem',
         origin: 'bottom',
         reset: globalReset,
         easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
     },
     'UPWARD_DELAY_LONGER': {
-        delay: delayBase + delayStep * 5,
+        delay: delayBase + delayStep.mov * 5,
         distance: '3rem',
         origin: 'bottom',
         reset: globalReset,
         easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
     },
     'UPWARD_DELAY_LONGEST': {
-        delay: delayBase + delayStep * 6,
+        delay: delayBase + delayStep.mov * 6,
         distance: '3rem',
         origin: 'bottom',
         reset: globalReset,
@@ -75,5 +78,21 @@ export default {
         origin: 'left',
         reset: globalReset,
         easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
+    },
+//------------------ FADEWARD ------------------
+    'FADE_NORMAL': {
+        delay: delayBase,
+        opacity: 0,
+        reset: globalReset
+    },
+    'FADE_DELAY_SHORTEST': {
+        delay: delayBase + delayStep.fade * 1,
+        opacity: 0,
+        reset: globalReset
+    },
+    'FADE_DELAY_SHORTER': {
+        delay: delayBase + delayStep.fade * 2,
+        opacity: 0,
+        reset: globalReset
     }
 }

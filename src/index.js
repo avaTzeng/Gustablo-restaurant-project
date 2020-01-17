@@ -36,4 +36,13 @@ function setUpScrollRevealAnim() {
             console.log('Error:', `${scrollRevealConfig[prop]} 中並沒有 scrollrevealViews 的 ${prop} 設定資料`);
         }
     }
+
+    // const temp = $('.section-team__photo');
+    // console.log(temp);
+    // for(let el of temp) {
+        // ScrollReveal().reveal('.section-team__photo');
+        // ScrollReveal().reveal('.section-team__photo');
+    // }
+
+    
 }
