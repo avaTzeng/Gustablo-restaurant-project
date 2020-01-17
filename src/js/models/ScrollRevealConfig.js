@@ -79,6 +79,20 @@ export default {
         reset: globalReset,
         easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
     },
+    'RIGHTWARD_DELAY_SHORTEST': {
+        delay: delayBase + delayStep.mov * 1,
+        distance: '3rem',
+        origin: 'left',
+        reset: globalReset,
+        easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
+    },
+    'RIGHTWARD_DELAY_SHORTER': {
+        delay: delayBase + delayStep.mov * 2,
+        distance: '3rem',
+        origin: 'left',
+        reset: globalReset,
+        easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
+    },
 //------------------ FADEWARD ------------------
     'FADE_NORMAL': {
         delay: delayBase,
