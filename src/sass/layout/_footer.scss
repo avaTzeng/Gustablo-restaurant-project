@@ -147,14 +147,14 @@
 
             &:hover {
                 img {
-                    width: 110%;
+                    width: 100%;
                 }
             }
 
             img {
                 @include abs-center;
-                width: 100%;
-                transition: .15s;
+                width: 108%;
+                transition: .25s;
             }
         }
     }
