@@ -1,22 +1,22 @@
 import $ from 'jquery';
 
 // delay length => shortest -> shorter -> short -> long -> longer -> longest
-export const upwardElements = {
-    normal: null,
-    delayShortest: null,
-    delayShorter: null,
-    delayShort: null,
-    delayLong: null,
-    delayLonger: null,
-    delayLongest: null
+export const elements = {
+    'UPWARD_NORMAL': null,
+    'UPWARD_DELAY_SHORTEST': null,
+    'UPWARD_DELAY_SHORTER': null,
+    'UPWARD_DELAY_SHORT': null,
+    'UPWARD_DELAY_LONG': null,
+    'UPWARD_DELAY_LONGER': null,
+    'UPWARD_DELAY_LONGEST': null,
 }
 
 $(function() {
-    upwardElements.normal = $('.scrollreveal-upward-normal');
-    upwardElements.delayShortest = $('.scrollreveal-upward-delay-shortest');
-    upwardElements.delayShorter = $('.scrollreveal-upward-delay-shorter');
-    upwardElements.delayShort = $('.scrollreveal-upward-delay-short');
-    upwardElements.delayLong = $('.scrollreveal-upward-delay-long');
-    upwardElements.delayLonger = $('.scrollreveal-upward-delay-longer');
-    upwardElements.delayLongest = $('.scrollreveal-upward-delay-longest');
+    elements.UPWARD_NORMAL = $('.scrollreveal-upward-normal');
+    elements.UPWARD_DELAY_SHORTEST = $('.scrollreveal-upward-delay-shortest');
+    elements.UPWARD_DELAY_SHORTER = $('.scrollreveal-upward-delay-shorter');
+    elements.UPWARD_DELAY_SHORT = $('.scrollreveal-upward-delay-short');
+    elements.UPWARD_DELAY_LONG = $('.scrollreveal-upward-delay-long');
+    elements.UPWARD_DELAY_LONGER = $('.scrollreveal-upward-delay-longer');
+    elements.UPWARD_DELAY_LONGEST = $('.scrollreveal-upward-delay-longest');
 });
