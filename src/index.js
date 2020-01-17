@@ -1,7 +1,6 @@
 import "./sass/main.scss";
 
 import ScrollReveal from 'scrollreveal';
-import animate from 'animate.css';
 import $ from "jquery";
 
 // import VIEWS
