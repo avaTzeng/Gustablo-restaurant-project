@@ -1,21 +1,31 @@
 import "./sass/main.scss";
-// import { elements } from './views/base.js';
-// import ScrollRevealConfig from './configs/scrollRevealConfig.js';
-// import ScrollReveal from 'scrollreveal';
 
-$(function() {
-    var s = skrollr.init({
-        render: function(data) {
-            console.log(data.curTop);
-        }
-    });
+import ScrollReveal from 'scrollreveal';
+import $ from "jquery";
 
-    // setUpScrollRevealAnim();
+import { elements } from './js/views/base';
+import ScrollRevealConfig from './js/configs/scrollRevealConfig';
+
+window.addEventListener('load', () => {
 
 });
 
+$(function() {
+    console.log('Hey');
+    var s = skrollr.init({
+        render: function(data) {
+            // console.log(data.curTop);
+        }
+    });
 
-// function setUpScrollRevealAnim() {
-//     // elements.titleDivider
-//     ScrollReveal().reveal(elements.titleDivider, ScrollRevealConfig.CONTENT_UPWARD);
-// }
+    setUpScrollRevealAnim();
+});
+
+
+function setUpScrollRevealAnim() {
+
+    for(let titleDivider of elements.titleDividers) {
+        ScrollReveal().reveal(titleDivider, ScrollRevealConfig.CONTENT_UPWARD);
+    }
+    
+}

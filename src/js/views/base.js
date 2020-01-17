@@ -1,3 +1,9 @@
+import $ from "jquery";
+
 export const elements = {
-    titleDivider: $('.title-divider')
+    titleDividers: null
 };
+
+$(function() {
+    elements.titleDividers = $('.title-divider');
+});

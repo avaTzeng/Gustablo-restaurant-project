@@ -7,9 +7,9 @@
   "author": "Ava",
   "license": "ISC",
   "scripts": {
-    "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
