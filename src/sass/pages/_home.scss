@@ -109,10 +109,18 @@
         justify-self: stretch;
         height: 34.8rem;
         overflow: hidden;
+        
 
         img {
             @include abs-center;
-            width: 105%;
+            width: 112%;
+            transition: .35s;
+        }
+
+        &:hover {
+            img {
+                width: 105%;
+            }
         }
     } 
 }
