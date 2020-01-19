@@ -13,6 +13,10 @@ export const elements = {
     'FADE_NORMAL': null,
     'FADE_DELAY_SHORTEST': null,
     'FADE_DELAY_SHORTER': null,
+    'FADE_DELAY_SHORT': null,
+    'FADE_DELAY_LONG': null,
+    'FADE_DELAY_LONGER': null,
+    'FADE_DELAY_LONGEST': null,
 
     'RIGHTWARD_NORMAL': null,
     'RIGHTWARD_DELAY_SHORTEST': null,
@@ -39,6 +43,10 @@ $(function() {
     elements.FADE_NORMAL = $('.scrollreveal-fade-normal');
     elements.FADE_DELAY_SHORTEST = $('.scrollreveal-fade-shortest');
     elements.FADE_DELAY_SHORTER = $('.scrollreveal-fade-shorter');
+    elements.FADE_DELAY_SHORT = $('.scrollreveal-fade-short');
+    elements.FADE_DELAY_LONG = $('.scrollreveal-fade-long');
+    elements.FADE_DELAY_LONGER = $('.scrollreveal-fade-longer');
+    elements.FADE_DELAY_LONGEST = $('.scrollreveal-fade-longest');
 
     elements.RIGHTWARD_NORMAL = $('.scrollreveal-rightward-normal');
     elements.RIGHTWARD_DELAY_SHORTEST = $('.scrollreveal-rightward-shortest');

@@ -1,7 +1,7 @@
 const globalReset = true;
 const delayBase = 100; 
 const delayStep = {
-    mov: 60, // 原本是 40
+    mov: 40,
     fade: 140
 }
 
@@ -147,6 +147,26 @@ export default {
     },
     'FADE_DELAY_SHORTER': {
         delay: delayBase + delayStep.fade * 2,
+        opacity: 0,
+        reset: globalReset
+    },
+    'FADE_DELAY_SHORT': {
+        delay: delayBase + delayStep.fade * 3,
+        opacity: 0,
+        reset: globalReset
+    },
+    'FADE_DELAY_LONG': {
+        delay: delayBase + delayStep.fade * 4,
+        opacity: 0,
+        reset: globalReset
+    },
+    'FADE_DELAY_LONGER': {
+        delay: delayBase + delayStep.fade * 5,
+        opacity: 0,
+        reset: globalReset
+    },
+    'FADE_DELAY_LONGEST': {
+        delay: delayBase + delayStep.fade * 6,
         opacity: 0,
         reset: globalReset
     }
