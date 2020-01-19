@@ -91,6 +91,27 @@ export default {
         reset: globalReset,
         easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
     },
+    'LEFTWARD_DELAY_LONG': {
+        delay: delayBase + delayStep.mov * 4,
+        distance: movOffset.leftWard,
+        origin: 'right',
+        reset: globalReset,
+        easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
+    },
+    'LEFTWARD_DELAY_LONGER': {
+        delay: delayBase + delayStep.mov * 5,
+        distance: movOffset.leftWard,
+        origin: 'right',
+        reset: globalReset,
+        easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
+    },
+    'LEFTWARD_DELAY_LONGEST': {
+        delay: delayBase + delayStep.mov * 6,
+        distance: movOffset.leftWard,
+        origin: 'right',
+        reset: globalReset,
+        easing: 'cubic-bezier(0.23, 1, 0.32, 1)'
+    },
 //------------------ RIGHTWARD ------------------
     'RIGHTWARD_NORMAL': {
         delay: delayBase,

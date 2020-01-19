@@ -20,7 +20,11 @@ export const elements = {
 
     'LEFTWARD_NORMAL': null,
     'LEFTWARD_DELAY_SHORTEST': null,
-    'LEFTWARD_DELAY_SHORTER': null
+    'LEFTWARD_DELAY_SHORTER': null,
+    'LEFTWARD_DELAY_LONG': null,
+    'LEFTWARD_DELAY_LONGER': null,
+    'LEFTWARD_DELAY_LONGEST': null
+
 }
 
 $(function() {
@@ -43,5 +47,9 @@ $(function() {
     elements.LEFTWARD_NORMAL = $('.scrollreveal-leftward-normal');
     elements.LEFTWARD_DELAY_SHORTEST = $('.scrollreveal-leftward-shortest');
     elements.LEFTWARD_DELAY_SHORTER = $('.scrollreveal-leftward-shorter');
+    elements.LEFTWARD_DELAY_LONG = $('.scrollreveal-leftward-long');
+    elements.LEFTWARD_DELAY_LONGER = $('.scrollreveal-leftward-longer');
+    elements.LEFTWARD_DELAY_LONGEST = $('.scrollreveal-leftward-longest');
+                                        
     
 });
