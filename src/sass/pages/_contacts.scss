@@ -65,6 +65,14 @@
         color: $color-grey-light-3;
     }
 
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 30px $color-grey-light-1 inset !important;
+        -webkit-text-fill-color: $color-black !important;
+    }
+
     textarea {
         border: none;
         padding: 2rem 0 0 2.8rem;
