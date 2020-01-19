@@ -1,7 +1,7 @@
 const globalReset = true;
-const delayBase = 100;
+const delayBase = 100; 
 const delayStep = {
-    mov: 40,
+    mov: 60, // 原本是 40
     fade: 140
 }
 
