@@ -1,33 +1,34 @@
 import "./sass/main.scss";
-
 import ScrollReveal from 'scrollreveal';
 import $ from "jquery";
 
-// import VIEWS
-// import { elements } from './js/views/base';
+// VIEWS
+import { elements } from './js/views/base';
 import * as scrollrevealViews from './js/views/scrollRevealViews';
+import * as introductionView from './js/views/introductionView';
 
-// import MODELS
+// MODELS
 import scrollRevealConfig from './js/models/ScrollRevealConfig';
-
-window.addEventListener('load', () => {
-
-});
+import Introduction from './js/models/Introduction';
 
 $(function() {
-    var s = skrollr.init({
-        render: function(data) {
-            // console.log(data.curTop);
-        }
-    });
+    var s = skrollr.init();
 
+    for(let el of elements.introductionBtns) {
+        const dataType = $(el).data('type');
+        const data = Introduction[dataType];
+        $(el).click(() => {
+            introductionView.switchContent(dataType, data);
+        });
+    }
+
+    introductionView.switchContent('history', Introduction['history']);
+    
     setUpScrollRevealAnim();
 });
 
 
-// Register all the elements that require scroll reveal animation
 function setUpScrollRevealAnim() {
-
     for(let prop in scrollrevealViews.elements) {
         const el = scrollrevealViews.elements[prop];
         if(scrollRevealConfig[prop]) {
