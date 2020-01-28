@@ -13,10 +13,12 @@
         margin-right: 5rem;
 
         &--small {
+            // width: 48%;
             @include size(48%,38rem);
         }
 
         &--big {
+            // width: 48%;
             @include size(48%,46.8rem);
         }
 
@@ -29,11 +31,14 @@
 
     &__info {
         flex: 1;
-        // float: right;
-        // width: 54.5rem;
     }
 
     &__extra-content {
         margin-top: 3.5rem;
+        
+        @include respond(tab-land) {
+            width: 12rem;
+            margin-top: 3rem;
+        }
     }
 }
