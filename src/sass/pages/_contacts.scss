@@ -1,5 +1,6 @@
 //--------------- SECTION-CONTACTS ---------------
 .section-formal-contacts {
+    @include center-row;
     padding: 12rem 0 11.5rem 0;
 
     &__contents {

@@ -4,5 +4,7 @@
 }
 //--------------- SECTION-INFO-BOXES ---------------
 .section-info-boxes {
+    @include flex-row-space-between;
+    @include center-row;
     padding: 17.4rem 0 13.5rem 0;
 }

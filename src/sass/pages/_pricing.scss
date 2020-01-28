@@ -1,4 +1,6 @@
 //--------------- SECTION-DESCRIPTION-BOXES ---------------
 .section-description-boxes {
+    @include flex-row-space-between;
+    @include center-row;
     padding: 13.9rem 0 9.4rem 0;
 }
