@@ -5,6 +5,17 @@
     transform: translate(-50%,-50%);
 }
 
+@mixin center-row {
+    max-width: $row-content-max-width;
+    margin: 0 auto;
+    // border: 1px solid blue;
+
+    @include respond(tab-land) {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+
 @mixin flex-column-center {
     display: flex;
     flex-direction: column;
@@ -18,7 +29,49 @@
     justify-content: center;
 }
 
+@mixin flex-row-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 @mixin size($w, $h) {
     height: $h;
     width: $w;
+}
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1920] is where our normal style apply
+1920 + :      Big desktop
+
+$breakpoint argument choices
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {  // 600px
+        @media only screen and (max-width: 37.5em) { @content };
+    }
+    @if breakpont == tab-port { // 900px
+        @media only screen and (max-width: 56.25em) { @content };
+    }
+
+    @if $breakpoint == tab-land {  // 1200px
+        @media only screen and (max-width: 75em) { @content };
+    }
+
+    @if $breakpoint == big-desktop {    // 1920px
+        @media only screen and (mix-width: 120em) { @content };
+    }
 }

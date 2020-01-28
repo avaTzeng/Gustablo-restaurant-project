@@ -12,13 +12,14 @@
 
 html {
     font-size: 62.5%;
+
+    @include respond(tab-land) {
+        font-size: 56.25%;  // 1rem = 9px
+    }
 }
 
 body {
     box-sizing: border-box;
-
-    // DEBUG
-    // height: 5000px;
 }
 
 section:nth-child(even) {

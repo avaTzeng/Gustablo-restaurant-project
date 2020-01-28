@@ -2,6 +2,10 @@
     width: 37rem;
     border: 2px solid $color-grey-light-2;
 
+    @include respond(tab-land) {
+        width: 29.5rem;
+    }
+
     &__border-mask {
         @include size(10.8rem, 10.8rem);
         border: 1rem solid $color-white;
@@ -44,6 +48,6 @@
     &__paragraph {
         font-size: 1.6rem;
         line-height: 1.6;
-        width: 30rem;
+        width: 90%;
     }
 }

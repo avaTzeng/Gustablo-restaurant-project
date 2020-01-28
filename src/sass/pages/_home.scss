@@ -10,14 +10,13 @@
     &__content {   
         @include abs-center;   
         @include flex-column-center;
+    }
 
-        h1 {
-            margin-bottom: 2rem;
-        }
+    &__slogans {
+        margin-bottom: 2.5rem;
     }
 
     &__title {
-        margin-top: -1rem;
         letter-spacing: -.5rem;
         white-space: nowrap;
         color: $color-white;
@@ -27,10 +26,15 @@
         font-weight: 700;
         text-transform: uppercase;
         line-height: 1;
+
+        @include respond(tab-land) {
+            font-size: 7rem;
+            letter-spacing: 1px;
+        }
     }
 
     &__subtitle {
-        margin-bottom: 2.4rem;
+        margin-bottom: 1rem;
         vertical-align: top;
         line-height: 1;
         color: $color-white;
@@ -40,6 +44,10 @@
         font-size: 2.4rem;
         letter-spacing: 2px;
         text-transform: uppercase;
+
+        @include respond(tab-land) {
+            font-size: 2rem;
+        }
     }
 }
 //--------------- SECTION-INTRO ---------------
@@ -49,7 +57,9 @@
 }
 //--------------- SECTION-TEAM ---------------
 .section-team {
+    
     @include flex-column-center;
+    
     background-color: $color-grey-light-1;
     padding-top: $padding-section-top;
 
@@ -62,70 +72,74 @@
     }
 
     &__photos {
-        @include flex-row-center;
-        justify-content: space-between;
-        width: $row-content-max-width;
+        @include flex-row-space-between;
+        @include center-row;
     }
 
     &__photo {
+        width: 30%;
         align-items: flex-end;
-        display: flex;
-        justify-content: center;
 
-        &:not(:last-child)::after {
-            @include size(1px, 70%);
-            background-color: $color-grey-light-2;
-            content: "";
-            display: inline-block;
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translate(8.5rem, calc(-50% - 2rem));
-        }
+        // &:not(:last-child)::after {
+        //     @include size(1px, 270%);
+        //     background-color: $color-grey-light-2;
+        //     content: "";
+        //     display: inline-block;
+        //     position: absolute;
+        //     right: 0;
+        //     top: 50%;
+        //     transform: translate(calc(50% + 2.5rem), calc(-50% - 2rem));
+        // }
 
         img {
-            height: 42rem;
+            width: 100%;
+            vertical-align: middle;
         }
     }
 }
 
 //--------------- SECTION-GALLERY ---------------
 .section-gallery {
+    @include center-row;
     @include flex-column-center;
-    margin: 0 auto;
-    max-width: $row-content-max-width;
     padding-top: $padding-section-top;
     padding-bottom: 7.2rem;
     
     &__photo-grid {
-        width: $row-content-max-width;
+        width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
         margin-bottom: 7rem;
+
+        @include respond(tab-land) {
+            margin-bottom: 5rem;
+        }
     }
 
     &__photo {
         justify-self: stretch;
         height: 34.8rem;
         overflow: hidden;
-        
 
         img {
             @include abs-center;
-            width: 112%;
+            height: 108%;
             transition: .35s;
         }
 
         &:hover {
+
             img {
-                width: 105%;
+                height: 102%;
             }
         }
     } 
 }
 //--------------- SECTION-CONTENT_BOXES ---------------
 .section-content-boxes {
+    @include flex-row-space-between;
+    @include center-row;
     padding: 15rem 0 10rem 0;
 }
 //--------------- SECTION-EVENTS ---------------
@@ -134,22 +148,27 @@
     padding-top: $padding-section-top;
     padding-bottom: 13rem;
     text-align: center;
+
+    &__contents {
+        @include center-row;
+    }
 }
 //--------------- SECTION-WHY ---------------
 .section-why {
+    @include center-row;
+    @include flex-row-space-between;
     padding: 12rem 0;
 
-    &__contents {
-        @include flex-row-center;
-        justify-content: flex-start;
-    }
-
     &__info {
-        width: 55rem;
+        width: 50%;
+        margin-right: 8.5rem;
+
+        @include respond(tab-land) {
+            margin-right: 3rem;
+        }
     }
 
     &__chart {
-        margin-left: 9rem;
         flex: 1;
     }
 

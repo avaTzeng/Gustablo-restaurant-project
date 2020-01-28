@@ -2,6 +2,10 @@
     @include flex-column-center;
     margin-bottom: 7rem;
 
+    @include respond(tab-land) {
+        margin-bottom: 5rem;
+    }
+
     &__icon {
         @include size(3.3rem,3.3rem);
         margin: 1.7rem 0;

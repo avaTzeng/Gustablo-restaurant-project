@@ -10,10 +10,8 @@
     border-bottom: 1px solid $color-grey-light-3;
 
     &__nav {
-        @include flex-row-center;
-        justify-content: space-between;
-        margin: 0 auto;
-        width: $row-content-max-width;
+        @include flex-row-space-between;
+        @include center-row;
         z-index: 1500;
     }
 
@@ -21,6 +19,7 @@
         display: flex;
         list-style: none;
         margin-top: .3rem;
+        left: 1.5rem;
     }
 
     &__item {
@@ -57,6 +56,10 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         transition: all .3s;
+
+        @include respond(tab-land) {
+            font-size: 1.4rem;
+        }
     }
     
     &__logo {

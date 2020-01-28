@@ -38,20 +38,20 @@
 
         <header class="home-header" data-start="filter: brightness(100%);" data-top-bottom="filter: brightness(50%);">
             <div class="home-header__content">
-                <h1>
+                <div class="home-header__slogans">
                     <span class="home-header__subtitle" data-start="transform: translateX(0rem);" data--500-top="transform: translateX(-100rem);">
                         Hello, Are You Ready To Start Right Now ?
                     </span>
                     <span class="home-header__title" data-start="transform: translateX(0rem);" data--1000-top="transform: translateX(-100rem);">
                         Delicate & Gustable
                     </span>
-                </h1>
+                </div>
                 <a href="/html/services.html" class="btn btn--big btn--transparent-light-txt" data-start="visibility: visible;" data--800-top="visibility: hidden;">Discover menu</a>     
             </div>
         </header>
 
         <main>
-            <section class="section-intro container">
+            <section class="section-intro">
                 <!-- <div class="reservation__block">
                     <div class="reservation__box">
                         <span>Time</span>
@@ -72,7 +72,8 @@
                         <a href="#">Book a table</a>
                     </span>
                 </div> -->
-                <div class="row-space-between">
+                 
+                <div class="introduction">   
                     <div class="introduction__info">
                         <ul class="introduction__list">
                             <li data-type="history" class="introduction__list-item introduction__list-item--active"><span>History</span></li>
@@ -81,15 +82,15 @@
                         </ul>
                         <p id="introductionParagraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. enerators on the Internet tend to repeat.</p>
                     </div>
-
+    
                     <div class="introduction__video">
                         <video controls autoplay loop>
                             <source src="/video/FoodReel.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
-                    </div>  
+                    </div> 
                 </div>
-
+                 
             </section>
 
             <section class="section-team">
@@ -100,23 +101,22 @@
                             <use xlink:href="/img/sprites_icon.svg#icon-spoon-knife"></use>
                         </svg>
                     </span>
-                    
                     <p class="scrollreveal-upward-delay-shorter">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of lorem Ipsum.</p>
                 </div>
 
                 <div class="section-team__photos">
 
-                    <span class="section-team__photo scrollreveal-fade-normal">
+                    <div class="section-team__photo scrollreveal-fade-normal">
                         <img src="/img/photos/ChefPhoto_1.webp" alt="Chef Photo 1">
-                    </span>
+                    </div>
 
-                    <span class="section-team__photo scrollreveal-fade-shortest">
+                    <div class="section-team__photo scrollreveal-fade-shortest">
                         <img src="/img/photos/ChefPhoto_2.webp" alt="Chef Photo 2">
-                    </span>
+                    </div>
 
-                    <span class="section-team__photo scrollreveal-fade-shorter">
+                    <div class="section-team__photo scrollreveal-fade-shorter">
                         <img src="/img/photos/ChefPhoto_3.webp" alt="Chef Photo 3">
-                    </span>
+                    </div>
 
                 </div>
             </section>
@@ -152,10 +152,11 @@
                         <img src="/img/photos/gallery_6.webp" alt="Gallery Photo 1">
                     </a>
                 </div>
+    
                 <a href="#" class="btn btn--big btn--transparent-dark-txt">View gallery</a>
             </section>
 
-            <section class="section-pricing container">
+            <section class="section-pricing">
                 <div class="title-divider">
                     <h2 class="scrollreveal-upward-normal">Pricing Plans</h2>
                     <span class="title-divider__icon scrollreveal-upward-delay-shortest">
@@ -217,48 +218,46 @@
                     </div>
                 </div>
             </section>
-            <section class="section-content-boxes container">
-                <div class="row-space-between">
-                    <div class="content-box scrollreveal-leftward-normal">
-                        <div class="content-box__border-mask">
-                            <div class="content-box__icon">
-                                <img src="/img/icons/orangeChefHat.png" alt="The hat of chef">
-                            </div>
+            <section class="section-content-boxes">
+                <div class="content-box scrollreveal-leftward-normal">
+                    <div class="content-box__border-mask">
+                        <div class="content-box__icon">
+                            <img src="/img/icons/orangeChefHat.png" alt="The hat of chef">
                         </div>
-                        <span class="content-box__contents">
-                            <span class="content-box__title">Flexible Prices</span>
-                            <span class="content-box__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</span>
-                        </span>
                     </div>
-    
-                    <div class="content-box scrollreveal-leftward-shorter">
-                        <div class="content-box__border-mask">
-                            <div class="content-box__icon">
-                                <img src="/img/icons/orangeTableware.png" alt="The hat of chef">
-                            </div>
+                    <span class="content-box__contents">
+                        <span class="content-box__title">Flexible Prices</span>
+                        <span class="content-box__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</span>
+                    </span>
+                </div>
+
+                <div class="content-box scrollreveal-leftward-shorter">
+                    <div class="content-box__border-mask">
+                        <div class="content-box__icon">
+                            <img src="/img/icons/orangeTableware.png" alt="The hat of chef">
                         </div>
-                        <span class="content-box__contents">
-                            <span class="content-box__title">Delicable Food</span>
-                            <span class="content-box__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</span>
-                        </span>
                     </div>
-    
-                    <div class="content-box scrollreveal-leftward-longer">
-                        <div class="content-box__border-mask">
-                            <div class="content-box__icon">
-                                <img src="/img/icons/orangeLid.png" alt="The hat of chef">
-                            </div>
+                    <span class="content-box__contents">
+                        <span class="content-box__title">Delicable Food</span>
+                        <span class="content-box__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</span>
+                    </span>
+                </div>
+
+                <div class="content-box scrollreveal-leftward-longer">
+                    <div class="content-box__border-mask">
+                        <div class="content-box__icon">
+                            <img src="/img/icons/orangeLid.png" alt="The hat of chef">
                         </div>
-                        <span class="content-box__contents">
-                            <span class="content-box__title">Premium Services</span>
-                            <span class="content-box__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</span>
-                        </span>
                     </div>
+                    <span class="content-box__contents">
+                        <span class="content-box__title">Premium Services</span>
+                        <span class="content-box__paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci</span>
+                    </span>
                 </div>
             </section>
 
             <section class="section-events">
-                <div class="row">
+                <div class="section-events__contents">
                     <div class="title-divider">
                         <h2 class="scrollreveal-upward-normal">Gustablo Events</h2>
                         <span class="title-divider__icon scrollreveal-upward-delay-shortest">
@@ -272,29 +271,29 @@
                         <div class="event-gallery__item">
                             <img src="/img/photos/hamburger_1.webp" alt="Photo of hamburger">
                         </div>
-
+    
                         <div class="event-gallery__item--content">
                             <span>Italian Master Class</span>
                             <span>14 August 2020 / 19:00</span>
                             <p>Here are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form ...</p>
                             <a href="/html/contacts.html" class="btn btn--small btn--transparent-dark-txt">read more</a>     
                         </div>
-
+    
                         <div class="event-gallery__item">
                             <img src="/img/photos/pasta_1.webp" alt="Photo of hamburger">
                         </div>
-
+    
                         <div class="event-gallery__item--content">
                             <span>Creative Delicates Cook</span>
                             <span>13 August 2020 / 21:00</span>
                             <p>Here are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in ...</p>
                             <a href="/html/contacts.html" class="btn btn--small btn--transparent-dark-txt">read more</a>     
                         </div>
-
+    
                         <div class="event-gallery__item">
                             <img src="/img/photos/pasta_2.webp" alt="Photo of hamburger">
                         </div>
-
+    
                         <div class="event-gallery__item--content">
                             <span>Belissimo Cake Cooking</span>
                             <span>15 August 2020 / 18:00</span>
@@ -306,53 +305,48 @@
                 </div>
             </section>
             <section class="section-why">
-                <div class="row">
-                    <div class="section-why__contents">
-                        <div class="section-why__info">
-                            <div class="content-divider">
-                                <h2 class="scrollreveal-rightward-normal">Why Gustablo?</h2>
-                                <span class="content-divider__icon scrollreveal-rightward-shortest">
-                                    <svg>
-                                        <use xlink:href="/img/sprites_icon.svg#icon-user-check"></use>
-                                    </svg>
-                                </span>
-                            </div>
-                            <p class="scrollreveal-rightward-shorter">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                <div class="section-why__info">
+                    <div class="content-divider">
+                        <h2 class="scrollreveal-rightward-normal">Why Gustablo?</h2>
+                        <span class="content-divider__icon scrollreveal-rightward-shortest">
+                            <svg>
+                                <use xlink:href="/img/sprites_icon.svg#icon-user-check"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <p class="scrollreveal-rightward-shorter">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
+                </div>
+                <div class="section-why__chart">
+                    <div class="progress">
+                        <div class="progress__content">
+                            <span class="progress__title">Restaurant</span>
+                            <span>65%</span>
                         </div>
-                        
-                        <div class="section-why__chart">
-                            <div class="progress">
-                                <div class="progress__content">
-                                    <span class="progress__title">Restaurant</span>
-                                    <span>65%</span>
-                                </div>
-                                <div class="progress__bar progress__bar--65"></div>
-                            </div>
+                        <div class="progress__bar progress__bar--65"></div>
+                    </div>
 
-                            <div class="progress">
-                                <div class="progress__content">
-                                    <span class="progress__title">Cafeteria</span>
-                                    <span>75%</span>
-                                </div>
-                                <div class="progress__bar progress__bar--75"></div>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress__content">
-                                    <span class="progress__title">Cocktails</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="progress__bar progress__bar--70"></div>
-                            </div>
-
-                            <div class="progress">
-                                <div class="progress__content">
-                                    <span class="progress__title">Appetizers</span>
-                                    <span>65%</span>
-                                </div>
-                                <div class="progress__bar progress__bar--65"></div>
-                            </div>
+                    <div class="progress">
+                        <div class="progress__content">
+                            <span class="progress__title">Cafeteria</span>
+                            <span>75%</span>
                         </div>
+                        <div class="progress__bar progress__bar--75"></div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress__content">
+                            <span class="progress__title">Cocktails</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress__bar progress__bar--70"></div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress__content">
+                            <span class="progress__title">Appetizers</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress__bar progress__bar--65"></div>
                     </div>
                 </div>
             </section>
@@ -371,124 +365,119 @@
             </section>
         </main>
         <footer class="footer">
-            <div class="row">
-                <div class="footer__main-contents">
-                    <div class="footer__block">
-                        <div class="footer__logo">
-                            <img src="/img/icons/logo.png" alt="Logo"> 
-                            <span>Gustablo</span>
-                        </div>
-    
-                        <div class="footer__sub-block">
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
-    
-                            <div class="footer__social-media">
-                                <a href="https://www.facebook.com/" class="footer__social-media-icon" target="_blank">
-                                    <svg>
-                                        <use xlink:href="/img/sprites_icon.svg#icon-facebook2"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://twitter.com/" class="footer__social-media-icon" target="_blank">
-                                    <svg>
-                                        <use xlink:href="/img/sprites_icon.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://zh.wikipedia.org/wiki/Google%2B" class="footer__social-media-icon" target="_blank">
-                                    <svg>
-                                        <use xlink:href="/img/sprites_icon.svg#icon-google"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://www.linkedin.com/home/" class="footer__social-media-icon" target="_blank">
-                                    <svg>
-                                        <use xlink:href="/img/sprites_icon.svg#icon-linkedin1"></use>
-                                    </svg>
-                                </a>
-                                <a href="https://www.pinterest.com/" class="footer__social-media-icon" target="_blank">
-                                    <svg>
-                                        <use xlink:href="/img/sprites_icon.svg#icon-pinterest"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-    
-                        
+        <div class="footer__contents">
+            <div class="footer__main-contents">
+                <div class="footer__block">
+                    <div class="footer__logo">
+                        <img src="/img/icons/logo.png" alt="Logo"> 
+                        <span>Gustablo</span>
                     </div>
-    
-                    <div class="footer__block">
-                        <span class="footer__sub-title">Recent Posts</span>
-                            <div class="footer__sub-block">
-                                <a href="#" class="footer__recent-post">
-                                    <span class="footer__recent-post-img">
-                                        <img src="/img/photos/footer/1.webp" alt="Food photo">
-                                    </span>
-                                    <div class="footer__recent-post-info">
-                                        <span class="footer__recent-post-title">Website Post with A Smart</span>
-                                        <span class="footer__recent-post-title">Designed Gallery Post</span>
-                                        <span class="footer__recent-post-date">29 June 2016</span>
-                                    </div>
-                                </a>
-                                <a href="#" class="footer__recent-post">
-                                    <span class="footer__recent-post-img">
-                                        <img src="/img/photos/footer/2.webp" alt="Food photo">
-                                    </span>
-                                    <div class="footer__recent-post-info">
-                                        <span class="footer__recent-post-title">Application Post with A</span>
-                                        <span class="footer__recent-post-title">Smart Designed Gallery </span>
-                                        <span class="footer__recent-post-date">31 June 2016</span>
-                                    </div>
-                                </a>
-                            </div>
-                        </a>
-                    </div>
-    
-                    <div class="footer__block">
-                        <span class="footer__sub-title">Instagram</span>
-                        <div class="footer__sub-block">
-                            <div class="footer__photo-grid">
-                                <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
-                                    <img src="/img/photos/footer/3.webp" alt="Food photo">
-                                </a>
-                                <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
-                                    <img src="/img/photos/footer/4.webp" alt="Food photo">
-                                </a>
-                                <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
-                                    <img src="/img/photos/footer/5.webp" alt="Food photo">
-                                </a>
-                                <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
-                                    <img src="/img/photos/footer/6.webp" alt="Food photo">
-                                </a>
-                                <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
-                                    <img src="/img/photos/footer/1.webp" alt="Food photo">
-                                </a>
-                                <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
-                                    <img src="/img/photos/footer/2.webp" alt="Food photo">
-                                </a>
-                            </div>
+
+                    <div class="footer__sub-block">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincid  unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation</p>
+
+                        <div class="footer__social-media">
+                            <a href="https://www.facebook.com/" class="footer__social-media-icon" target="_blank">
+                                <svg>
+                                    <use xlink:href="/img/sprites_icon.svg#icon-facebook2"></use>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-media-icon" target="_blank">
+                                <svg>
+                                    <use xlink:href="/img/sprites_icon.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                            <a href="https://zh.wikipedia.org/wiki/Google%2B" class="footer__social-media-icon" target="_blank">
+                                <svg>
+                                    <use xlink:href="/img/sprites_icon.svg#icon-google"></use>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/home/" class="footer__social-media-icon" target="_blank">
+                                <svg>
+                                    <use xlink:href="/img/sprites_icon.svg#icon-linkedin1"></use>
+                                </svg>
+                            </a>
+                            <a href="https://www.pinterest.com/" class="footer__social-media-icon" target="_blank">
+                                <svg>
+                                    <use xlink:href="/img/sprites_icon.svg#icon-pinterest"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
-                    <div class="footer__block">
-                        <span class="footer__sub-title">Contact</span>
-                        <form class="footer__sub-block">
-                            <input type="text" name="username" placeholder="Name" required>
-                            <input type="email" name="email" placeholder="Email" required>
-                            <textarea name="footermessage" placeholder="Message" required></textarea>
-                            <button class="footer__send-btn">Send</button>
-                        </form>
-                    </div>
-    
+
+                    
                 </div>
-    
-                <div class="footer__sub-contents">
-                    <span class="footer__rights">© 2016 Ninzio Themes ALL RIGHTS RESERVED.</span>
-                    <ul class="footer__list">
-                        <li class="footer__list-item"><a href="/html/about.html">About Us</a></li>
-                        <li class="footer__list-item"><a href="#">Terms</a></li>
-                        <li class="footer__list-item"><a href="#">Delivery</a></li>
-                        <li class="footer__list-item"><a href="/html/services.html">Services</a></li>
-                        <li class="footer__list-item"><a href="/html/contacts.html">Contacts</a></li>
-                    </ul>
+
+                <div class="footer__block">
+                    <span class="footer__sub-title">Recent Posts</span>
+                        <div class="footer__sub-block">
+                            <a href="#" class="footer__recent-post">
+                                <img class="footer__recent-post-img" src="/img/photos/footer/1.webp" alt="Food photo">
+                                <div class="footer__recent-post-info">
+                                    <div class="footer__recent-post-title">Website Post with A Designed Gallery Post</div>
+                                    <span class="footer__recent-post-date">29 June 2016</span>
+                                </div>
+                            </a>
+                            <a href="#" class="footer__recent-post">
+                                <img class="footer__recent-post-img" src="/img/photos/footer/2.webp" alt="Food photo">
+                                </span>
+                                <div class="footer__recent-post-info">
+                                    <div class="footer__recent-post-title">Application Post with A Smart Designed Gallery</div>
+                                    <span class="footer__recent-post-date">31 June 2016</span>
+                                </div>
+                            </a>
+                        </div>
+                    </a>
                 </div>
+
+                <div class="footer__block">
+                    <span class="footer__sub-title">Instagram</span>
+                    <div class="footer__sub-block">
+                        <div class="footer__photo-grid">
+                            <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
+                                <img src="/img/photos/footer/3.webp" alt="Food photo">
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
+                                <img src="/img/photos/footer/4.webp" alt="Food photo">
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
+                                <img src="/img/photos/footer/5.webp" alt="Food photo">
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
+                                <img src="/img/photos/footer/6.webp" alt="Food photo">
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
+                                <img src="/img/photos/footer/1.webp" alt="Food photo">
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__photo-grid-item" target="_black">
+                                <img src="/img/photos/footer/2.webp" alt="Food photo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__block">
+                    <span class="footer__sub-title">Contact</span>
+                    <form class="footer__sub-block">
+                        <input type="text" name="username" placeholder="Name" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="footermessage" placeholder="Message" required></textarea>
+                        <button class="footer__send-btn">Send</button>
+                    </form>
+                </div>
+
             </div>
+
+            <div class="footer__sub-contents">
+                <span class="footer__rights">© 2016 Ninzio Themes ALL RIGHTS RESERVED.</span>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="/html/about.html">About Us</a></li>
+                    <li class="footer__list-item"><a href="#">Terms</a></li>
+                    <li class="footer__list-item"><a href="#">Delivery</a></li>
+                    <li class="footer__list-item"><a href="/html/services.html">Services</a></li>
+                    <li class="footer__list-item"><a href="/html/contacts.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
         </footer>
     </body>
 </html>

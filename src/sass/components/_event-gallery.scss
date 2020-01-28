@@ -1,9 +1,9 @@
 .event-gallery {
+    @include center-row;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     margin-bottom: 8rem;
-    
 
     &__item {
         justify-self: stretch;
@@ -11,13 +11,17 @@
         
         img {
             @include abs-center;
-            width: 105%;
+            height: 100%;
         }
 
         &--content {
             @include flex-column-center;
             padding: 8rem 4.5rem 6.5rem 4.5rem;
             line-height: 1;
+
+            @include respond(tab-land) {
+                padding: 8rem 3rem 6.5rem 3rem;
+            }
             
             span:first-child {
                 font-size: 2.2rem;
@@ -36,7 +40,6 @@
                 text-align: center;
                 line-height: 1.6;
                 margin-bottom: 2.5rem;
-                height: 8rem;
             }
 
         }

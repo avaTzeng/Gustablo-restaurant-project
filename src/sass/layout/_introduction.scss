@@ -1,11 +1,14 @@
 // 之所以沒有重構成一個 section ui 是因為不同 page 的 section-introduction 會有不同的 padding(樣板很怪)
 .introduction {
+    @include center-row;
+    @include flex-row-space-between;
+    align-items: flex-start;
 
     &__video {
-        height: 37rem;
+        width: 58%;
 
         video {
-            height: 100%;
+            width: 100%;
             outline: none;
         }
     }

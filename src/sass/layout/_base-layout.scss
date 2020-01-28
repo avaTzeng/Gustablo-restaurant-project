@@ -13,8 +13,10 @@
 // container 基本上 flex-direction 是 row 的
 .row {
     max-width: $row-content-max-width;
-    width: $row-content-max-width;
     margin: 0 auto;
+    border: 2px solid red !important;
+    // padding: 0 3rem;
+    // width: $row-content-max-width;
 }
 
 .row-space-between {
