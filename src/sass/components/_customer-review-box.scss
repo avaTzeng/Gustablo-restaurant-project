@@ -1,6 +1,11 @@
 .customer-review-box {
-    width: 37rem;
+    width: 32%;
     border: 2px solid $color-grey-light-2;
+    padding: 0 2.5rem;
+
+    @include respond(tab-land) {
+        padding: 0 2.5rem;
+    }
 
     &__border-mask {
         @include size(11.2rem, 11.2rem);
@@ -49,7 +54,6 @@
     &__paragraph {
         font-size: 1.6rem;
         line-height: 1.6;
-        width: 30rem;
         margin-bottom: 1.8rem;
     }
 
