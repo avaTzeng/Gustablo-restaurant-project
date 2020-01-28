@@ -1,27 +1,36 @@
 .section-about {
+    
     padding: 8.6rem 0 8.8rem 0;
     text-align: center;
 
+    &__contents {
+        @include flex-row-space-between;
+        @include center-row;
+    }
+
     &__picture {
         overflow: hidden;
+        margin-right: 5rem;
 
         &--small {
-            @include size(55rem,38rem);
+            @include size(48%,38rem);
         }
 
         &--big {
-            @include size(55rem,46.8rem);
+            @include size(48%,46.8rem);
         }
 
         img {
+            @include abs-center;
             width: 100.5%;
             vertical-align: middle;
         }
     }
 
     &__info {
-        float: right;
-        width: 54.5rem;
+        flex: 1;
+        // float: right;
+        // width: 54.5rem;
     }
 
     &__extra-content {
