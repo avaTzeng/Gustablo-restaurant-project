@@ -95,6 +95,10 @@
             @include respond(tab-port) {
                 transform: translate(3.2rem,25%);
             }
+
+            @include respond(phone) {
+                transform: translate(4rem,25%);
+            }
         }
     }
 

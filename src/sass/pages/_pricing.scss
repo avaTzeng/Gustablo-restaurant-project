@@ -3,4 +3,9 @@
     @include flex-row-space-between;
     @include center-row;
     padding: 13.9rem 0 9.4rem 0;
+
+    @include respond(tab-port) {
+        @include flex-column-center;
+        padding: 11rem 0 8rem 0;
+    }
 }
