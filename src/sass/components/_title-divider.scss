@@ -32,5 +32,9 @@
         text-align: center;
         display: block;
         width: 68rem;
+        
+        @include respond(tab-port) {
+            width: 80%; 
+        }
     }
 }

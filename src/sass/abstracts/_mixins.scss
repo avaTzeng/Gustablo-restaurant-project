@@ -59,19 +59,43 @@ ORDER: Base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 
+
+
+
+
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {  // 600px
-        @media only screen and (max-width: 37.5em) { @content };
+        @media only screen and (max-width: 37.5em) {
+             @content;
+
+            .content-desktop { display: none;  }
+            .content-mobile {  display: block; }
+        }
     }
     @if $breakpoint == tab-port { // 900px
-        @media only screen and (max-width: 56.25em) { @content };
+        @media only screen and (max-width: 56.25em) { 
+            @content; 
+
+            .content-desktop { display: none;  }
+            .content-mobile {  display: block; }
+        }
     }
 
     @if $breakpoint == tab-land {  // 1200px
-        @media only screen and (max-width: 75em) { @content };
+        @media only screen and (max-width: 75em) { 
+            @content; 
+
+            .content-desktop { display: block;  }
+            .content-mobile {  display: none; }
+        }
     }
 
     @if $breakpoint == big-desktop {    // 1920px
-        @media only screen and (mix-width: 120em) { @content };
+        @media only screen and (mix-width: 120em) { 
+            @content; 
+
+            .content-desktop { display: block;  }
+            .content-mobile {  display: none; }
+        }
     }
 }

@@ -17,6 +17,10 @@
         img {
             @include abs-center;
             height: 100%;
+
+            @include respond(phone) {
+                height: 100%;
+            }
         }
 
         &--content {
@@ -31,6 +35,12 @@
             @include respond(tab-port) {
                 padding: 4rem 3rem 0rem 3rem;
             }
+
+            @include respond(phone) {
+                padding: 4rem 3rem 4rem 3rem;
+                // top: 2rem;
+                left: 2rem;
+            }
             
             span:first-child {
                 font-size: 2.2rem;
@@ -43,6 +53,10 @@
                 font-size: 1.6rem;
                 color: $color-primary;
                 letter-spacing: 1px;
+
+                @include respond(phone) {
+                    margin-bottom: 1.6rem;
+                }
             }
 
             p {

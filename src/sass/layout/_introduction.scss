@@ -3,10 +3,28 @@
     @include center-row;
     @include flex-row-space-between;
     align-items: flex-start;
-    // border: 1px solid red;
     
     @include respond(tab-port) {
         @include flex-column-center;
+    }
+
+    //--- 只有是手機小畫面的時候才會顯示
+    &__phone-view {
+        margin-bottom: 6rem;
+
+        & > div:not(:last-child) {
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__phone-view-content {
+        margin: 0 auto;
+        width: 90%;
+
+        & > h2 {
+            text-align: left;
+            margin-bottom: 1.6rem;
+        }
     }
 
     &__video {

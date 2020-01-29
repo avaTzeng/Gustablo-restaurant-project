@@ -10,6 +10,10 @@
         height: 65vh;
     }
 
+    @include respond(phone) {
+        height: 60vh;
+    }
+
     &__content {   
         @include abs-center;   
         @include flex-column-center;
@@ -146,6 +150,13 @@
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 1rem;
         }
+
+        @include respond(phone) {
+
+            & > a:nth-child(5),  & > a:nth-child(6){
+                display: none;
+            }
+        }
     }
 
     &__photo {
@@ -160,9 +171,22 @@
         }
 
         &:hover {
-
             img {
                 height: 102%;
+            }
+        }
+
+        @include respond(phone) {
+            height: 21.8rem;
+
+            img {
+                @include size(100%, auto);
+            }
+
+            &:hover {
+                img {
+                    @include size(108%, auto);
+                }
             }
         }
     } 
@@ -211,6 +235,10 @@
             margin-right: 0rem;
             margin-bottom: 5rem;
             width: 90%;
+        }
+
+        @include respond(tab-port) {
+            margin-bottom: 7rem;
         }
     }
 
