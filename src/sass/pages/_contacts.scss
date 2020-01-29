@@ -6,6 +6,10 @@
     &__contents {
         @include flex-row-center;
         align-items: flex-start;   
+        
+        @include respond(tab-port) {
+            @include flex-column-center;
+        }
     }
 }
 //--------------- MAP ---------------
@@ -22,6 +26,15 @@
     flex: 1;
     margin-right: 3.2rem;
     line-height: 1;
+    
+    @include respond(tab-port) {
+        margin-right: 0rem;
+        margin-bottom: 10rem;
+    }
+
+    @include respond(phone) {
+        margin-bottom: 15rem;
+    }
 
     &__titie-block {
         @include flex-row-center;
@@ -41,6 +54,11 @@
         color: $color-primary;
         margin-right: 3.8rem;
         line-height: 1;
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
     }
 
     &__sub-title {
@@ -97,17 +115,48 @@
 //--------------- FORMAL-CONTACT-INFO ---------------
 .formal-contact-info {
     width: 28rem;
+    
+    @include respond(tab-port) {
+        width: 100%;    
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+
+    @include respond(phone) {  
+        @include flex-column-center;
+    }
+    
 
     &__content {
         @include flex-column-center;
         align-items: flex-start;
         padding-bottom: 5.5rem;
+
+        &:not(:last-child) {
+            @include respond(phone) {
+                margin-bottom: 6rem;
+            }
+        }
+
+        @include respond(tab-port) {
+            padding-bottom: 0rem;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
     }
 
     &__title-block {
         @include flex-row-center;
         width: 100%;
         margin-bottom: 4rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 3rem;
+        }
     }
 
     &__title-line {
@@ -122,6 +171,10 @@
         color: $color-primary;
         margin-right: 1.2rem;
         line-height: 1;
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+        }
     }
 
     &__detail {
@@ -137,6 +190,10 @@
             @include respond(tab-land) {
                 font-size: 1.5rem;
             }
+
+            @include respond(tab-port) {
+                font-size: 2rem;
+            }
         }
 
         span:not(:first-child) {
@@ -147,15 +204,34 @@
     &__social-media {
         @include flex-row-center;
         justify-content: flex-start;
+        
+        @include respond(tab-port) {
+            justify-content: space-between;
+            top: 1rem;
+        }
+
+        @include respond(phone) {
+            margin-top: 1rem;
+            width: 50%;
+            top: 0;
+        }
 
         &-icon:not(:last-child) {
             margin-right: .9rem;
+
+            @include respond(tab-port) {
+                margin-right: 0rem;
+            }
         }
 
         &-icon {
             @include size(3.8rem, 3.8rem);
             cursor: pointer;
             border: 1px solid $color-grey-light-3;
+
+            @include respond(tab-port) {
+                @include size(5.7rem, 5.7rem);
+            }
         }
 
         svg {
@@ -163,6 +239,10 @@
             @include size(1.4rem, 1.4rem);
             fill: $color-grey-light-3;
             vertical-align: middle;
+
+            @include respond(tab-port) {
+                @include size(2.8rem, 2.8rem);
+            }
         }
     }
 }
