@@ -3,6 +3,11 @@
     @include center-row;
     @include flex-row-space-between;
     align-items: flex-start;
+    // border: 1px solid red;
+    
+    @include respond(tab-port) {
+        @include flex-column-center;
+    }
 
     &__video {
         width: 58%;
@@ -10,6 +15,14 @@
         video {
             width: 100%;
             outline: none;
+
+            @include respond(tab-port) {
+                vertical-align: middle;
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 90%;
         }
     }
 
@@ -21,6 +34,15 @@
             display: block;
             margin-top: 3.5rem;
             width: 100%;
+
+            @include respond(tab-port) {
+                height: 20rem;
+            }
+        }
+
+        @include respond(tab-port) {
+            width: 90%;
+            margin-bottom: 6.5rem;
         }
     }
 

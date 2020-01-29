@@ -5,6 +5,10 @@
     &__block {
         width: 84rem;
         margin: 0 auto;
+
+        @include respond(tab-land) {
+            width: 90%;
+        }
     }
 
     &__content {

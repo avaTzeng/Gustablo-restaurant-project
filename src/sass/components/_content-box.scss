@@ -6,6 +6,14 @@
         width: 29.5rem;
     }
 
+    @include respond(tab-port) {
+        width: 90%;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 8rem;
+    }
+
     &__border-mask {
         @include size(10.8rem, 10.8rem);
         border: 1rem solid $color-white;

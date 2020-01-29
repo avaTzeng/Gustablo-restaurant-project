@@ -12,7 +12,7 @@
     &__nav {
         @include flex-row-space-between;
         @include center-row;
-        z-index: 1500;
+         z-index: 1500;
     }
 
     &__list {

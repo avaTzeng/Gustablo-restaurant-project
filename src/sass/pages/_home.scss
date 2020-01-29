@@ -4,8 +4,11 @@
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    // height: 90vh;
     height: 100vh;
+
+    @include respond(tab-port) {
+        height: 65vh;
+    }
 
     &__content {   
         @include abs-center;   
@@ -31,6 +34,10 @@
             font-size: 7rem;
             letter-spacing: 1px;
         }
+
+        @include respond(tab-port) {
+            font-size: 5rem;
+        }
     }
 
     &__subtitle {
@@ -48,12 +55,20 @@
         @include respond(tab-land) {
             font-size: 2rem;
         }
+
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+        }
     }
 }
 //--------------- SECTION-INTRO ---------------
 .section-intro {
     background-color: $color-white;
     padding: 18rem 0 12rem 0;
+
+    @include respond(tab-port) {
+        padding: 12rem 0 12rem 0;
+    }
 }
 //--------------- SECTION-TEAM ---------------
 .section-team {
@@ -95,6 +110,17 @@
             width: 100%;
             vertical-align: middle;
         }
+
+        &:not(:last-child) {
+            @include respond(tab-port) {
+                margin-right: 1rem;
+            }
+        }
+
+        @include respond(tab-port) {
+            @include size(100%, 30rem);
+            overflow: hidden;
+        }
     }
 }
 
@@ -114,6 +140,11 @@
 
         @include respond(tab-land) {
             margin-bottom: 5rem;
+        }
+
+        @include respond(tab-port) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1rem;
         }
     }
 
@@ -141,6 +172,10 @@
     @include flex-row-space-between;
     @include center-row;
     padding: 15rem 0 10rem 0;
+
+    @include respond(tab-port) {
+        @include flex-column-center;
+    }
 }
 //--------------- SECTION-EVENTS ---------------
 .section-events {
@@ -159,6 +194,10 @@
     @include flex-row-space-between;
     padding: 12rem 0;
 
+    @include respond(tab-port) {
+        @include flex-column-center;
+    }
+
     &__info {
         width: 50%;
         margin-right: 8.5rem;
@@ -166,10 +205,21 @@
         @include respond(tab-land) {
             margin-right: 3rem;
         }
+
+        @include respond(tab-port) {
+            @include flex-column-center;
+            margin-right: 0rem;
+            margin-bottom: 5rem;
+            width: 90%;
+        }
     }
 
     &__chart {
         flex: 1;
+
+        @include respond(tab-land) {
+            width: 90%;
+        }
     }
 
     .progress:not(:last-child) {

@@ -9,6 +9,15 @@
         }
     }
 
+    @include respond(tab-port) {
+
+        padding: 6rem 0 2.4rem 0;
+
+        & &__block:not(:first-child) {
+            display: none;
+        }
+    }
+
     &__contents {
         @include center-row;
     }
@@ -23,6 +32,15 @@
             font-size: 1.4rem;
             text-align: initial;
             line-height: 1.4;
+
+            @include respond(tab-port) {
+                font-size: 1.9rem;
+            }
+        }
+
+        @include respond(tab-port) {
+            @include flex-column-center;
+            margin-bottom: 1rem;
         }
     }
 
@@ -33,6 +51,15 @@
         align-items: flex-start;
         width: 27rem;
         height: 23.5rem;
+
+        @include respond(tab-port) {
+            width: 90%;
+            height: 22rem;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 6rem;
+        }
     }
 
     &__sub-block {
@@ -217,6 +244,10 @@
     &__sub-contents {
         @include flex-row-center;
         justify-content: space-between;
+
+        @include respond(tab-port) {
+            @include flex-column-center;
+        }
     }
 
     &__rights {
@@ -229,6 +260,10 @@
     &__list {
         @include flex-row-center;
         list-style: none;
+
+        @include respond(tab-port) {
+            display: none;
+        }
 
         &-item:not(:last-child) {
             padding: .3rem 2rem;

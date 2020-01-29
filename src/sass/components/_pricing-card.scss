@@ -12,12 +12,23 @@
         height: 50rem;
     }
 
+    @include respond(tab-port) {
+        margin-top: 0rem;
+        border: none;
+        width: 60%;
+    }
+
     &:hover {
         border: 2px solid $color-primary;
         height: 61.5rem;
 
         @include respond(tab-land) {
             height: 54rem;
+        }
+
+        @include respond(tab-port) {
+            height: 50rem;
+            border: none;
         }
     }
 
@@ -80,6 +91,10 @@
             right: 0;
             bottom: 0;
             transform: translate(2.8rem,25%);
+
+            @include respond(tab-port) {
+                transform: translate(3.2rem,25%);
+            }
         }
     }
 
