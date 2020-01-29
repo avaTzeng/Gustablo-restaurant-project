@@ -199,6 +199,7 @@
 
     @include respond(tab-port) {
         @include flex-column-center;
+        padding: 10.5rem 0 8rem 0;
     }
 }
 //--------------- SECTION-EVENTS ---------------

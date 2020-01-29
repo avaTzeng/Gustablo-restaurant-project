@@ -8,10 +8,10 @@
 
     @include respond(tab-port) {
         width: 90%;
-    }
 
-    &:not(:last-child) {
-        margin-bottom: 8rem;
+        &:not(:last-child) {
+            margin-bottom: 8rem;
+        }
     }
 
     &__border-mask {
@@ -57,5 +57,10 @@
         font-size: 1.6rem;
         line-height: 1.6;
         width: 90%;
+
+        @include respond(tab-port) {
+            font-size: 2rem;
+            line-height: 1.4;
+        }
     }
 }

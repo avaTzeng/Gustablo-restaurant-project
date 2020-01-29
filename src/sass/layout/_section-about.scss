@@ -6,19 +6,30 @@
     &__contents {
         @include flex-row-space-between;
         @include center-row;
+
+        @include respond(tab-land) {
+            @include flex-column-center;
+        }
     }
 
     &__picture {
         overflow: hidden;
         margin-right: 5rem;
 
+        @include respond(tab-land) {
+            margin-right: 0rem;
+            margin-bottom: 7rem;
+        }
+
         &--small {
-            // width: 48%;
             @include size(48%,38rem);
+
+            @include respond(tab-land) {
+                width: 90%;
+            }
         }
 
         &--big {
-            // width: 48%;
             @include size(48%,46.8rem);
         }
 
@@ -31,6 +42,10 @@
 
     &__info {
         flex: 1;
+
+        @include respond(tab-land) {
+            width: 90%;
+        }
     }
 
     &__extra-content {

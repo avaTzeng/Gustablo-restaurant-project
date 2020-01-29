@@ -10,6 +10,11 @@
 
     //--- 只有是手機小畫面的時候才會顯示
     &__phone-view {
+        display: none;
+
+        @media only screen and (max-width: 56.25em) { // 900px = tab-port
+            display: block;
+        }
         margin-bottom: 6rem;
 
         & > div:not(:last-child) {
@@ -47,6 +52,10 @@
     &__info {
         @include flex-column-center;
         width: 38%;
+
+        @media only screen and (max-width: 56.25em) { // 900px = tab-port
+            display: none;
+        }
 
         p {
             display: block;
