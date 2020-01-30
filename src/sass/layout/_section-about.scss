@@ -3,6 +3,11 @@
     padding-bottom: 8.8rem;
     text-align: center;
 
+    @include respond(phone) {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
     &__contents {
         @include flex-row-space-between;
         @include center-row;
@@ -25,7 +30,7 @@
             @include size(48%, 38rem);
 
             @include respond(tab-land) {
-                width: 90%;
+                width: 80%;
             }
         }
 
@@ -33,19 +38,20 @@
             @include size(48%, 46.8rem);
 
             @include respond(tab-land) {
-                @include size(48%, 30rem);
-                width: 90%;
+                @include size(60%, 30rem);
 
                 & img {
-                    transform: translate(-50%, calc(-50% + 14.5rem)) !important;
+                    // transform: translate(-50%, calc(-50% + 14.5rem)) !important;
                 }
             }
         }
 
         img {
             @include abs-center;
-            width: 100.5%;
+            // width: 100.5%;
+            height: 100%;
             vertical-align: middle;
+            object-fit: contain;
         }
     }
 

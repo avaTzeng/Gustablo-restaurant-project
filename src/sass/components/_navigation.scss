@@ -3,8 +3,7 @@
     padding: 2.2rem 0;
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 0;
     background-color: rgba($color-black, .7);
     z-index: 1000;
     border-bottom: 1px solid $color-grey-light-3;
@@ -79,7 +78,7 @@
     &__buger-btn-nav {
         visibility: hidden;
         position: fixed;
-        top: -100%;
+        top: 0;
         left: 0;
         z-index: 8500;
         height: 100vh;
@@ -124,6 +123,7 @@
         &:active {
             background-position: 100%;
             color: $color-white;
+            background-color: $color-primary;
             transform: translateX(1rem);
         }
     }
@@ -161,42 +161,6 @@
         transform: rotate(-135deg);
     }
 
-
-    // &__burger-btn {
-    //     @include size(5.8rem, 5.8rem);
-    //     display: none;
-    //     cursor: pointer;
-    //     border: 1px solid $color-white;
-    //     border-radius: 4px;
-
-    //     @media only screen and(max-width: 56.25em) { // 900px = tab-port
-    //         display: block;
-    //     }
-    // }
-
-    // &__burger-line {
-    //     @include abs-center;
-    //     @include size(60%, 2px);
-    //     border: 50%;
-    //     background-color: $color-white;
-
-    //     &::after {
-    //         @include size(100%, 2px);
-    //         content: "";
-    //         display: block;
-    //         background-color: $color-white;
-    //         top: 1rem;
-    //     }
-
-    //     &::before {
-    //         @include size(100%, 2px);
-    //         content: "";
-    //         display: block;
-    //         background-color: $color-white;
-    //         top: -1rem;
-    //     }
-    // }
-
     // --- 正常選單
     &__list {
         display: flex;
@@ -227,7 +191,8 @@
             transition: all .15s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         }
 
-        &:hover::before {
+        &:hover::before,
+        &:active::before {
             transform: translateX(-50%) translateY(calc(-50% - 4.2rem)) scaleX(1);
         }
     }

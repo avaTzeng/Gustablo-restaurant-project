@@ -38,6 +38,10 @@
             }
         }
 
+        @include respond(tab-land) {
+            margin-bottom: 0rem;
+        }
+
         @include respond(tab-port) {
             @include flex-column-center;
             margin-bottom: 1rem;

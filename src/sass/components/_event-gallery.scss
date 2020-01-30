@@ -5,8 +5,10 @@
     margin-bottom: 8rem;
 
     @include respond(tab-port) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-row-gap: 2rem;
+        margin-bottom: 4rem;
     }
 
     &__item {
@@ -38,13 +40,7 @@
             }
 
             @include respond(tab-port) {
-                padding: 4rem 3rem 4rem 3rem;
-            }
-
-            @include respond(phone) {
-                padding: 4rem 3rem 4rem 3rem;
-                left: 2rem;
-                top: 2.3rem;
+                padding: 0rem 3rem 5rem 3rem;
             }
             
             span:first-child {

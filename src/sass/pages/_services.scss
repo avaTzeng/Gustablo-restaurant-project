@@ -11,6 +11,11 @@
         padding-bottom: 8rem;
     }
 
+    @include respond(phone) {
+        padding-top: 8rem;
+        padding-bottom: 6rem;
+    }
+
     & > .content-box:nth-child(2) {
         margin: 0 2rem;
 

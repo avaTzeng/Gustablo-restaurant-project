@@ -18,6 +18,10 @@
         width: 60%;
     }
 
+    @include respond(phone) {
+        width: 90%;
+    }
+
     &:hover {
         border: 2px solid $color-primary;
         height: 61.5rem;

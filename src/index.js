@@ -12,8 +12,7 @@ import scrollRevealConfig from './js/models/ScrollRevealConfig';
 import Introduction from './js/models/Introduction';
 
 $(function() {
-    var s = skrollr.init();
-
+    
     for(let el of elements.introductionBtns) {
         const dataType = $(el).data('type');
         const data = Introduction[dataType];
