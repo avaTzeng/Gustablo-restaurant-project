@@ -15,11 +15,196 @@
          z-index: 1500;
     }
 
+    // --- 漢堡選單
+    &__buger-btn-nav-all {
+        display: none;
+
+        @media only screen and(max-width: 56.25em) { // 900px = tab-port
+            display: block;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        @include size(5.8rem, 5.8rem);
+        display: block;
+        background-color: $color-primary;
+        border: 1px solid $color-white;
+        border-radius: 1rem;
+        z-index: 9000;
+        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__bg {
+        @include size(5rem, 5rem);
+        position: absolute;
+        border-radius: 50%;
+        background-image: radial-gradient($color-grey-light-1, $color-white);
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        z-index: 6000;
+        transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+    &__icon {
+        @include abs-center;
+
+        &,
+        &::before,
+        &::after {
+            width: 3rem;
+            height: 2px;
+            background-color: $color-white;
+            display: inline-block;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .15s;
+        }
+
+        &::before { top: -.8rem; }
+        &::after { top: .8rem; }
+    }
+
+    &__buger-btn-nav {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        z-index: 8500;
+        height: 100vh;
+        opacity: 0;
+        width: 0;
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    &__buger-btn-list {
+        @include abs-center;
+        position: absolute;
+        list-style: none;
+        text-align: center;
+        width: 100vw;
+    }
+
+    &__buger-btn-item {
+        margin-bottom: 1rem;
+    }
+
+    &__buger-btn-link {
+        &:link,
+        &:visited {
+            display: inline-block;
+            font-size: 2.8rem;
+            font-weight: 300;
+            color: $color-primary;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-primary 50%);
+            background-size: 230%;
+            transition: all .4s;
+
+            span {
+                margin-right: 1.5rem;
+                display: inline-block;
+            }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-white;
+            transform: translateX(1rem);
+        }
+    }
+
+    //FUNCTIONALITY
+    &__checkbox:checked ~ &__bg {
+        transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__buger-btn-nav {
+        opacity: 1;
+        width: 100vw;
+    }
+
+    &__button:hover &__icon::before {
+        top: -1rem;
+    }
+
+    &__button:hover &__icon::after {
+        top: 1rem;
+    }
+
+    &__checkbox:checked + &__button &__icon {
+        background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+        top: 0;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__icon::after {
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+
+    // &__burger-btn {
+    //     @include size(5.8rem, 5.8rem);
+    //     display: none;
+    //     cursor: pointer;
+    //     border: 1px solid $color-white;
+    //     border-radius: 4px;
+
+    //     @media only screen and(max-width: 56.25em) { // 900px = tab-port
+    //         display: block;
+    //     }
+    // }
+
+    // &__burger-line {
+    //     @include abs-center;
+    //     @include size(60%, 2px);
+    //     border: 50%;
+    //     background-color: $color-white;
+
+    //     &::after {
+    //         @include size(100%, 2px);
+    //         content: "";
+    //         display: block;
+    //         background-color: $color-white;
+    //         top: 1rem;
+    //     }
+
+    //     &::before {
+    //         @include size(100%, 2px);
+    //         content: "";
+    //         display: block;
+    //         background-color: $color-white;
+    //         top: -1rem;
+    //     }
+    // }
+
+    // --- 正常選單
     &__list {
         display: flex;
         list-style: none;
         margin-top: .3rem;
         left: 1.5rem;
+
+        @media only screen and (max-width: 56.25em) { // 900px = tab-port
+            display: none;
+        }
     }
 
     &__item {
