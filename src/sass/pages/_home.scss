@@ -99,17 +99,6 @@
         width: 30%;
         align-items: flex-end;
 
-        // &:not(:last-child)::after {
-        //     @include size(1px, 270%);
-        //     background-color: $color-grey-light-2;
-        //     content: "";
-        //     display: inline-block;
-        //     position: absolute;
-        //     right: 0;
-        //     top: 50%;
-        //     transform: translate(calc(50% + 2.5rem), calc(-50% - 2rem));
-        // }
-
         img {
             width: 100%;
             vertical-align: middle;
@@ -133,7 +122,7 @@
     @include center-row;
     @include flex-column-center;
     padding-top: $padding-section-top;
-    padding-bottom: 7.2rem;
+    padding-bottom: 10rem;
     
     &__photo-grid {
         width: 100%;

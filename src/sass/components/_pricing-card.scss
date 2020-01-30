@@ -45,18 +45,24 @@
         color: $color-white;
         font-family: $font-family-1;
         letter-spacing: 1px;
-        padding: .5rem 0;
+        font-size: 1.3rem;
+        padding: 1.2rem 0;
         text-align: center;
         text-transform: uppercase;
         width: 100%;
     }
 
     &__contents {
+        @include abs-center;
         align-items: center;
         display: flex;
         flex-direction: column;
         padding: 4.5rem 0 4rem 0;
         width: 100%;
+
+        @include respond(tab-land) {
+            margin-top: 1.5rem;
+        }
     }
 
     &__price {
