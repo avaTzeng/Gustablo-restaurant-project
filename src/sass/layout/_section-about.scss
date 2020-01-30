@@ -1,6 +1,6 @@
 .section-about {
-    
-    padding: 8.6rem 0 8.8rem 0;
+    padding-top: 8.6rem;
+    padding-bottom: 8.8rem;
     text-align: center;
 
     &__contents {
@@ -18,7 +18,7 @@
 
         @include respond(tab-land) {
             margin-right: 0rem;
-            margin-bottom: 7rem;
+            margin-bottom: 5rem;
         }
 
         &--small {
@@ -35,6 +35,10 @@
             @include respond(tab-land) {
                 @include size(48%, 30rem);
                 width: 90%;
+
+                & img {
+                    transform: translate(-50%, calc(-50% + 14.5rem)) !important;
+                }
             }
         }
 
@@ -42,10 +46,6 @@
             @include abs-center;
             width: 100.5%;
             vertical-align: middle;
-
-            @include respond(tab-land) {
-                transform: translate(-50%, calc(-50% + 14.5rem));
-            }
         }
     }
 

@@ -8,7 +8,6 @@
 @mixin center-row {
     max-width: $row-content-max-width;
     margin: 0 auto;
-    // border: 1px solid blue;
 
     @include respond(tab-land) {
         padding-right: 3rem;

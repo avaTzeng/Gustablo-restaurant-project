@@ -1,5 +1,4 @@
 .event-gallery {
-    @include center-row;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -18,7 +17,13 @@
             @include abs-center;
             height: 100%;
 
+            @include respond(tab-port) {
+                width: 120%;
+                height: auto;
+            }
+
             @include respond(phone) {
+                width: auto;
                 height: 100%;
             }
         }
@@ -33,13 +38,13 @@
             }
 
             @include respond(tab-port) {
-                padding: 4rem 3rem 0rem 3rem;
+                padding: 4rem 3rem 4rem 3rem;
             }
 
             @include respond(phone) {
                 padding: 4rem 3rem 4rem 3rem;
-                // top: 2rem;
                 left: 2rem;
+                top: 2.3rem;
             }
             
             span:first-child {

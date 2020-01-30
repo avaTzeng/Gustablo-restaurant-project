@@ -68,15 +68,15 @@
 //--------------- SECTION-INTRO ---------------
 .section-intro {
     background-color: $color-white;
-    padding: 18rem 0 12rem 0;
+    padding-top: 18rem;
+    padding-bottom: 12rem;
 
     @include respond(tab-port) {
-        padding: 12rem 0 12rem 0;
+        padding-top: 12rem;
     }
 }
 //--------------- SECTION-TEAM ---------------
 .section-team {
-    
     @include flex-column-center;
     
     background-color: $color-grey-light-1;
@@ -153,6 +153,10 @@
         height: 34.8rem;
         overflow: hidden;
 
+        @include respond(tab-port) {
+            height: 45rem;
+        }
+
         img {
             @include abs-center;
             height: 108%;
@@ -164,6 +168,7 @@
                 height: 102%;
             }
         }
+        
 
         @include respond(phone) {
             height: 21.8rem;
@@ -182,13 +187,22 @@
 }
 //--------------- SECTION-CONTENT_BOXES ---------------
 .section-content-boxes {
-    @include flex-row-space-between;
+    @include flex-row-center;
     @include center-row;
-    padding: 15rem 0 10rem 0;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
 
     @include respond(tab-port) {
         @include flex-column-center;
-        padding: 10.5rem 0 8rem 0;
+        padding-bottom: 12rem;
+    }
+
+    & > .content-box:nth-child(2) {
+        margin: 0 2rem;
+
+        @include respond(tab-port) {
+            margin: 0;
+        }
     }
 }
 //--------------- SECTION-EVENTS ---------------
@@ -206,7 +220,8 @@
 .section-why {
     @include center-row;
     @include flex-row-space-between;
-    padding: 12rem 0;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
 
     @include respond(tab-port) {
         @include flex-column-center;

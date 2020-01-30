@@ -77,6 +77,7 @@
     }
 
     &__buger-btn-nav {
+        visibility: hidden;
         position: fixed;
         top: -100%;
         left: 0;
@@ -135,6 +136,7 @@
     &__checkbox:checked ~ &__buger-btn-nav {
         opacity: 1;
         width: 100vw;
+        visibility: visible;
     }
 
     &__button:hover &__icon::before {

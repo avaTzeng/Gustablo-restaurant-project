@@ -1,10 +1,12 @@
 .section-customer-reviews {
     @include flex-row-space-between;
     @include center-row;
-    padding: 11.5rem 0 11.6rem 0;
+    padding-top: 11.5rem;
+    padding-bottom: 11.6rem;
 
     @include respond(tab-port) {
         @include flex-column-center;
-        padding: 11rem 0 8rem 0;
+        padding-top: 11rem;
+        padding-bottom: 8rem;
     }
 }

@@ -1,7 +1,7 @@
 .footer {
-    
+    padding-top: 10.5rem;
+    padding-bottom: 2.4rem;
     background-color: $color-grey-dark-1;
-    padding: 10.5rem 0 2.4rem 0;
 
     @include respond(tab-land) {
         & &__block:last-child {

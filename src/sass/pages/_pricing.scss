@@ -1,11 +1,21 @@
 //--------------- SECTION-DESCRIPTION-BOXES ---------------
 .section-description-boxes {
-    @include flex-row-space-between;
+    @include flex-row-center;
     @include center-row;
-    padding: 13.9rem 0 9.4rem 0;
+    padding-top: 13.9rem;
+    padding-bottom: 9.4rem;
 
     @include respond(tab-port) {
         @include flex-column-center;
-        padding: 11rem 0 8rem 0;
+        padding-top: 11rem;
+        padding-bottom: 8rem;
+    }
+
+    & > .content-box:nth-child(2) {
+        margin: 0 2rem;
+
+        @include respond(tab-port) {
+            margin: 0;
+        }
     }
 }
