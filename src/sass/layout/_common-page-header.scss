@@ -6,19 +6,31 @@
     text-align: center;
 
     &--about {
-        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url(/img/photos/cover/aboutPage_cover.webp);
+        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/aboutPage_cover-big-1x.jpg");
+        @include respond(phone) {
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/aboutPage_cover-small-1x.jpg");
+        }
     }
 
     &--services {
-        background-image: linear-gradient(to bottom, rgba($color-black, .55), rgba($color-primary, .35)), url(/img/photos/cover/servicesPage_cover.webp);
+        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/servicesPage_cover-big-1x.jpg");
+        @include respond(phone) {
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/servicesPage_cover-small-1x.jpg");
+        }
     }
 
     &--pricing {
-        background-image: linear-gradient(to bottom, rgba($color-black, .55), rgba($color-primary, .35)), url(/img/photos/cover/pricingPage_cover.webp);
+        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/pricingPage_cover-big-1x.jpg");
+        @include respond(phone) {
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/pricingPage_cover-small-1x.jpg");
+        }
     }
 
     &--contacts {
-        background-image: linear-gradient(to bottom, rgba($color-black, .55), rgba($color-primary, .35)), url(/img/photos/cover/contactsPage_cover.webp);
+        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/contactsPage_cover-big-1x.jpg");
+        @include respond(phone) {
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/contactsPage_cover-small-1x.jpg");
+        }
     }
 
     &__contents {

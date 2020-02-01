@@ -1,7 +1,6 @@
 //--------------- HEADER ---------------
 .home-header {
-    // background-image: url(/img/photos/showoff_01.webp);
-    background-image: url(/img/photos/temp.jpg);
+    background-image: url("/img/photos/showoff_01-big-1x.jpg");
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
@@ -13,6 +12,7 @@
 
     @include respond(phone) {
         height: 60vh;
+        // background-image: url("/img/photos/showoff_01-small-1x.jpg");
     }
 
     &__content {   
@@ -130,7 +130,7 @@
         width: 30%;
         align-items: flex-end;
 
-        img {
+        img, source {
             width: 100%;
             vertical-align: middle;
         }
@@ -164,20 +164,18 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 34.5rem);
         grid-gap: 2rem;
         margin-bottom: 7rem;
 
-        @include respond(tab-land) {
-            margin-bottom: 5rem;
-        }
-
         @include respond(tab-port) {
             grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 48rem);
             grid-gap: 1rem;
         }
 
         @include respond(phone) {
-
+            grid-template-rows: repeat(2, 30rem);
             & > a:nth-child(5),  & > a:nth-child(6){
                 display: none;
             }
@@ -185,38 +183,17 @@
     }
 
     &__photo {
-        justify-self: stretch;
-        height: 34.8rem;
         overflow: hidden;
 
-        @include respond(tab-port) {
-            height: 45rem;
-        }
-
-        img {
+        img, source, picture {
             @include abs-center;
             height: 108%;
             transition: .35s;
         }
 
         &:hover {
-            img {
+            img, source {
                 height: 102%;
-            }
-        }
-        
-
-        @include respond(phone) {
-            height: 20rem;
-
-            img {
-                @include size(100%, auto);
-            }
-
-            &:hover {
-                img {
-                    @include size(108%, auto);
-                }
             }
         }
     } 

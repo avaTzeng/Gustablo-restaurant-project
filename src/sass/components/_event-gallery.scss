@@ -5,9 +5,9 @@
     margin-bottom: 8rem;
 
     @include respond(tab-port) {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-        grid-row-gap: 2rem;
+        grid-row-gap: 3rem;
         margin-bottom: 4rem;
     }
 
@@ -15,13 +15,12 @@
         justify-self: stretch;
         overflow: hidden;
         
-        img {
+        img, picture, source {
             @include abs-center;
-            height: 100%;
+            height: 102%;
 
             @include respond(tab-port) {
-                width: 120%;
-                height: auto;
+                height: 110%;
             }
 
             @include respond(phone) {
@@ -40,7 +39,7 @@
             }
 
             @include respond(tab-port) {
-                padding: 0rem 3rem 5rem 3rem;
+                padding: 0rem 20% 5rem 20%;
             }
             
             span:first-child {
