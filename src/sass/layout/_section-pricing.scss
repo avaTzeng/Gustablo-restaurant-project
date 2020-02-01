@@ -3,8 +3,8 @@
     padding-bottom: 13.3rem;
 
     @include respond(phone) {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        padding-top: $phone-section-side-padding;
+        padding-bottom: $phone-section-side-padding;
     }
 
     &__cards {
@@ -21,8 +21,11 @@
         }
 
         .pricing-card:not(:last-child) {
+            margin-right: 2rem;
+
             @include respond(tab-port) {
-                margin-bottom: 4rem;
+                margin-bottom: 2rem;
+                margin-right: 0rem;
             }
         }
     }

@@ -7,6 +7,11 @@
         padding-top: 8rem;
         padding-bottom: 8rem;
     }
+
+    @include respond(phone) {
+        padding-top: $phone-section-side-padding;
+        padding-bottom: $phone-section-side-padding;
+    }
 }
 //--------------- SECTION-INFO-BOXES ---------------
 .section-info-boxes {

@@ -10,18 +10,26 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         text-decoration: none;
-        transition: all .1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+        @media only screen and (hover: hover) {
+            transition: all .1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        }
+
+        @include respond(phone) {
+            font-size: 2rem;
+        }
     }
 
     &:hover {
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
-        transform: translateY(-0.3rem) scale(1.05,1.05);
+        transform: translateY(-0.3rem) scale(1, 1.01);
     }
 
-    &:active,
-    &:focus {
-        box-shadow: 0 0.5rem 1rem rgba($color-black,.2);
-        transform: translateY(-1px) scale(1,1);
+    &:active {
+        @media only screen and (hover: hover) {
+            box-shadow: 0 0.5rem 1rem rgba($color-black,.2);
+            transform: translateY(-1px) scale(1,1);
+        }
     }
 
     // ---- 尺寸 ----
@@ -53,7 +61,8 @@
         letter-spacing: 0px;
     }
 
-    &--transparent-light-txt:hover {
+    &--transparent-light-txt:hover,
+    &--transparent-light-txt:active {
         background-color: $color-primary;
         border: 1px solid $color-primary;
         letter-spacing: 2px;
@@ -68,7 +77,8 @@
         letter-spacing: 0px;
     }
 
-    &--transparent-dark-txt:hover {
+    &--transparent-dark-txt:hover,
+    &--transparent-dark-txt:active {
         color: $color-white;
         background-color: $color-primary;
         border: 1px solid $color-primary;
@@ -76,14 +86,15 @@
     }
 
     &--primary-solid,
-    &--primary-solid:link,
+    &--primary-solid:link, 
     &--primary-solid:visited {
         color: $color-white;
         background-color: $color-primary;
         letter-spacing: 0px;
     }
 
-    &--primary-solid:hover {
+    &--primary-solid:hover,
+    &--primary-solid:active {
         letter-spacing: 2px;
     }
 
@@ -95,10 +106,8 @@
         letter-spacing: 0px;
     }
 
-    &--secondary:hover {
+    &--secondary:hover,
+    &--secondary:active {
         letter-spacing: 2px;
     }
-
-    // ---- 動畫 ----
-
 }

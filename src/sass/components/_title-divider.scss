@@ -6,6 +6,10 @@
         margin-bottom: 5rem;
     }
 
+    @include respond(phone) {
+        margin-bottom: 2rem;
+    }
+
     &__icon {
         @include size(3.3rem,3.3rem);
         margin: 1.7rem 0;

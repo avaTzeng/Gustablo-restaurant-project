@@ -8,6 +8,10 @@
     z-index: 1000;
     border-bottom: 1px solid $color-grey-light-3;
 
+    @include respond(phone) {
+        padding: 1rem 0;
+    }
+
     &__nav {
         @include flex-row-space-between;
         @include center-row;
@@ -31,10 +35,10 @@
         @include size(5.8rem, 5.8rem);
         display: block;
         background-color: $color-primary;
-        border: 1px solid $color-white;
+        // border: 1px solid $color-black;
         border-radius: 1rem;
         z-index: 9000;
-        box-shadow: 0 1rem 3rem rgba($color-black, .1);
+        box-shadow: 0 2px 6px rgba($color-black, .35);
         text-align: center;
         cursor: pointer;
 
@@ -163,6 +167,10 @@
     //FUNCTIONALITY
     &__checkbox:checked ~ &__bg {
         transform: scale(80);
+    }
+
+    &__checkbox:checked ~ &__button {
+        box-shadow: 0 2px 6px rgba($color-black, 0);
     }
 
     &__checkbox:checked ~ &__buger-btn-nav {

@@ -5,8 +5,8 @@
     padding-bottom: 11.5rem;
 
     @include respond(phone) {
-        padding-top: 5rem;
-        padding-bottom: 6rem;
+        padding-top: $phone-section-side-padding;
+        padding-bottom: $phone-section-side-padding;
     }
 
     &__contents {
@@ -26,7 +26,8 @@
     border: 0;
 
     @include respond(phone) {
-        margin-bottom: 7rem;
+        margin-bottom: 3rem;
+        height: 30vh;
     }
 }
 //--------------- FORMAL-CONTACT-FORM ---------------
@@ -44,7 +45,7 @@
     }
 
     @include respond(phone) {
-        margin-bottom: 10rem;
+        margin-bottom: 7rem;
     }
 
     &__titie-block {

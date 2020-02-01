@@ -1,14 +1,14 @@
 .common-page-header {
-    padding-top: 20.8rem;
-    padding-bottom: 13rem;
+    height: 45vh;
     background-position: top;
     background-attachment: fixed;
+    background-size: cover;
     text-align: center;
 
     &--about {
-        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/aboutPage_cover-big-1x.jpg");
+        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("https://i.postimg.cc/J4fzCh9q/servicesPage_cover-big-1x.jpg");
         @include respond(phone) {
-            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/aboutPage_cover-small-1x.jpg");
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("https://i.postimg.cc/FKmF1BFk/servicesPage_cover-small-1x.jpg");
         }
     }
 
@@ -20,7 +20,7 @@
     }
 
     &--pricing {
-        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/pricingPage_cover-big-1x.jpg");
+        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("https://i.imgur.com/Ro4AvB9.jpg");
         @include respond(phone) {
             background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("/img/photos/cover/pricingPage_cover-small-1x.jpg");
         }
@@ -35,6 +35,8 @@
 
     &__contents {
         display: inline-block;
+        padding-top: 20rem;
+        padding-bottom: 12.5rem;
     }
 
     &__slogan {

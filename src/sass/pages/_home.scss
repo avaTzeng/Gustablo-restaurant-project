@@ -11,8 +11,7 @@
     }
 
     @include respond(phone) {
-        height: 60vh;
-        // background-image: url("/img/photos/showoff_01-small-1x.jpg");
+        height: 45vh;
     }
 
     &__content {   
@@ -21,6 +20,7 @@
     }
 
     &__slogans {
+        @include flex-column-center;
         margin-bottom: 2.5rem;
     }
 
@@ -45,8 +45,14 @@
         }
 
         @include respond(phone) {
+            width: 100%;
+            flex: 1;
+            display: block;
+            // border: 1px solid red;
             top: 2rem;
-            font-size: 3rem;
+            font-size: 4rem;
+            line-height: 1.1;
+            white-space: initial;
         }
     }
 
@@ -72,11 +78,10 @@
         }
 
         @include respond(phone) {
-            display: inline-block;
-            padding: 0 2rem;
-            letter-spacing: 1px;
+            // white-space: nowrap; 
             line-height: 1.3;
-            top: .6rem;
+            padding: 0 1rem;
+            top: 6rem;
             position: absolute;
         }
     }
@@ -98,37 +103,30 @@
     }
 
     @include respond(phone) {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        padding-top: $phone-section-side-padding;
+        padding-bottom: $phone-section-side-padding;
     }
 }
 //--------------- SECTION-TEAM ---------------
 .section-team {
     @include flex-column-center;
-    
+    @include center-row; 
     background-color: $color-grey-light-1;
+
     padding-top: $padding-section-top;
+    padding-bottom: $padding-section-top;
 
     @include respond(phone) {
-        padding-top: 8rem;
-    }
-
-    &::after {
-        content: "";
-        bottom: 0;
-        display: inline-block;
-        position: absolute;
-        right: 0;
+        padding-top: $phone-section-side-padding;
+        padding-bottom: $phone-section-side-padding;
     }
 
     &__photos {
-        @include flex-row-space-between;
-        @include center-row;
+        @include flex-row-center;
     }
 
     &__photo {
-        width: 30%;
-        align-items: flex-end;
+        flex: 1;
 
         img, source {
             width: 100%;
@@ -142,7 +140,6 @@
         }
 
         @include respond(tab-port) {
-            @include size(100%, 30rem);
             overflow: hidden;
         }
     }
@@ -156,8 +153,8 @@
     padding-bottom: 10rem;
 
     @include respond(phone) {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        padding-top: $phone-section-side-padding;
+        padding-bottom: $phone-section-side-padding;
     }
     
     &__photo-grid {
@@ -176,6 +173,8 @@
 
         @include respond(phone) {
             grid-template-rows: repeat(2, 30rem);
+            margin-bottom: 3rem;
+
             & > a:nth-child(5),  & > a:nth-child(6){
                 display: none;
             }
@@ -231,9 +230,11 @@
     text-align: center;
 
     @include respond(phone) {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        padding-top: $phone-section-side-padding;
+        padding-bottom: $phone-section-side-padding;
     }
+
+
 
     &__contents {
         @include center-row;
@@ -251,8 +252,8 @@
     }
 
     @include respond(phone) {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        padding-top: $phone-section-side-padding;
+        padding-bottom: $phone-section-side-padding;
     }
 
     &__info {
