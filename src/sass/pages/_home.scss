@@ -110,7 +110,6 @@
 //--------------- SECTION-TEAM ---------------
 .section-team {
     @include flex-column-center;
-    @include center-row; 
     background-color: $color-grey-light-1;
 
     padding-top: $padding-section-top;
@@ -122,20 +121,30 @@
     }
 
     &__photos {
-        @include flex-row-center;
+        // border: 1px solid red;
+        @include flex-row-space-between;
+        @include center-row; 
+        // justify-content: space-evenly;
+        // width: 100%;
+        overflow: hidden;
     }
 
     &__photo {
-        flex: 1;
+        // border: 1px solid blue;
+        // width: 17vw;
+        width: 32%;
 
         img, source {
+            // border: 1px solid yellow;
             width: 100%;
             vertical-align: middle;
         }
 
         &:not(:last-child) {
+            // margin-right: 2rem;
+
             @include respond(tab-port) {
-                margin-right: 1rem;
+                // margin-right: 1rem;
             }
         }
 

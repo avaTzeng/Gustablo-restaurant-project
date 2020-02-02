@@ -1,20 +1,22 @@
 .navigation {
-    width: 100vw;
+    width: 100%;
     padding: 2.2rem 0;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba($color-black, .7);
     z-index: 1000;
     border-bottom: 1px solid $color-grey-light-3;
 
     @include respond(phone) {
-        padding: 1rem 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     &__nav {
-        @include flex-row-space-between;
         @include center-row;
+        @include flex-row-space-between;
          z-index: 1500;
     }
 
