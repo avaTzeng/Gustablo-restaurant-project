@@ -17,9 +17,15 @@
         }
         margin-bottom: 5rem;
 
+        @include respond(phone) {
+            margin-bottom: 2rem;
+        }
+
         & > div:not(:last-child) {
             margin-bottom: 5rem;
         }
+
+
     }
 
     &__phone-view-content {

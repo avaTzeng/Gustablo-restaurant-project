@@ -1,35 +1,65 @@
 .common-page-header {
     height: 43rem;
+    background-size: cover;
+
     background-position: top;
     background-attachment: fixed;
-    // background-size: cover;
     text-align: center;
 
+    @include respond(tab-land) {
+        background-position: center;
+        background-attachment: initial;
+    }
+
+    @include respond(phone) {
+        height: 40vh;
+    }
+
     &--about {
-        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("https://i.imgur.com/AU00iHh.jpg");
+        background-image: linear-gradient(to bottom, rgba($color-black, .3), rgba($color-primary, .6)), url("https://i.imgur.com/AU00iHh.jpg");
+
+        @include respond(tab-land) {
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .25)), url("https://i.imgur.com/AU00iHh.jpg");
+        }
+
         @include respond(phone) {
-            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("https://i.imgur.com/dFMvwMs.jpg");
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .25)), url("https://i.imgur.com/dFMvwMs.jpg");
         }
     }
 
     &--services {
-        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("https://i.imgur.com/Ro4AvB9.jpg");
+        background-image: linear-gradient(to bottom, rgba($color-black, .3), rgba($color-primary, .6)), url("https://i.imgur.com/Ro4AvB9.jpg");
+
+        @include respond(tab-land) {
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .25)), url("https://i.imgur.com/Ro4AvB9.jpg");
+        }
+
         @include respond(phone) {
-            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("https://i.imgur.com/INElijO.jpg");
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .25)), url("https://i.imgur.com/INElijO.jpg");
         }
     }
 
     &--pricing {
-        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("https://i.imgur.com/5tAEoZX.jpg");
+        background-image: linear-gradient(to bottom, rgba($color-black, .3), rgba($color-primary, .6)), url("https://i.imgur.com/5tAEoZX.jpg");
+
+        @include respond(tab-land) {
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .25)), url("https://i.imgur.com/5tAEoZX.jpg");
+        }
+        
         @include respond(phone) {
-            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("https://i.imgur.com/Za1k4zG.jpg");
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .25)), url("https://i.imgur.com/Za1k4zG.jpg");
         }
     }
 
     &--contacts {
-        background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("https://i.imgur.com/vA80D7t.jpg");
+        background-image: linear-gradient(to bottom, rgba($color-black, .3), rgba($color-primary, .6)), url("https://i.imgur.com/vA80D7t.jpg");
+
+        @include respond(tab-land) {
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .25)), url("https://i.imgur.com/vA80D7t.jpg");
+        }
+
         @include respond(phone) {
-            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .35)), url("https://i.imgur.com/Vosa24v.jpg");
+            background-image: linear-gradient(to bottom, rgba($color-black, .65), rgba($color-primary, .25)), url("https://i.imgur.com/Vosa24v.jpg");
         }
     }
 
