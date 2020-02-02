@@ -121,22 +121,30 @@
     }
 
     &__photos {
-        // border: 1px solid red;
         @include flex-row-space-between;
         @include center-row; 
-        // justify-content: space-evenly;
-        // width: 100%;
         overflow: hidden;
     }
 
     &__photo {
-        // border: 1px solid blue;
-        // width: 17vw;
         width: 32%;
 
-        img, source {
-            // border: 1px solid yellow;
+        img {
             width: 100%;
+            @media only screen and (max-width: 37.5em) {
+                display: none;
+            }
+            vertical-align: middle;
+        }
+
+        source {
+            display: none;
+            // height: 0;
+            border: 1px solid red;
+            @media only screen and (max-width: 37.5em) {
+                display: inline-block;
+                width: 100%;
+            }
             vertical-align: middle;
         }
 
