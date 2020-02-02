@@ -21,8 +21,10 @@
     }
 
     &:hover {
-        box-shadow: 0 1rem 2rem rgba($color-black,.2);
-        transform: translateY(-0.3rem) scale(1, 1.01);
+        @media only screen and (hover: hover) {
+            box-shadow: 0 1rem 2rem rgba($color-black,.2);
+            transform: translateY(-0.3rem) scale(1, 1.01);
+        }
     }
 
     &:active {
@@ -107,6 +109,10 @@
 
     &--secondary:hover,
     &--secondary:active {
-        letter-spacing: 2px;
+        // letter-spacing: 2px;
+
+        @media only screen and (hover: hover) {
+            letter-spacing: 2px;
+        }
     }
 }
