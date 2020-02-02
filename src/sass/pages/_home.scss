@@ -115,6 +115,10 @@
     padding-top: $padding-section-top;
     padding-bottom: $padding-section-top;
 
+    @include respond(tab-port) {
+        overflow: hidden;
+    }
+
     @include respond(phone) {
         padding-top: $phone-section-side-padding;
         padding-bottom: $phone-section-side-padding;
@@ -131,34 +135,24 @@
 
         img {
             width: 100%;
-            @media only screen and (max-width: 37.5em) {
-                display: none;
-            }
             vertical-align: middle;
+            // @media only screen and (max-width: 37.5em) {
+            //     // display: none;
+            // }
         }
 
         source {
             display: none;
-            // height: 0;
-            border: 1px solid red;
-            @media only screen and (max-width: 37.5em) {
-                display: inline-block;
-                width: 100%;
-            }
             vertical-align: middle;
+            // height: 0;
+            // border: 1px solid red;
+            // @media only screen and (max-width: 37.5em) {
+            //     // display: inline-block;
+            //     // width: 100%;
+            // }
         }
 
-        &:not(:last-child) {
-            // margin-right: 2rem;
-
-            @include respond(tab-port) {
-                // margin-right: 1rem;
-            }
-        }
-
-        @include respond(tab-port) {
-            overflow: hidden;
-        }
+        
     }
 }
 
