@@ -34,19 +34,29 @@
 
     &__video {
         width: 58%;
+        height: 38rem; // for iframe
 
-        video {
-            width: 100%;
-            outline: none;
-
-            @include respond(tab-port) {
-                vertical-align: middle;
-            }
+        @include respond(tab-land) {
+            height: 35rem;
         }
 
         @include respond(tab-port) {
             width: 90%;
+            height: 45rem;
         }
+
+        @include respond(phone) {
+            height: 23rem;
+        }
+
+        // video {
+        //     width: 100%;
+        //     outline: none;
+
+        //     @include respond(tab-port) {
+        //         vertical-align: middle;
+        //     }
+        // }
     }
 
     &__info {
