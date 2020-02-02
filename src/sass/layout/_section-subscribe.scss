@@ -3,6 +3,11 @@
     padding-bottom: 5rem;
     background-color: $color-primary;
 
+    @include respond(phone) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
     &__block {
         width: 84rem;
         margin: 0 auto;

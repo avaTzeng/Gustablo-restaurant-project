@@ -2,8 +2,8 @@
 .section-description-boxes {
     @include flex-row-center;
     @include center-row;
-    padding-top: 13.9rem;
-    padding-bottom: 9.4rem;
+    padding-top: 12rem;
+    padding-bottom: 10rem;
 
     @include respond(tab-port) {
         @include flex-column-center;

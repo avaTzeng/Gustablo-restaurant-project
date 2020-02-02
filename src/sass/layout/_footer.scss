@@ -107,7 +107,7 @@
             margin-right: .9rem;
 
             @include respond(phone) {
-                margin-right: 1.2rem;
+                margin-right: 1rem;
             }
         }
 
@@ -123,7 +123,7 @@
             vertical-align: middle;
 
             @include respond(phone) {
-                @include size(4rem, 4rem);
+                @include size(3rem, 3rem);
             }
         }
     }

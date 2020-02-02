@@ -45,8 +45,8 @@
         width: 100%;
 
         @include respond(phone) {
-            font-size: 2rem;
-            padding: 1.5rem 0;
+            font-size: 1.5rem;
+            padding: .8rem 0;
         }
     }
 
@@ -61,6 +61,10 @@
         @include respond(tab-land) {
             margin-top: 1rem;
         }
+
+        @include respond(phone) {
+            padding: 3.5rem 0 4rem 0;
+        }
     }
 
     &__price {
@@ -71,6 +75,10 @@
         font-weight: 500;
         line-height: .7;
         transition: .1s;
+        
+        @include respond(phone) {
+            font-size: 7rem;
+        }
 
         &::before {
             content: "$";

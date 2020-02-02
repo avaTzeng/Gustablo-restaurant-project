@@ -78,6 +78,8 @@
                 letter-spacing: 1px;
 
                 @include respond(phone) {
+                    font-size: 2rem;
+                    margin-top: 1rem;
                     margin-bottom: 1rem;
                 }
             }

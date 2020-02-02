@@ -4,7 +4,9 @@
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    height: 100vh;
+    // height: 100vh;
+    height: 60vh;
+    // height: 43rem;
 
     @include respond(tab-port) {
         height: 65vh;
@@ -117,7 +119,7 @@
 //--------------- SECTION-INTRO ---------------
 .section-intro {
     background-color: $color-white;
-    padding-top: 18rem;
+    padding-top: 12rem;
     padding-bottom: 12rem;
 
     @include respond(tab-port) {
