@@ -66,6 +66,7 @@
         color: $color-primary;
         margin-right: 3.8rem;
         line-height: 1;
+        font-weight: 400;
 
         @include respond(tab-port) {
             font-size: 2rem;
@@ -183,6 +184,7 @@
         color: $color-primary;
         margin-right: 1.2rem;
         line-height: 1;
+        font-weight: 400;
 
         @include respond(tab-port) {
             font-size: 2rem;

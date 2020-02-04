@@ -17,24 +17,23 @@
         }
     }
 
+    &__title {
+        font-family: $font-family-1;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: $color-white;
+        letter-spacing: 2px;
+        line-height: 1;
+        font-weight: 400;
+
+        @include respond(phone) {
+            font-size: 1.8rem;
+        }
+    }
+
     &__content {
         @include flex-row-center;
         justify-content: space-between;
-
-        label {
-            font-family: $font-family-1;
-            font-size: 1.3rem;
-            text-transform: uppercase;
-            color: $color-white;
-            letter-spacing: 2px;
-            line-height: 1;
-
-            @include respond(phone) {
-                font-size: 1.8rem;
-            }
-
-
-        }
 
         button {
             @include size(2rem, 2rem);

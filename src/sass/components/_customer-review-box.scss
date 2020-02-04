@@ -95,6 +95,7 @@
         font-size: 1.6rem;
         color: $color-grey-light-3;
         line-height: 1;
+        font-weight: 400;
 
         @include respond(tab-port) {
             font-size: 1.9rem;

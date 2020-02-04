@@ -41,6 +41,7 @@
     &__video {
         width: 58%;
         height: 38rem; // for iframe
+        border: none;
 
         @include respond(tab-land) {
             height: 35rem;
