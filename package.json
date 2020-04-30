@@ -19,7 +19,7 @@
     "url": "https://github.com/avaTzeng/Gustablo-restaurant-project/issues"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "scrollreveal": "^4.0.5"
   },
   "devDependencies": {
